@@ -1,0 +1,16 @@
+{
+  "name": "NSFW Image Gen Bot",
+  "slug": "nsfw-image-gen-bot",
+  "tagline": "AI image generation bot for creating NSFW artwork on Telegram",
+  "description": "NSFW Image Gen Bot uses AI image generation models to create adult artwork based on text prompts. Users describe what they want to see and the bot generates images accordingly. The bot supports various art styles from photorealistic to anime, with customizable parameters for body type, pose, setting, and more. Premium tiers offer higher resolution and faster generation.",
+  "category": "NSFW Bots",
+  "url": "https://t.me/nsfwimagegen",
+  "members": "220K+",
+  "pricing": { "model": "freemium", "startingPrice": "$6.99/mo" },
+  "features": ["AI image generation", "Text-to-image prompts", "Multiple art styles", "Customizable parameters", "High-resolution output", "Fast generation"],
+  "pros": ["Good image quality", "Flexible prompting", "Multiple styles", "Works right in Telegram"],
+  "cons": ["Free tier is slow", "Some prompts get filtered", "Inconsistent quality", "Premium is pricey"],
+  "rating": 4.1,
+  "lastUpdated": "2026-02-24",
+  "tags": ["ai image generation", "nsfw bots", "telegram bot", "nsfw art"]
+}

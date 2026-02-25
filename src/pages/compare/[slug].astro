@@ -1,0 +1,136 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import FAQSection from '../../components/FAQSection.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const listings = await getCollection('listings');
+  const paths: any[] = [];
+  
+  const byCategory: Record<string, any[]> = {};
+  for (const l of listings) {
+    const cat = l.data.category;
+    if (!byCategory[cat]) byCategory[cat] = [];
+    byCategory[cat].push(l.data);
+  }
+  
+  for (const tools of Object.values(byCategory)) {
+    for (let i = 0; i < tools.length; i++) {
+      for (let j = i + 1; j < tools.length; j++) {
+        const [a, b] = [tools[i], tools[j]].sort((x, y) => x.slug.localeCompare(y.slug));
+        paths.push({
+          params: { slug: `${a.slug}-vs-${b.slug}` },
+          props: { toolA: a, toolB: b },
+        });
+      }
+    }
+  }
+  
+  return paths;
+}
+
+const { toolA, toolB } = Astro.props;
+const pageTitle = `${toolA.name} vs ${toolB.name} — Which Is Better in 2026?`;
+const pageDesc = `Compare ${toolA.name} and ${toolB.name} side by side. Features, ratings, pros & cons to help you pick the best ${toolA.category.toLowerCase()} channel.`;
+
+const faqs = [
+  {
+    question: `Is ${toolA.name} better than ${toolB.name}?`,
+    answer: `${toolA.name} is rated ${toolA.rating}/5 while ${toolB.name} is rated ${toolB.rating}/5. The best choice depends on your preferences.`,
+  },
+  {
+    question: `What are the main differences between ${toolA.name} and ${toolB.name}?`,
+    answer: `${toolA.name} offers ${toolA.features.slice(0, 3).join(', ')}. ${toolB.name} offers ${toolB.features.slice(0, 3).join(', ')}. Both are ${toolA.category} channels.`,
+  },
+];
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map((faq) => ({
+    '@type': 'Question',
+    name: faq.question,
+    acceptedAnswer: { '@type': 'Answer', text: faq.answer },
+  })),
+};
+---
+
+<BaseLayout title={pageTitle} description={pageDesc} schema={faqSchema}>
+  <article class="max-w-4xl">
+    <div class="flex items-center gap-2 text-sm text-gray-500 mb-4">
+      <a href="/" class="hover:text-purple-400">Home</a>
+      <span>/</span>
+      <span>Compare</span>
+      <span>/</span>
+      <span class="text-gray-400">{toolA.name} vs {toolB.name}</span>
+    </div>
+
+    <h1 class="text-3xl font-bold mb-2">{pageTitle}</h1>
+    <p class="text-gray-400 mb-8">An honest side-by-side comparison of two popular <strong>{toolA.category}</strong> channels.</p>
+
+    <!-- Side-by-side -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
+      {[toolA, toolB].map((tool) => (
+        <div class="border border-gray-800 rounded-lg p-5 bg-gray-900">
+          <h2 class="text-xl font-bold mb-1">{tool.name}</h2>
+          <p class="text-sm text-gray-500 mb-3">{tool.tagline}</p>
+          {tool.rating && <div class="text-yellow-500 font-semibold mb-3">★ {tool.rating.toFixed(1)} / 5.0</div>}
+          
+          <div class="mb-3">
+            <span class="text-xs font-medium uppercase text-gray-500">Pricing</span>
+            <p class="font-medium">{tool.pricing.startingPrice || tool.pricing.model}</p>
+          </div>
+
+          <div class="mb-3">
+            <span class="text-xs font-medium uppercase text-gray-500">Key Features</span>
+            <ul class="mt-1 space-y-1">
+              {tool.features.slice(0, 5).map((f: string) => (
+                <li class="text-sm flex items-center gap-1"><span class="text-green-400">✓</span> {f}</li>
+              ))}
+            </ul>
+          </div>
+
+          {tool.pros && (
+            <div class="mb-3">
+              <span class="text-xs font-medium uppercase text-green-400">Pros</span>
+              <ul class="mt-1 space-y-1">
+                {tool.pros.slice(0, 3).map((p: string) => <li class="text-sm text-green-300">✅ {p}</li>)}
+              </ul>
+            </div>
+          )}
+
+          {tool.cons && (
+            <div class="mb-3">
+              <span class="text-xs font-medium uppercase text-red-400">Cons</span>
+              <ul class="mt-1 space-y-1">
+                {tool.cons.slice(0, 3).map((c: string) => <li class="text-sm text-red-300">❌ {c}</li>)}
+              </ul>
+            </div>
+          )}
+
+          <div class="mt-4 flex gap-2">
+            <a href={`/listing/${tool.slug}`} class="text-sm px-4 py-2 bg-gray-800 rounded hover:bg-gray-700">Full Review</a>
+            <a href={tool.url} target="_blank" rel="noopener nofollow" class="text-sm px-4 py-2 bg-purple-600 text-white rounded hover:bg-purple-700">Open →</a>
+          </div>
+        </div>
+      ))}
+    </div>
+
+    <!-- Verdict -->
+    <section class="mb-10 bg-gray-900 border border-gray-800 rounded-lg p-6">
+      <h2 class="text-xl font-semibold mb-3">The Verdict</h2>
+      <p class="text-gray-300">
+        Choose <strong>{toolA.name}</strong> if you want {toolA.features[0]?.toLowerCase()} and {toolA.features[1]?.toLowerCase()}.
+        Choose <strong>{toolB.name}</strong> if you prefer {toolB.features[0]?.toLowerCase()} and {toolB.features[1]?.toLowerCase()}.
+        Both are solid {toolA.category.toLowerCase()} options.
+      </p>
+    </section>
+
+    <div class="flex gap-4 mb-10 text-sm">
+      <a href={`/alternatives/${toolA.slug}`} class="text-purple-400 hover:underline">More {toolA.name} Alternatives →</a>
+      <a href={`/alternatives/${toolB.slug}`} class="text-purple-400 hover:underline">More {toolB.name} Alternatives →</a>
+    </div>
+
+    <FAQSection faqs={faqs} title={`${toolA.name} vs ${toolB.name} — FAQ`} />
+  </article>
+</BaseLayout>

@@ -1,0 +1,81 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description: string;
+  canonical?: string;
+  ogImage?: string;
+  schema?: object;
+}
+
+const { title, description, canonical, ogImage, schema } = Astro.props;
+const siteUrl = import.meta.env.SITE || 'https://nsfw-telegram-directory.vercel.app';
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical || Astro.url.href} />
+    <meta name="rating" content="adult" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonical || Astro.url.href} />
+    {ogImage && <meta property="og:image" content={ogImage} />}
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+
+    <!-- Schema.org JSON-LD -->
+    {schema && (
+      <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+    )}
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  </head>
+  <body class="bg-gray-950 text-gray-100 antialiased">
+    <nav class="border-b border-gray-800 bg-gray-900">
+      <div class="mx-auto max-w-6xl px-4 py-4 flex items-center justify-between">
+        <a href="/" class="text-xl font-bold text-purple-400">📱 NSFW Telegram Directory</a>
+        <div class="flex gap-6 text-sm">
+          <a href="/" class="hover:text-purple-400 transition-colors">Home</a>
+          <a href="/categories" class="hover:text-purple-400 transition-colors">Categories</a>
+          <a href="/blog" class="hover:text-purple-400 transition-colors">Blog</a>
+        </div>
+      </div>
+    </nav>
+
+    <main class="mx-auto max-w-6xl px-4 py-8">
+      <slot />
+    </main>
+
+    <footer class="border-t border-gray-800 bg-gray-900 mt-16">
+      <div class="mx-auto max-w-6xl px-4 py-8 text-sm text-gray-400">
+        <div class="bg-red-950 border border-red-800 rounded-lg p-4 mb-6">
+          <p class="text-red-300 font-medium">⚠️ 18+ Only Disclaimer</p>
+          <p class="text-red-400 text-xs mt-1">This website is a directory and review site for adults only. All listed channels require users to be 18 years or older. We do not host any NSFW content directly. By using this site, you confirm you are at least 18 years old. We are not responsible for the content found on third-party Telegram channels.</p>
+        </div>
+        <div class="flex flex-wrap gap-4 mb-4">
+          <a href="/categories" class="hover:text-purple-400">Categories</a>
+          <a href="/blog" class="hover:text-purple-400">Blog</a>
+          <a href="/best/nsfw-telegram-channels" class="hover:text-purple-400">Best NSFW Channels</a>
+          <a href="/best/telegram-dating-groups" class="hover:text-purple-400">Best Dating Groups</a>
+          <a href="/best/nsfw-telegram-bots" class="hover:text-purple-400">Best NSFW Bots</a>
+          <a href="/llms.txt" class="hover:text-purple-400">llms.txt</a>
+        </div>
+        <p>&copy; {new Date().getFullYear()} NSFW Telegram Directory. All rights reserved. This is a review/directory site — we do not host content.</p>
+      </div>
+    </footer>
+  </body>
+</html>

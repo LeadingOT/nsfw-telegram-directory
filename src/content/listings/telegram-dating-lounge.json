@@ -1,0 +1,16 @@
+{
+  "name": "Telegram Dating Lounge",
+  "slug": "telegram-dating-lounge",
+  "tagline": "Active dating and hookup group with verification and meetup coordination",
+  "description": "Telegram Dating Lounge is one of the more established dating groups on Telegram, offering a space for adults to connect for casual dating and hookups. The group uses a verification system with photo verification to reduce catfishing. Regional sub-groups help connect people in the same area. Active moderation keeps spam and scams to a minimum.",
+  "category": "Dating & Hookup Groups",
+  "url": "https://t.me/telegramdatinglounge",
+  "members": "120K+",
+  "pricing": { "model": "free" },
+  "features": ["Photo verification", "Regional sub-groups", "Active moderation", "Anti-scam measures", "Meetup coordination", "Profile sharing"],
+  "pros": ["Verification reduces catfishing", "Regional organization", "Active moderation", "Free to use"],
+  "cons": ["Gender imbalance common", "Some fake profiles slip through", "Regional groups vary in activity", "Privacy risks with meetups"],
+  "rating": 3.9,
+  "lastUpdated": "2026-02-24",
+  "tags": ["telegram dating", "hookup groups", "nsfw telegram groups", "dating telegram"]
+}

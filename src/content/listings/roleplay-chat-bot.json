@@ -1,0 +1,16 @@
+{
+  "name": "NSFW Roleplay Chat Bot",
+  "slug": "roleplay-chat-bot",
+  "tagline": "Advanced AI roleplay bot with scenario templates and character creation",
+  "description": "NSFW Roleplay Chat Bot is a Telegram bot designed for immersive adult roleplay experiences. It offers pre-built scenario templates covering various genres from fantasy to modern settings, with detailed character creation. The AI adapts its writing style based on the chosen scenario and maintains narrative consistency. Users can create custom scenarios and share them with the community.",
+  "category": "NSFW Bots",
+  "url": "https://t.me/nsfwroleplaybot",
+  "members": "170K+",
+  "pricing": { "model": "freemium", "startingPrice": "$3.99/mo" },
+  "features": ["Scenario templates", "Character creation", "Adaptive writing style", "Custom scenarios", "Community sharing", "Multiple genres"],
+  "pros": ["Great scenario variety", "Good AI writing", "Community scenarios", "Affordable premium"],
+  "cons": ["Free tier limited", "Can lose narrative thread", "Some scenarios shallow", "Response time varies"],
+  "rating": 4.0,
+  "lastUpdated": "2026-02-24",
+  "tags": ["roleplay bot", "nsfw bots", "ai roleplay", "telegram bot nsfw"]
+}

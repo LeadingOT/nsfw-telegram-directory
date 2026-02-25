@@ -1,0 +1,16 @@
+{
+  "name": "NSFW Sticker Pack Hub",
+  "slug": "nsfw-sticker-pack-hub",
+  "tagline": "The largest collection of NSFW Telegram sticker packs",
+  "description": "NSFW Sticker Pack Hub curates and shares the best NSFW sticker packs available on Telegram. From anime-style to realistic, the channel covers all types of adult stickers. Each post includes a direct link to add the sticker pack, a preview of the stickers, and the pack's theme/category. The channel regularly updates with new packs and removes dead links.",
+  "category": "NSFW Stickers",
+  "url": "https://t.me/nsfwstickerpackhub",
+  "members": "400K+",
+  "pricing": { "model": "free" },
+  "features": ["Sticker pack directory", "Direct add links", "Preview images", "Category organization", "Regular updates", "Dead link cleanup"],
+  "pros": ["Huge sticker collection", "Easy one-click add", "Well-categorized", "Regular updates"],
+  "cons": ["Some packs get removed by Telegram", "Quality varies", "Some inappropriate content", "Can be overwhelming"],
+  "rating": 4.1,
+  "lastUpdated": "2026-02-24",
+  "tags": ["nsfw stickers", "telegram stickers", "adult stickers", "sticker packs"]
+}

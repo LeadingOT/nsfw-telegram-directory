@@ -1,0 +1,41 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ListingCard from '../../components/ListingCard.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const listings = await getCollection('listings');
+  const categories = [...new Set(listings.map((l) => l.data.category))];
+  return categories.map((cat) => ({
+    params: { category: cat.toLowerCase().replace(/[&+]/g, '').replace(/\s+/g, '-') },
+    props: {
+      category: cat,
+      listings: listings.filter((l) => l.data.category === cat).sort((a, b) => (b.data.rating || 0) - (a.data.rating || 0)),
+    },
+  }));
+}
+
+const { category, listings } = Astro.props;
+---
+
+<BaseLayout
+  title={`Best ${category} on Telegram (2026) — Directory & Reviews`}
+  description={`Find and compare the best ${category} on Telegram. Reviews, ratings, and member counts for ${listings.length} channels and groups.`}
+>
+  <div class="flex items-center gap-2 text-sm text-gray-500 mb-4">
+    <a href="/" class="hover:text-purple-400">Home</a>
+    <span>/</span>
+    <a href="/categories" class="hover:text-purple-400">Categories</a>
+    <span>/</span>
+    <span class="text-gray-400">{category}</span>
+  </div>
+
+  <h1 class="text-3xl font-bold mb-2">Best {category} on Telegram</h1>
+  <p class="text-gray-400 mb-8">Compare {listings.length} channels and groups in this category.</p>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+    {listings.map((listing: any) => (
+      <ListingCard {...listing.data} />
+    ))}
+  </div>
+</BaseLayout>

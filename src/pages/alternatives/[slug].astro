@@ -1,0 +1,116 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import FAQSection from '../../components/FAQSection.astro';
+import ListingCard from '../../components/ListingCard.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const listings = await getCollection('listings');
+  return listings.map((listing) => {
+    const alternatives = listings.filter(
+      (l) => l.data.category === listing.data.category && l.data.slug !== listing.data.slug
+    );
+    return {
+      params: { slug: listing.data.slug },
+      props: { listing: listing.data, alternatives: alternatives.map((a) => a.data) },
+    };
+  });
+}
+
+const { listing, alternatives } = Astro.props;
+const altCount = alternatives.length;
+const pageTitle = `Best ${listing.name} Alternatives in 2026 (Top ${altCount} Picks)`;
+const pageDesc = `Looking for ${listing.name} alternatives? Compare the top ${altCount} similar Telegram channels with features, ratings, and reviews.`;
+
+const faqs = [
+  {
+    question: `What are the best alternatives to ${listing.name}?`,
+    answer: `The top alternatives to ${listing.name} include ${alternatives.slice(0, 5).map((a) => a.name).join(', ')}. All are in the ${listing.category} category.`,
+  },
+  {
+    question: `Is there a free alternative to ${listing.name}?`,
+    answer: (() => {
+      const free = alternatives.filter((a) => a.pricing.model === 'free' || a.pricing.model === 'freemium');
+      return free.length > 0
+        ? `Yes! ${free.map((a) => a.name).join(', ')} ${free.length === 1 ? 'offers' : 'offer'} free access.`
+        : `Most alternatives offer free or freemium access.`;
+    })(),
+  },
+];
+---
+
+<BaseLayout title={pageTitle} description={pageDesc}>
+  <article class="max-w-4xl">
+    <div class="flex items-center gap-2 text-sm text-gray-500 mb-4">
+      <a href="/" class="hover:text-purple-400">Home</a>
+      <span>/</span>
+      <a href={`/listing/${listing.slug}`} class="hover:text-purple-400">{listing.name}</a>
+      <span>/</span>
+      <span class="text-gray-400">Alternatives</span>
+    </div>
+
+    <h1 class="text-3xl font-bold mb-2">{pageTitle}</h1>
+    <p class="text-gray-400 mb-8">Not sure about {listing.name}? Here are the best alternatives in <strong>{listing.category}</strong>.</p>
+
+    <!-- Reference -->
+    <div class="bg-purple-950 border border-purple-800 rounded-lg p-4 mb-8">
+      <div class="flex items-center justify-between">
+        <div>
+          <h2 class="font-semibold text-lg">{listing.name}</h2>
+          <p class="text-sm text-gray-400">{listing.tagline}</p>
+        </div>
+        <div class="text-right">
+          {listing.rating && <div class="text-yellow-500 font-bold">★ {listing.rating.toFixed(1)}</div>}
+          <div class="text-sm text-gray-500">{listing.pricing.startingPrice || listing.pricing.model}</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Comparison Table -->
+    {altCount > 0 && (
+      <section class="mb-10 overflow-x-auto">
+        <h2 class="text-xl font-semibold mb-4">Quick Comparison</h2>
+        <table class="w-full text-sm border-collapse">
+          <thead>
+            <tr class="bg-gray-800">
+              <th class="text-left p-3 border border-gray-700">Channel</th>
+              <th class="text-left p-3 border border-gray-700">Rating</th>
+              <th class="text-left p-3 border border-gray-700">Pricing</th>
+              <th class="text-left p-3 border border-gray-700">Key Features</th>
+              <th class="text-center p-3 border border-gray-700">Link</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="bg-purple-950">
+              <td class="p-3 border border-gray-700 font-medium">{listing.name} ⭐</td>
+              <td class="p-3 border border-gray-700">{listing.rating ? `${listing.rating.toFixed(1)}/5` : 'N/A'}</td>
+              <td class="p-3 border border-gray-700">{listing.pricing.startingPrice || listing.pricing.model}</td>
+              <td class="p-3 border border-gray-700">{listing.features.slice(0, 3).join(', ')}</td>
+              <td class="p-3 border border-gray-700 text-center"><a href={`/listing/${listing.slug}`} class="text-purple-400 hover:underline">Review</a></td>
+            </tr>
+            {alternatives.map((alt) => (
+              <tr class="hover:bg-gray-800">
+                <td class="p-3 border border-gray-700 font-medium">{alt.name}</td>
+                <td class="p-3 border border-gray-700">{alt.rating ? `${alt.rating.toFixed(1)}/5` : 'N/A'}</td>
+                <td class="p-3 border border-gray-700">{alt.pricing.startingPrice || alt.pricing.model}</td>
+                <td class="p-3 border border-gray-700">{alt.features.slice(0, 3).join(', ')}</td>
+                <td class="p-3 border border-gray-700 text-center"><a href={`/listing/${alt.slug}`} class="text-purple-400 hover:underline">Review</a></td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </section>
+    )}
+
+    <section class="mb-10">
+      <h2 class="text-xl font-semibold mb-4">All {listing.name} Alternatives</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        {alternatives.map((alt) => (
+          <ListingCard {...alt} />
+        ))}
+      </div>
+    </section>
+
+    <FAQSection faqs={faqs} title={`${listing.name} Alternatives — FAQ`} />
+  </article>
+</BaseLayout>

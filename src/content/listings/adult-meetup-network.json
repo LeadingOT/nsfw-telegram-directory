@@ -1,0 +1,16 @@
+{
+  "name": "Adult Meetup Network",
+  "slug": "adult-meetup-network",
+  "tagline": "Network of regional adult meetup groups with event coordination",
+  "description": "Adult Meetup Network operates as a hub connecting multiple regional adult meetup groups across different cities and countries. The main channel serves as a directory, linking to active regional groups. Each regional group has its own moderators and local events. This networked approach means you can find active groups in many locations worldwide.",
+  "category": "Dating & Hookup Groups",
+  "url": "https://t.me/adultmeetupnetwork",
+  "members": "200K+ (network-wide)",
+  "pricing": { "model": "free" },
+  "features": ["Regional group network", "Event coordination", "Local moderators", "City-specific groups", "Global coverage", "Meetup planning tools"],
+  "pros": ["Wide geographic coverage", "Local groups are more relevant", "Decentralized moderation", "Regular events"],
+  "cons": ["Some regional groups inactive", "Quality varies by location", "Main channel is just links", "Privacy concerns"],
+  "rating": 3.8,
+  "lastUpdated": "2026-02-24",
+  "tags": ["adult meetup", "telegram dating", "nsfw telegram groups", "hookup network"]
+}

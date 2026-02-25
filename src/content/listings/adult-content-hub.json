@@ -1,0 +1,16 @@
+{
+  "name": "Adult Content Hub",
+  "slug": "adult-content-hub",
+  "tagline": "One of Telegram's largest curated adult content channels with daily updates",
+  "description": "Adult Content Hub is a well-established Telegram channel that aggregates and curates adult content from various sources. With daily posts and a strong moderation team, it maintains quality standards while providing a steady stream of content. The channel features organized categories, making it easy for subscribers to find content matching their preferences. Regular updates and an active community keep engagement high.",
+  "category": "Adult Content Channels",
+  "url": "https://t.me/adultcontenthub",
+  "members": "500K+",
+  "pricing": { "model": "free" },
+  "features": ["Daily content updates", "Curated collections", "Category organization", "Active moderation", "Search-friendly tags", "Regular themed posts"],
+  "pros": ["Large content library", "Consistent daily updates", "Well-moderated", "Free to join"],
+  "cons": ["Ads between posts", "Some content gets removed by Telegram", "Can be overwhelming volume"],
+  "rating": 4.3,
+  "lastUpdated": "2026-02-24",
+  "tags": ["nsfw telegram", "adult content", "telegram channel", "free nsfw"]
+}

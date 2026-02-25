@@ -1,0 +1,39 @@
+---
+interface Props {
+  name: string;
+  slug: string;
+  tagline: string;
+  category: string;
+  members?: string;
+  pricing: { model: string; startingPrice?: string };
+  rating?: number;
+  tags: string[];
+}
+
+const { name, slug, tagline, category, members, pricing, rating, tags } = Astro.props;
+
+const pricingBadge: Record<string, { text: string; class: string }> = {
+  free: { text: 'Free', class: 'bg-green-900 text-green-300' },
+  freemium: { text: 'Freemium', class: 'bg-blue-900 text-blue-300' },
+  paid: { text: pricing.startingPrice || 'Paid', class: 'bg-orange-900 text-orange-300' },
+  enterprise: { text: 'Enterprise', class: 'bg-purple-900 text-purple-300' },
+  'open-source': { text: 'Open Source', class: 'bg-gray-700 text-gray-300' },
+};
+
+const badge = pricingBadge[pricing.model] || pricingBadge.paid;
+---
+
+<a href={`/listing/${slug}`} class="block border border-gray-800 rounded-lg p-5 hover:shadow-lg hover:border-purple-600 transition-all bg-gray-900">
+  <div class="flex items-start justify-between mb-2">
+    <h3 class="text-lg font-semibold text-gray-100">{name}</h3>
+    <span class={`text-xs font-medium px-2 py-1 rounded-full ${badge.class}`}>{badge.text}</span>
+  </div>
+  <p class="text-sm text-gray-400 mb-3">{tagline}</p>
+  <div class="flex items-center gap-2 flex-wrap">
+    <span class="text-xs bg-gray-800 text-gray-400 px-2 py-0.5 rounded">{category}</span>
+    {members && <span class="text-xs text-gray-500">👥 {members}</span>}
+    {rating && (
+      <span class="text-xs text-yellow-500">★ {rating.toFixed(1)}</span>
+    )}
+  </div>
+</a>

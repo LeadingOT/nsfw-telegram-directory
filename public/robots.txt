@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://nsfwtelegrambot.com/sitemap-index.xml

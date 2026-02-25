@@ -1,0 +1,16 @@
+{
+  "name": "Truth or Dare NSFW Bot",
+  "slug": "truth-or-dare-bot",
+  "tagline": "Adult truth or dare game bot for groups and private chats",
+  "description": "Truth or Dare NSFW Bot brings the classic party game to Telegram with an adult twist. The bot works in both group chats and private conversations, offering thousands of NSFW truth questions and dare challenges. Difficulty levels range from mild to extreme, and the bot tracks scores and streaks. It's become a popular icebreaker in adult Telegram groups.",
+  "category": "NSFW Bots",
+  "url": "https://t.me/truthordare_nsfwbot",
+  "members": "180K+",
+  "pricing": { "model": "free" },
+  "features": ["Truth or dare gameplay", "Multiple difficulty levels", "Group & private play", "Score tracking", "Thousands of prompts", "Icebreaker tool"],
+  "pros": ["Fun icebreaker", "Works in groups", "Lots of prompts", "Completely free"],
+  "cons": ["Some dares are repetitive", "No custom prompts", "Can get stale", "Limited game modes"],
+  "rating": 3.9,
+  "lastUpdated": "2026-02-24",
+  "tags": ["nsfw game", "telegram bot", "truth or dare", "adult game"]
+}

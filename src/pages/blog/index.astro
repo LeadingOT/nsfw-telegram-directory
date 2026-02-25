@@ -1,0 +1,26 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const posts = [
+  {
+    title: 'Best NSFW Telegram Channels in 2026: Complete Guide',
+    slug: 'best-nsfw-telegram-channels-2026',
+    date: 'February 24, 2026',
+    description: 'A comprehensive guide to finding the best NSFW Telegram channels in 2026. Reviews, safety tips, and our top picks across every category.',
+    readTime: '12 min read',
+  },
+];
+---
+
+<BaseLayout title="Blog — NSFW Telegram Directory" description="Guides, reviews, and tips for finding the best NSFW content on Telegram.">
+  <h1 class="text-3xl font-bold mb-8">Blog</h1>
+  <div class="space-y-6 max-w-3xl">
+    {posts.map((post) => (
+      <a href={`/blog/${post.slug}`} class="block border border-gray-800 rounded-lg p-6 hover:border-purple-600 transition-all bg-gray-900">
+        <h2 class="text-xl font-semibold mb-2">{post.title}</h2>
+        <p class="text-sm text-gray-500 mb-2">{post.date} · {post.readTime}</p>
+        <p class="text-gray-400">{post.description}</p>
+      </a>
+    ))}
+  </div>
+</BaseLayout>

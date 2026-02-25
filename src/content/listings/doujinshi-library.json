@@ -1,0 +1,16 @@
+{
+  "name": "Doujinshi Library",
+  "slug": "doujinshi-library",
+  "tagline": "Extensive doujinshi and hentai manga library with translations",
+  "description": "Doujinshi Library maintains one of the largest collections of translated doujinshi and hentai manga on Telegram. The channel posts full-length works with English translations, organized by series, artist, and genre. A searchable index bot helps users find specific titles. The channel also takes translation requests from the community.",
+  "category": "Hentai & Anime",
+  "url": "https://t.me/doujinshilibrary",
+  "members": "250K+",
+  "pricing": { "model": "free" },
+  "features": ["Full doujinshi scans", "English translations", "Searchable index bot", "Series organization", "Translation requests", "Genre categorization"],
+  "pros": ["Full-length works", "Quality translations", "Searchable database", "Takes requests"],
+  "cons": ["Translations can be slow", "Some works untranslated", "Large file sizes", "Copyright grey area"],
+  "rating": 4.2,
+  "lastUpdated": "2026-02-24",
+  "tags": ["doujinshi", "hentai manga", "translated hentai", "anime nsfw"]
+}

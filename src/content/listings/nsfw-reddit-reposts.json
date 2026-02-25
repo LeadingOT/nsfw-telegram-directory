@@ -1,0 +1,16 @@
+{
+  "name": "NSFW Reddit Reposts",
+  "slug": "nsfw-reddit-reposts",
+  "tagline": "Best NSFW content from Reddit's top adult subreddits, posted to Telegram",
+  "description": "NSFW Reddit Reposts automatically aggregates top-rated NSFW content from popular Reddit subreddits and reposts them to Telegram. A bot handles the cross-posting, pulling only highly upvoted content to maintain quality. Posts include the original subreddit source and Reddit link. This makes it easy to enjoy Reddit's best NSFW content directly in Telegram without needing a Reddit account.",
+  "category": "Adult Content Channels",
+  "url": "https://t.me/nsfwredditreposts",
+  "members": "280K+",
+  "pricing": { "model": "free" },
+  "features": ["Reddit content aggregation", "Auto-posting bot", "Quality threshold filter", "Source attribution", "Multiple subreddits", "High-upvote content only"],
+  "pros": ["Best of Reddit NSFW", "Automated quality filter", "Source links included", "No Reddit account needed"],
+  "cons": ["Delayed from Reddit posts", "Some content already seen", "Bot occasionally goes down", "Limited to Reddit content"],
+  "rating": 4.0,
+  "lastUpdated": "2026-02-24",
+  "tags": ["reddit nsfw", "nsfw telegram channels", "reddit telegram", "curated content"]
+}

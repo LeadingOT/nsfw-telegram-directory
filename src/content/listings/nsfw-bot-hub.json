@@ -1,0 +1,16 @@
+{
+  "name": "NSFW Bot Hub",
+  "slug": "nsfw-bot-hub",
+  "tagline": "Directory of the best NSFW Telegram bots for content, games, and AI chat",
+  "description": "NSFW Bot Hub serves as a curated directory of adult-oriented Telegram bots. From AI-powered adult chatbots to image generation bots and NSFW games, this channel reviews and links to the best NSFW bots available on Telegram. Each bot listing includes a description, usage guide, and user ratings. The channel regularly tests bots to ensure they're still active and functional.",
+  "category": "NSFW Bots",
+  "url": "https://t.me/nsfwbothub",
+  "members": "150K+",
+  "pricing": { "model": "free" },
+  "features": ["Bot directory", "Usage guides", "User ratings", "Regular testing", "AI chatbots", "Image generation bots"],
+  "pros": ["Comprehensive bot directory", "Regular updates on bot status", "Helpful usage guides", "Community ratings"],
+  "cons": ["Some listed bots go offline", "Bot quality varies widely", "Some bots require payment", "Can be hard to navigate"],
+  "rating": 4.2,
+  "lastUpdated": "2026-02-24",
+  "tags": ["nsfw bots", "telegram bots", "ai chatbot nsfw", "nsfw telegram"]
+}

@@ -1,0 +1,63 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ListingCard from '../../components/ListingCard.astro';
+import FAQSection from '../../components/FAQSection.astro';
+import { getCollection } from 'astro:content';
+
+const allListings = await getCollection('listings');
+const picks = ['nsfw-bot-hub', 'nsfw-image-gen-bot', 'ai-girlfriend-bot', 'roleplay-chat-bot', 'truth-or-dare-bot'];
+const listings = picks.map(slug => allListings.find(l => l.data.slug === slug)).filter(Boolean);
+
+const faqs = [
+  { question: "What are the best NSFW Telegram bots?", answer: "Top NSFW Telegram bots include NSFW Bot Hub (4.2★) for discovering bots, NSFW Image Gen Bot (4.1★) for AI art, AI Girlfriend Bot (4.0★) for chat, and NSFW Roleplay Chat Bot (4.0★) for immersive roleplay." },
+  { question: "Are NSFW Telegram bots free?", answer: "Many NSFW bots offer free tiers with limited usage. Premium features typically cost $3.99-$6.99/month. Truth or Dare NSFW Bot and NSFW Bot Hub are completely free." },
+  { question: "How do NSFW Telegram bots work?", answer: "You start a chat with the bot by clicking its link or searching its username. Then you interact through text commands or buttons. AI bots use language models for conversation, image bots generate art from text prompts." },
+];
+---
+
+<BaseLayout
+  title="Best NSFW Telegram Bots (2026) — AI Chat, Image Gen & Games"
+  description="Discover the best NSFW Telegram bots for AI chat, image generation, roleplay, and adult games. Reviews, pricing, and ratings for top bots."
+>
+  <article class="max-w-4xl">
+    <h1 class="text-4xl font-bold mb-4">Best NSFW Telegram Bots (2026)</h1>
+    <p class="text-lg text-gray-400 mb-8">
+      From AI-powered adult chatbots to image generators and party games, here are the best NSFW bots you can use directly in Telegram.
+    </p>
+
+    <div class="bg-blue-950 border border-blue-800 rounded-lg p-4 mb-8">
+      <h2 class="font-semibold text-blue-300 mb-2">🏆 Our Top Pick: NSFW Bot Hub</h2>
+      <p class="text-sm text-blue-400">Start with NSFW Bot Hub — it's a free directory of the best NSFW bots, regularly tested and updated. Think of it as a meta-bot for finding other bots.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-12">
+      {listings.map((listing) => listing && (
+        <ListingCard {...listing.data} />
+      ))}
+    </div>
+
+    <section class="mb-12">
+      <h2 class="text-2xl font-bold mb-4">Types of NSFW Telegram Bots</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
+        <div class="bg-gray-900 border border-gray-800 rounded-lg p-4">
+          <h3 class="font-semibold mb-2">🤖 AI Chat Bots</h3>
+          <p class="text-gray-400">Simulate conversations with AI personalities. Good for roleplay, companionship, and adult chat.</p>
+        </div>
+        <div class="bg-gray-900 border border-gray-800 rounded-lg p-4">
+          <h3 class="font-semibold mb-2">🎨 Image Generation Bots</h3>
+          <p class="text-gray-400">Create NSFW artwork from text descriptions using AI models. Various styles from photorealistic to anime.</p>
+        </div>
+        <div class="bg-gray-900 border border-gray-800 rounded-lg p-4">
+          <h3 class="font-semibold mb-2">🎭 Roleplay Bots</h3>
+          <p class="text-gray-400">Immersive scenario-based roleplay with AI characters. Pre-built and custom scenarios available.</p>
+        </div>
+        <div class="bg-gray-900 border border-gray-800 rounded-lg p-4">
+          <h3 class="font-semibold mb-2">🎲 Game Bots</h3>
+          <p class="text-gray-400">Adult party games like Truth or Dare. Great for groups and icebreakers.</p>
+        </div>
+      </div>
+    </section>
+
+    <FAQSection faqs={faqs} />
+  </article>
+</BaseLayout>

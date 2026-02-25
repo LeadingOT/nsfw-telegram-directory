@@ -1,0 +1,68 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ListingCard from '../../components/ListingCard.astro';
+import FAQSection from '../../components/FAQSection.astro';
+import { getCollection } from 'astro:content';
+
+const allListings = await getCollection('listings');
+const picks = ['telegram-nudes-official', 'hentai-heaven-tg', 'adult-content-hub', 'nsfw-video-vault', 'nsfw-daily', 'nsfw-reddit-reposts', 'anime-nsfw-art', 'gay-telegram-hub'];
+const listings = picks.map(slug => allListings.find(l => l.data.slug === slug)).filter(Boolean);
+
+const faqs = [
+  { question: "What are the best NSFW Telegram channels?", answer: "The best NSFW Telegram channels include Telegram Nudes Official (4.5★), Hentai Heaven TG (4.4★), Gay Telegram Hub (4.4★), and Adult Content Hub (4.3★). Each offers different content types from general adult to anime to LGBTQ+." },
+  { question: "Are NSFW Telegram channels safe?", answer: "Most established NSFW Telegram channels are safe to join. However, protect your privacy by using a separate Telegram account, not sharing personal info, and being cautious of channels that ask for personal details. Stick to well-known channels with active moderation." },
+  { question: "Are NSFW Telegram channels legal?", answer: "Viewing adult content on Telegram is legal for adults 18+ in most jurisdictions. However, the legality depends on your local laws and the nature of the content. Always ensure content involves consenting adults and comply with your local regulations." },
+  { question: "How do I find NSFW channels on Telegram?", answer: "You can find NSFW Telegram channels through directories like ours, Reddit communities, or by searching Telegram directly. Be cautious of spam channels and stick to reviewed, well-established channels with active moderation." },
+];
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: 'Best NSFW Telegram Channels 2026',
+  numberOfItems: listings.length,
+  itemListElement: listings.map((l, i) => l && ({
+    '@type': 'ListItem',
+    position: i + 1,
+    name: l.data.name,
+    url: `https://nsfw-telegram-directory.vercel.app/listing/${l.data.slug}`,
+  })),
+};
+---
+
+<BaseLayout
+  title="Best NSFW Telegram Channels (2026) — Top Picks Reviewed"
+  description="Discover the best NSFW Telegram channels in 2026. Expert reviews of the top adult channels for nudes, hentai, videos, and more. Updated monthly."
+  schema={schema}
+>
+  <article class="max-w-4xl">
+    <h1 class="text-4xl font-bold mb-4">Best NSFW Telegram Channels (2026)</h1>
+    <p class="text-lg text-gray-400 mb-8">
+      We've reviewed dozens of NSFW Telegram channels to bring you the best options for adult content, anime/hentai, LGBTQ+, and more. All channels are rated on content quality, posting frequency, moderation, and safety.
+    </p>
+
+    <div class="bg-red-950 border border-red-800 rounded-lg p-4 mb-8">
+      <p class="text-sm text-red-300 font-medium">🔞 All channels listed are 18+ only. Use responsibly and protect your privacy.</p>
+    </div>
+
+    <div class="bg-purple-950 border border-purple-800 rounded-lg p-4 mb-8">
+      <h2 class="font-semibold text-purple-300 mb-2">🏆 Our Top Pick: Telegram Nudes Official</h2>
+      <p class="text-sm text-purple-400">With verified content, creator credits, and a strong community, Telegram Nudes Official stands out as the best overall NSFW channel. Rated 4.5/5.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-12">
+      {listings.map((listing) => listing && (
+        <ListingCard {...listing.data} />
+      ))}
+    </div>
+
+    <section class="mb-12">
+      <h2 class="text-2xl font-bold mb-4">How We Evaluate NSFW Telegram Channels</h2>
+      <div class="text-gray-400 space-y-3">
+        <p>We assess channels based on <strong>content quality</strong> (resolution, variety, originality), <strong>posting frequency</strong> (how often new content appears), <strong>moderation</strong> (spam control, community management), and <strong>safety</strong> (privacy practices, no malicious links).</p>
+        <p>Channels that credit original creators and maintain ethical practices score higher. We penalize channels with excessive ads, spam, or suspicious links.</p>
+      </div>
+    </section>
+
+    <FAQSection faqs={faqs} />
+  </article>
+</BaseLayout>

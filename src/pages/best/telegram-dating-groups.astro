@@ -1,0 +1,52 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ListingCard from '../../components/ListingCard.astro';
+import FAQSection from '../../components/FAQSection.astro';
+import { getCollection } from 'astro:content';
+
+const allListings = await getCollection('listings');
+const picks = ['telegram-dating-lounge', 'adult-meetup-network', 'hookup-finder-group', 'sexting-group-tg', 'couples-playground', 'swinger-network-tg'];
+const listings = picks.map(slug => allListings.find(l => l.data.slug === slug)).filter(Boolean);
+
+const faqs = [
+  { question: "What are the best Telegram dating groups?", answer: "Top Telegram dating groups include Telegram Dating Lounge (3.9★), Adult Meetup Network (3.8★), and Sexting Group TG (3.7★). Each serves different needs from casual hookups to relationship-focused dating." },
+  { question: "Are Telegram dating groups safe?", answer: "Exercise caution with any online dating platform. Use groups with verification systems, never share personal info publicly, meet in public places, and tell someone where you're going. Stick to verified, well-moderated groups." },
+  { question: "How do Telegram dating groups work?", answer: "Members join the group, complete verification (usually photo verification), and can then interact with other members. Some groups use bots for matching, while others rely on organic conversation. Many have regional sub-groups." },
+];
+---
+
+<BaseLayout
+  title="Best Telegram Dating & Hookup Groups (2026) — Top Picks"
+  description="Find the best Telegram dating and hookup groups in 2026. Verified groups for casual encounters, dating, and adult meetups. Reviews and safety tips."
+>
+  <article class="max-w-4xl">
+    <h1 class="text-4xl font-bold mb-4">Best Telegram Dating & Hookup Groups (2026)</h1>
+    <p class="text-lg text-gray-400 mb-8">
+      Looking for dating and hookup groups on Telegram? We've reviewed the most popular options for safety, activity level, and verification practices.
+    </p>
+
+    <div class="bg-yellow-950 border border-yellow-800 rounded-lg p-4 mb-8">
+      <p class="text-sm text-yellow-300 font-medium">⚠️ Safety First: Always meet in public places, tell someone your plans, and never send money to people you meet online.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-12">
+      {listings.map((listing) => listing && (
+        <ListingCard {...listing.data} />
+      ))}
+    </div>
+
+    <section class="mb-12">
+      <h2 class="text-2xl font-bold mb-4">Safety Tips for Telegram Dating Groups</h2>
+      <ul class="text-gray-400 space-y-2">
+        <li>✅ Use groups with photo verification to reduce catfishing</li>
+        <li>✅ Create a separate Telegram account for dating groups</li>
+        <li>✅ Never share your home address or workplace</li>
+        <li>✅ Meet in public places for first encounters</li>
+        <li>✅ Tell a friend where you're going and when to expect you back</li>
+        <li>❌ Never send money to people you meet in these groups</li>
+      </ul>
+    </section>
+
+    <FAQSection faqs={faqs} />
+  </article>
+</BaseLayout>

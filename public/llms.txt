@@ -1,0 +1,42 @@
+# NSFW Telegram Directory
+
+> A curated directory and review site for NSFW Telegram channels, groups, and bots.
+
+This site reviews and rates adult-oriented Telegram channels across 8 categories:
+- Adult Content Channels
+- OnlyFans & Creator Leaks
+- Dating & Hookup Groups
+- NSFW Bots
+- Hentai & Anime
+- NSFW Stickers
+- Gay & LGBTQ+
+- Couples & Swinger Groups
+
+## What We Do
+We evaluate NSFW Telegram channels based on content quality, posting frequency, moderation, community engagement, and safety practices. Each listing includes a rating, pros/cons, features, and member estimates.
+
+## What We Don't Do
+We do not host any NSFW content directly. This is a directory and review site only, similar to how PCMag reviews software.
+
+## Content
+- 30+ channel listings with detailed reviews
+- Category pages for browsing
+- "Best of" comparison pages
+- Alternatives pages for each channel
+- Side-by-side comparison pages
+- Blog articles with guides and tips
+
+## Important
+- All content is 18+ only
+- We encourage supporting creators directly
+- Always protect your privacy on Telegram
+- Exercise caution with meetup groups
+
+## URLs
+- Homepage: /
+- Categories: /categories
+- Listings: /listing/{slug}
+- Alternatives: /alternatives/{slug}
+- Comparisons: /compare/{slug-a}-vs-{slug-b}
+- Best of: /best/nsfw-telegram-channels, /best/telegram-dating-groups, /best/nsfw-telegram-bots
+- Blog: /blog

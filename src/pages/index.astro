@@ -1,0 +1,90 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ListingCard from '../components/ListingCard.astro';
+import { getCollection } from 'astro:content';
+
+const allListings = await getCollection('listings');
+const sortedListings = allListings.sort((a, b) => (b.data.rating || 0) - (a.data.rating || 0));
+const categories = [...new Set(allListings.map((l) => l.data.category))];
+const featured = sortedListings.slice(0, 6);
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: 'NSFW Telegram Directory',
+  description: 'Find the best NSFW Telegram channels, groups, and bots. Compare features, member counts, and reviews.',
+  url: Astro.url.origin,
+};
+---
+
+<BaseLayout
+  title="Best NSFW Telegram Channels & Groups Directory (2026)"
+  description="Discover and compare the best NSFW Telegram channels, adult groups, dating channels, and NSFW bots. Updated directory with reviews, ratings, and member counts for 30+ channels."
+  schema={schema}
+>
+  <!-- Hero -->
+  <section class="text-center py-12">
+    <h1 class="text-4xl font-bold mb-4">Best NSFW Telegram Channels & Groups (2026)</h1>
+    <p class="text-lg text-gray-400 max-w-2xl mx-auto mb-6">
+      Discover and compare the top NSFW Telegram channels, adult content groups, dating communities, and NSFW bots. Honest reviews updated February 2026.
+    </p>
+    <div class="bg-red-950 border border-red-800 rounded-lg p-3 max-w-md mx-auto">
+      <p class="text-red-300 text-sm font-medium">🔞 This directory is for adults 18+ only</p>
+    </div>
+  </section>
+
+  <!-- Categories -->
+  <section class="mb-12">
+    <h2 class="text-2xl font-bold mb-4 text-center">Browse by Category</h2>
+    <div class="flex flex-wrap gap-2 justify-center">
+      {categories.map((cat) => (
+        <a
+          href={`/category/${cat.toLowerCase().replace(/[&+]/g, '').replace(/\s+/g, '-')}`}
+          class="px-4 py-2 bg-gray-800 rounded-full text-sm hover:bg-purple-900 hover:text-purple-300 transition-colors"
+        >
+          {cat}
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <!-- Best Of Links -->
+  <section class="mb-12">
+    <h2 class="text-2xl font-bold mb-4 text-center">Popular Lists</h2>
+    <div class="flex flex-wrap gap-3 justify-center">
+      <a href="/best/nsfw-telegram-channels" class="px-4 py-2 bg-purple-950 border border-purple-800 rounded-lg text-sm hover:bg-purple-900 transition-colors">🔥 Best NSFW Channels</a>
+      <a href="/best/telegram-dating-groups" class="px-4 py-2 bg-pink-950 border border-pink-800 rounded-lg text-sm hover:bg-pink-900 transition-colors">💕 Best Dating Groups</a>
+      <a href="/best/nsfw-telegram-bots" class="px-4 py-2 bg-blue-950 border border-blue-800 rounded-lg text-sm hover:bg-blue-900 transition-colors">🤖 Best NSFW Bots</a>
+    </div>
+  </section>
+
+  <!-- Featured -->
+  <section class="mb-12">
+    <h2 class="text-2xl font-bold mb-6">⭐ Top Rated Channels</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      {featured.map((listing) => (
+        <ListingCard {...listing.data} />
+      ))}
+    </div>
+  </section>
+
+  <!-- All Listings -->
+  <section>
+    <h2 class="text-2xl font-bold mb-6">All NSFW Telegram Channels & Groups</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      {sortedListings.map((listing) => (
+        <ListingCard {...listing.data} />
+      ))}
+    </div>
+  </section>
+
+  <!-- SEO Content -->
+  <section class="mt-16 max-w-3xl">
+    <h2 class="text-2xl font-bold mb-4">About NSFW Telegram Directory</h2>
+    <div class="text-gray-400 space-y-4">
+      <p>Finding quality <strong>NSFW Telegram channels</strong> can be challenging. With thousands of channels and groups available, many are spam-filled, inactive, or misleading. Our directory solves this by reviewing and rating the best <strong>adult Telegram channels</strong>, groups, and bots so you can find exactly what you're looking for.</p>
+      <p>We evaluate each <strong>Telegram adult channel</strong> based on content quality, posting frequency, moderation, community engagement, and safety practices. Whether you're looking for <strong>telegram nudes</strong>, dating groups, NSFW bots, hentai channels, or couples communities, our directory has you covered.</p>
+      <p>All channels listed are for adults 18+ only. We are a review and directory site — we do not host any NSFW content directly. Always exercise caution and protect your privacy when joining any Telegram channel or group.</p>
+    </div>
+  </section>
+</BaseLayout>
