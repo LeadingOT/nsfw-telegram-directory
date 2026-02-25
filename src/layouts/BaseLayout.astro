@@ -43,6 +43,15 @@ const siteUrl = import.meta.env.SITE || 'https://nsfw-telegram-directory.vercel.
 
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VMJEVD4F9M"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-VMJEVD4F9M');
+    </script>
   </head>
   <body class="bg-gray-950 text-gray-100 antialiased">
     <nav class="border-b border-gray-800 bg-gray-900">
