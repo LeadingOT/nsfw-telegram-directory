@@ -1,0 +1,55 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const title = `Best NSFW Telegram by Category 2026`;
+const description = `Browse the best nsfw telegram organized by category. Find exactly what you're looking for.`;
+
+const categories = [
+  {
+    "name": "Adult Content",
+    "slug": "adult-content",
+    "description": "Top adult content options"
+  },
+  {
+    "name": "Dating",
+    "slug": "dating",
+    "description": "Top dating options"
+  },
+  {
+    "name": "NSFW Communities",
+    "slug": "nsfw-communities",
+    "description": "Top nsfw communities options"
+  },
+  {
+    "name": "Adult Channels",
+    "slug": "adult-channels",
+    "description": "Top adult channels options"
+  },
+  {
+    "name": "Premium Content",
+    "slug": "premium-content",
+    "description": "Top premium content options"
+  }
+];
+---
+
+<BaseLayout title={title} description={description}>
+  <div class="mb-12 text-center">
+    <h1 class="text-4xl font-bold mb-4">{title}</h1>
+    <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+      {description}
+    </p>
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    {categories.map(cat => (
+      <a 
+        href={`/best/${cat.slug}`}
+        class="p-6 bg-white border border-gray-200 rounded-lg hover:shadow-lg hover:border-blue-300 transition-all"
+      >
+        <h3 class="text-xl font-bold mb-2">{cat.name}</h3>
+        <p class="text-gray-600 text-sm">{cat.description}</p>
+      </a>
+    ))}
+  </div>
+</BaseLayout>
