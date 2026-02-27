@@ -10,7 +10,7 @@ interface Props {
 }
 
 const { title, description, canonical, ogImage, schema } = Astro.props;
-const siteUrl = import.meta.env.SITE || 'https://nsfw-telegram-directory.vercel.app';
+const siteUrl = import.meta.env.SITE || 'https://example.com';
 ---
 
 <!doctype html>
@@ -21,69 +21,72 @@ const siteUrl = import.meta.env.SITE || 'https://nsfw-telegram-directory.vercel.
     <title>{title}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical || Astro.url.href} />
-    <meta name="rating" content="adult" />
-    <meta name="robots" content="index, follow" />
-
-    <!-- Open Graph -->
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
     <meta property="og:url" content={canonical || Astro.url.href} />
     {ogImage && <meta property="og:image" content={ogImage} />}
-
-    <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
-
-    <!-- Schema.org JSON-LD -->
     {schema && (
       <script type="application/ld+json" set:html={JSON.stringify(schema)} />
     )}
-
-    <!-- Favicon -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-E8KF1B38B4"></script>
+    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-E8KF1B38B4');</script>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JPBXLQ06VN"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-JPBXLQ06VN');
-    </script>
   </head>
-  <body class="bg-gray-950 text-gray-100 antialiased">
-    <nav class="border-b border-gray-800 bg-gray-900">
-      <div class="mx-auto max-w-6xl px-4 py-4 flex items-center justify-between">
-        <a href="/" class="text-xl font-bold text-purple-400">📱 NSFW Telegram Directory</a>
-        <div class="flex gap-6 text-sm">
-          <a href="/" class="hover:text-purple-400 transition-colors">Home</a>
-          <a href="/categories" class="hover:text-purple-400 transition-colors">Categories</a>
-          <a href="/blog" class="hover:text-purple-400 transition-colors">Blog</a>
-        </div>
+  <body class="bg-gradient-to-br from-slate-50 to-blue-50 min-h-screen">
+    <header class="bg-white border-b border-blue-100 sticky top-0 z-50 backdrop-blur-sm bg-white/95">
+      <div class="mx-auto max-w-6xl px-4 py-4">
+        <nav class="flex items-center justify-between">
+          <a href="/" class="flex items-center gap-3 group">
+            <div class="bg-gradient-to-br from-blue-600 to-indigo-600 p-2.5 rounded-xl shadow-lg group-hover:shadow-xl transition-shadow">
+              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+              </svg>
+            </div>
+            <span class="text-xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
+              NSFW Telegram Directory
+            </span>
+          </a>
+          <div class="flex gap-6 text-sm font-medium">
+            <a href="/" class="text-gray-600 hover:text-blue-600 transition-colors">Home</a>
+            <a href="/categories" class="text-gray-600 hover:text-blue-600 transition-colors">Categories</a>
+          </div>
+        </nav>
       </div>
-    </nav>
-
+    </header>
     <main class="mx-auto max-w-6xl px-4 py-8">
       <slot />
     </main>
-
-    <footer class="border-t border-gray-800 bg-gray-900 mt-16">
-      <div class="mx-auto max-w-6xl px-4 py-8 text-sm text-gray-400">
-        <div class="bg-red-950 border border-red-800 rounded-lg p-4 mb-6">
-          <p class="text-red-300 font-medium">⚠️ 18+ Only Disclaimer</p>
-          <p class="text-red-400 text-xs mt-1">This website is a directory and review site for adults only. All listed channels require users to be 18 years or older. We do not host any NSFW content directly. By using this site, you confirm you are at least 18 years old. We are not responsible for the content found on third-party Telegram channels.</p>
+    <footer class="bg-gradient-to-r from-slate-900 to-slate-800 mt-16 text-white">
+      <div class="mx-auto max-w-6xl px-4 py-12">
+        <div class="grid md:grid-cols-3 gap-8 mb-8">
+          <div>
+            <h3 class="font-bold text-lg mb-4">NSFW Telegram Directory</h3>
+            <p class="text-slate-300 text-sm">
+              Discover the best tools and resources in our curated directory.
+            </p>
+          </div>
+          <div>
+            <h4 class="font-semibold mb-4">Quick Links</h4>
+            <ul class="space-y-2 text-sm text-slate-300">
+              <li><a href="/" class="hover:text-white transition-colors">Home</a></li>
+              <li><a href="/categories" class="hover:text-white transition-colors">Categories</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-semibold mb-4">Resources</h4>
+            <ul class="space-y-2 text-sm text-slate-300">
+              <li><a href="/submit" class="hover:text-white transition-colors">Submit a Tool</a></li>
+              <li><a href="/about" class="hover:text-white transition-colors">About</a></li>
+            </ul>
+          </div>
         </div>
-        <div class="flex flex-wrap gap-4 mb-4">
-          <a href="/categories" class="hover:text-purple-400">Categories</a>
-          <a href="/blog" class="hover:text-purple-400">Blog</a>
-          <a href="/best/nsfw-telegram-channels" class="hover:text-purple-400">Best NSFW Channels</a>
-          <a href="/best/telegram-dating-groups" class="hover:text-purple-400">Best Dating Groups</a>
-          <a href="/best/nsfw-telegram-bots" class="hover:text-purple-400">Best NSFW Bots</a>
-          <a href="/llms.txt" class="hover:text-purple-400">llms.txt</a>
+        <div class="border-t border-slate-700 pt-8 text-center text-sm text-slate-400">
+          <p>&copy; {new Date().getFullYear()} NSFW Telegram Directory. All rights reserved.</p>
         </div>
-        <p>&copy; {new Date().getFullYear()} NSFW Telegram Directory. All rights reserved. This is a review/directory site — we do not host content.</p>
       </div>
     </footer>
   </body>
