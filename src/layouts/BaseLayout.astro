@@ -51,6 +51,24 @@ const siteUrl = import.meta.env.SITE || 'https://nsfw-telegram-directory.vercel.
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
       gtag('config', 'G-JPBXLQ06VN');
+    
+    <!-- Outbound Link Tracking -->
+    <script is:inline>
+      function trackOutbound(url, listingName, linkType) {
+        if (typeof gtag !== 'undefined') {
+          gtag('event', 'outbound_click', {
+            'listing_name': listingName,
+            'link_type': linkType,
+            'destination_url': url,
+            'event_category': 'engagement',
+          });
+        }
+        setTimeout(function() {
+          window.open(url, '_blank', 'noopener');
+        }, 100);
+        return false;
+      }
+    </script>
     </script>
     <!-- Microsoft Clarity -->
     <script type="text/javascript">
