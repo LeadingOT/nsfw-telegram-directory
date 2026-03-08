@@ -1,5 +1,23 @@
 ---
-// AI Search Component
+// AI Search Component with dynamic placeholder
+const siteName = Astro.url.hostname;
+const categoryMap: Record<string, string> = {
+  'accountingai.tools': 'accounting software',
+  'aigirlfriend.tools': 'AI girlfriend',
+  'hrai.tools': 'HR software',
+  'legalai.tools': 'legal AI tools',
+  'realestateai.tools': 'real estate AI tools',
+  'bestwriting.tools': 'AI writing tools',
+  'bestnootropics.info': 'nootropics',
+  'bestonlyfans.info': 'OnlyFans creators',
+  'bestanime.info': 'anime streaming sites',
+  'mattressrank.info': 'mattresses',
+  'bestofpodcasts.com': 'podcasts',
+  'nsfwtelegrambot.com': 'NSFW Telegram bots'
+};
+
+const category = categoryMap[siteName] || 'tools';
+const placeholder = `Ask anything... (e.g., "best free ${category}")`;
 ---
 
 <div class="ai-search-container">
@@ -7,7 +25,7 @@
     <input 
       type="text" 
       id="ai-search-input"
-      placeholder="Ask anything... (e.g., 'best free AI girlfriend')"
+      placeholder={placeholder}
       class="search-input"
     />
     <button id="ai-search-btn" class="search-btn">
@@ -163,7 +181,9 @@
         body: JSON.stringify({ query })
       });
       
-      if (!response.ok) throw new Error('Search failed');
+      if (!response.ok) {
+        throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+      }
       
       const data = await response.json();
       
@@ -193,8 +213,9 @@
       
       result.innerHTML = html;
       
-    } catch (error) {
-      result.innerHTML = '<div class="loading" style="color: #ef4444;">❌ Search failed. Please try again.</div>';
+    } catch (error: any) {
+      console.error('AI Search error:', error);
+      result.innerHTML = `<div class="loading" style="color: #ef4444;">❌ Search failed: ${error.message}<br><br>The AI Search feature is still deploying. Please try again in a few minutes.</div>`;
     } finally {
       btn.disabled = false;
       btn.innerHTML = '<svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>';
