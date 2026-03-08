@@ -1,0 +1,208 @@
+---
+// AI Search Component
+---
+
+<div class="ai-search-container">
+  <div class="search-box">
+    <input 
+      type="text" 
+      id="ai-search-input"
+      placeholder="Ask anything... (e.g., 'best free AI girlfriend')"
+      class="search-input"
+    />
+    <button id="ai-search-btn" class="search-btn">
+      <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+      </svg>
+    </button>
+  </div>
+  
+  <div id="ai-search-result" class="search-result hidden"></div>
+</div>
+
+<style>
+  .ai-search-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+  
+  .search-box {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .search-input {
+    flex: 1;
+    padding: 0.75rem 1rem;
+    border: 2px solid #e5e7eb;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    transition: border-color 0.2s;
+  }
+  
+  .search-input:focus {
+    outline: none;
+    border-color: #3b82f6;
+  }
+  
+  .search-btn {
+    padding: 0.75rem 1.5rem;
+    background: #3b82f6;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  
+  .search-btn:hover {
+    background: #2563eb;
+  }
+  
+  .search-btn:disabled {
+    background: #9ca3af;
+    cursor: not-allowed;
+  }
+  
+  .search-result {
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  }
+  
+  .search-result.hidden {
+    display: none;
+  }
+  
+  .loading {
+    text-align: center;
+    color: #6b7280;
+    padding: 2rem;
+  }
+  
+  .ai-answer {
+    line-height: 1.6;
+    color: #374151;
+    margin-bottom: 1.5rem;
+  }
+  
+  .recommended-tools {
+    margin-top: 1.5rem;
+  }
+  
+  .tool-card {
+    border: 1px solid #e5e7eb;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-bottom: 0.75rem;
+    transition: border-color 0.2s;
+  }
+  
+  .tool-card:hover {
+    border-color: #3b82f6;
+  }
+  
+  .tool-name {
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 0.25rem;
+  }
+  
+  .tool-meta {
+    font-size: 0.875rem;
+    color: #6b7280;
+    margin-bottom: 0.5rem;
+  }
+  
+  .tool-desc {
+    font-size: 0.875rem;
+    color: #4b5563;
+  }
+  
+  .sources {
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #e5e7eb;
+  }
+  
+  .source-link {
+    display: block;
+    font-size: 0.875rem;
+    color: #3b82f6;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+  }
+  
+  .source-link:hover {
+    text-decoration: underline;
+  }
+</style>
+
+<script>
+  const input = document.getElementById('ai-search-input') as HTMLInputElement;
+  const btn = document.getElementById('ai-search-btn') as HTMLButtonElement;
+  const result = document.getElementById('ai-search-result') as HTMLDivElement;
+  
+  async function handleSearch() {
+    const query = input.value.trim();
+    if (!query) return;
+    
+    btn.disabled = true;
+    btn.textContent = 'Searching...';
+    result.classList.remove('hidden');
+    result.innerHTML = '<div class="loading">🤖 AI is thinking...</div>';
+    
+    try {
+      const response = await fetch('/api/ai-search', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ query })
+      });
+      
+      if (!response.ok) throw new Error('Search failed');
+      
+      const data = await response.json();
+      
+      let html = `<div class="ai-answer">${data.answer}</div>`;
+      
+      if (data.tools && data.tools.length > 0) {
+        html += '<div class="recommended-tools"><h3 style="margin-bottom: 1rem;">✨ Recommended Tools</h3>';
+        data.tools.forEach((tool: any) => {
+          html += `
+            <div class="tool-card">
+              <div class="tool-name">${tool.name}</div>
+              <div class="tool-meta">${tool.pricing?.model || 'N/A'} ${tool.pricing?.startingPrice ? '• ' + tool.pricing.startingPrice : ''} • ${tool.rating || 'N/A'}⭐</div>
+              <div class="tool-desc">${tool.description.substring(0, 120)}...</div>
+            </div>
+          `;
+        });
+        html += '</div>';
+      }
+      
+      if (data.sources && data.sources.length > 0) {
+        html += '<div class="sources"><h4 style="margin-bottom: 0.75rem;">📚 Sources</h4>';
+        data.sources.forEach((source: any, i: number) => {
+          html += `<a href="${source.url}" target="_blank" class="source-link">[${i + 1}] ${source.title}</a>`;
+        });
+        html += '</div>';
+      }
+      
+      result.innerHTML = html;
+      
+    } catch (error) {
+      result.innerHTML = '<div class="loading" style="color: #ef4444;">❌ Search failed. Please try again.</div>';
+    } finally {
+      btn.disabled = false;
+      btn.innerHTML = '<svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>';
+    }
+  }
+  
+  btn.addEventListener('click', handleSearch);
+  input.addEventListener('keypress', (e) => {
+    if (e.key === 'Enter') handleSearch();
+  });
+</script>
