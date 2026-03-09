@@ -1,11 +1,13 @@
 import type { APIRoute } from 'astro';
+import fs from 'fs';
+import path from 'path';
 
 const SITE_URL = 'https://nsfwtelegrambot.com';
 
-// Import listings data
-import listingsData from '../data/listings.json';
-
 export const GET: APIRoute = async () => {
+  // Read listings from JSON file
+  const listingsPath = path.join(process.cwd(), 'src/data/listings.json');
+  const listingsData = JSON.parse(fs.readFileSync(listingsPath, 'utf-8'));
   const listings = listingsData.listings || [];
   
   const urls = [
