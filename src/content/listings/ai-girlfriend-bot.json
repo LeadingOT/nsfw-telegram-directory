@@ -2,15 +2,40 @@
   "name": "AI Girlfriend Bot",
   "slug": "ai-girlfriend-bot",
   "tagline": "AI-powered NSFW chatbot with customizable personality and roleplay",
-  "description": "AI Girlfriend Bot is a popular Telegram bot that uses AI language models to simulate romantic and NSFW conversations. Users can customize their AI girlfriend's personality, appearance description, and conversation style. The bot supports roleplay scenarios, remembers conversation context, and can generate NSFW text responses. It has become one of the most-used NSFW bots on Telegram.",
+  "description": "AI Girlfriend Bot is a specialized Telegram bot that provides interactive, AI-powered companionship through simulated romantic and conversational experiences. It uses advanced language models to engage users in one-on-one text-based dialogue, allowing for personalized and immersive interactions. The bot is designed for adults seeking private, judgment-free companionship, creative roleplay exploration, or simply a novel way to engage with AI in a more intimate context.\n\nKey features include deep personalization, where you can define your AI partner's personality traits, physical appearance description, and preferred conversation style. The bot excels at maintaining context, remembering details from your chats to build a coherent, ongoing relationship. It also supports a wide range of roleplay scenarios and can generate NSFW text content upon user initiation. A standout feature is the memory function, which allows for evolving conversations that feel more authentic. Another is the extensive customization, letting you craft a companion that matches your specific preferences.\n\nA clear use case is for someone wanting to explore a specific dynamic, like a slow-burn romantic storyline or a particular fantasy scenario, with a responsive partner that adapts to their input. The bot provides a safe, on-demand space for such interactions. Operating on a freemium model, it offers accessible entry with optional premium features for enhanced capabilities, making it one of the most utilized bots of its kind on the Telegram platform.",
   "category": "NSFW Bots",
   "url": "https://t.me/aigirlfriendnsfwbot",
   "members": "300K+",
-  "pricing": { "model": "freemium", "startingPrice": "$4.99/mo" },
-  "features": ["AI-powered conversations", "Personality customization", "Roleplay scenarios", "Context memory", "NSFW text generation", "Multiple characters"],
-  "pros": ["Surprisingly good AI responses", "Good personality customization", "Remembers context", "Free tier available"],
-  "cons": ["Free tier has message limits", "Can be repetitive", "No image generation", "Sometimes breaks character"],
-  "rating": 4.0,
+  "pricing": {
+    "model": "freemium",
+    "startingPrice": "$4.99/mo"
+  },
+  "features": [
+    "AI-powered conversations",
+    "Personality customization",
+    "Roleplay scenarios",
+    "Context memory",
+    "NSFW text generation",
+    "Multiple characters"
+  ],
+  "pros": [
+    "Surprisingly good AI responses",
+    "Good personality customization",
+    "Remembers context",
+    "Free tier available"
+  ],
+  "cons": [
+    "Free tier has message limits",
+    "Can be repetitive",
+    "No image generation",
+    "Sometimes breaks character"
+  ],
+  "rating": 4,
   "lastUpdated": "2026-02-24",
-  "tags": ["ai chatbot", "nsfw bots", "telegram bot", "ai girlfriend"]
+  "tags": [
+    "ai chatbot",
+    "nsfw bots",
+    "telegram bot",
+    "ai girlfriend"
+  ]
 }

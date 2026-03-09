@@ -2,15 +2,39 @@
   "name": "Celebrity Leaks TG",
   "slug": "celebrity-leaks-tg",
   "tagline": "Celebrity and influencer leaked content aggregation channel",
-  "description": "Celebrity Leaks TG aggregates leaked and NSFW content featuring celebrities, influencers, and public figures. The channel posts content that has become publicly available, including leaked photos, paparazzi shots, and social media screenshots. Content is organized by celebrity name with searchable tags. The channel walks a fine ethical line and faces frequent takedown requests.",
+  "description": "Celebrity Leaks TG is a Telegram channel that serves as a centralized hub for leaked and NSFW content involving celebrities, influencers, and other public figures. It aggregates material that has already entered the public sphere, sourcing from leaks, paparazzi archives, social media posts, and similar outlets. The channel does not create this content but compiles it for easy access.\n\nKey features include a comprehensive organization system where content is tagged and sorted by the celebrity's name, making it searchable. It also provides regular updates as new material surfaces. The channel maintains a catalog-like structure, allowing users to browse historical leaks alongside recent ones.\n\nThis tool is primarily for entertainment followers, gossip enthusiasts, and individuals who track celebrity culture closely. Its main benefit is efficiency; instead of scouring multiple forums and websites, users find a wide array of content in one dedicated, updated stream.\n\nA clear use case is a user hearing about a specific leaked photo set of a particular actor. Instead of a fragmented web search, they can visit the channel, search the actor's name tag, and quickly locate the relevant photos and related media. Standout features are the meticulous tagging system for targeted searches, the aggregation of content from disparate sources into one feed, and the focus on material that is already publicly circulating.\n\nIt is important to note the channel operates in a legally and ethically gray area, frequently facing takedown requests for the copyrighted or private content it shares.",
   "category": "OnlyFans & Creator Leaks",
   "url": "https://t.me/celebrityleakstg",
   "members": "520K+",
-  "pricing": { "model": "free" },
-  "features": ["Celebrity content", "Influencer leaks", "Name-based organization", "Searchable tags", "Daily updates", "Trending content"],
-  "pros": ["Popular celebrity content", "Well-organized", "Frequent updates", "Large archive"],
-  "cons": ["Major ethical concerns", "Frequent takedowns", "Content may be non-consensual", "Legal risks"],
+  "pricing": {
+    "model": "free"
+  },
+  "features": [
+    "Celebrity content",
+    "Influencer leaks",
+    "Name-based organization",
+    "Searchable tags",
+    "Daily updates",
+    "Trending content"
+  ],
+  "pros": [
+    "Popular celebrity content",
+    "Well-organized",
+    "Frequent updates",
+    "Large archive"
+  ],
+  "cons": [
+    "Major ethical concerns",
+    "Frequent takedowns",
+    "Content may be non-consensual",
+    "Legal risks"
+  ],
   "rating": 3.5,
   "lastUpdated": "2026-02-24",
-  "tags": ["celebrity leaks", "telegram leaked", "influencer leaks", "celebrity nsfw"]
+  "tags": [
+    "celebrity leaks",
+    "telegram leaked",
+    "influencer leaks",
+    "celebrity nsfw"
+  ]
 }

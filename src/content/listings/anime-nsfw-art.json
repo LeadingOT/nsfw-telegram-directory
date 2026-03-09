@@ -2,15 +2,39 @@
   "name": "Anime NSFW Art",
   "slug": "anime-nsfw-art",
   "tagline": "Curated anime-style NSFW illustrations from top artists worldwide",
-  "description": "Anime NSFW Art focuses on high-quality anime and manga-style NSFW illustrations. Unlike channels that post everything, this one curates only the best artwork, featuring pieces from well-known artists on Pixiv, Twitter, and other platforms. Each post includes artist credits and source links. The channel also features AI-generated anime art that meets their quality standards.",
+  "description": "Anime NSFW Art is a curated channel dedicated to high-quality, adult-oriented anime and manga-style illustrations. It serves as a focused gallery, saving you time by filtering through the vast amount of online art to present only the most exceptional pieces. The channel sources artwork from prominent platforms like Pixiv and Twitter, ensuring you see the best from both established and emerging human artists. It also selectively features AI-generated anime art that meets a high standard of aesthetic and technical quality.\n\nKey features include rigorous curation for consistent quality, full artist credits and direct source links for every piece, and a blend of both human-made and premium AI-generated artwork. This tool is for adult anime enthusiasts, art collectors seeking inspiration, and artists looking to study styles and discover creators within the NSFW genre. The main benefit is efficient discovery; you get a reliable stream of premium art without having to scour multiple sites yourself.\n\nA clear use case is an artist experiencing creative block. By browsing this curated feed, they can efficiently find professionally-credited artwork that sparks new ideas, study specific rendering techniques, and directly follow the source artists for more work. The channel operates as a free, dedicated hub for serious appreciation of adult anime art.",
   "category": "Hentai & Anime",
   "url": "https://t.me/animensfwart",
   "members": "310K+",
-  "pricing": { "model": "free" },
-  "features": ["Curated artwork", "Artist credits & sources", "AI + hand-drawn art", "Quality standards", "Pixiv sourcing", "Multiple anime styles"],
-  "pros": ["Very high quality bar", "Always credits artists", "Good mix of styles", "Source links included"],
-  "cons": ["Posting frequency lower than others", "Strict curation means less variety", "Some prefer only hand-drawn", "No doujinshi"],
+  "pricing": {
+    "model": "free"
+  },
+  "features": [
+    "Curated artwork",
+    "Artist credits & sources",
+    "AI + hand-drawn art",
+    "Quality standards",
+    "Pixiv sourcing",
+    "Multiple anime styles"
+  ],
+  "pros": [
+    "Very high quality bar",
+    "Always credits artists",
+    "Good mix of styles",
+    "Source links included"
+  ],
+  "cons": [
+    "Posting frequency lower than others",
+    "Strict curation means less variety",
+    "Some prefer only hand-drawn",
+    "No doujinshi"
+  ],
   "rating": 4.3,
   "lastUpdated": "2026-02-24",
-  "tags": ["anime nsfw", "hentai art", "nsfw illustrations", "anime telegram"]
+  "tags": [
+    "anime nsfw",
+    "hentai art",
+    "nsfw illustrations",
+    "anime telegram"
+  ]
 }

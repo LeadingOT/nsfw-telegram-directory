@@ -2,15 +2,39 @@
   "name": "Doujinshi Library",
   "slug": "doujinshi-library",
   "tagline": "Extensive doujinshi and hentai manga library with translations",
-  "description": "Doujinshi Library maintains one of the largest collections of translated doujinshi and hentai manga on Telegram. The channel posts full-length works with English translations, organized by series, artist, and genre. A searchable index bot helps users find specific titles. The channel also takes translation requests from the community.",
+  "description": "Doujinshi Library is a dedicated Telegram channel and bot system providing free, organized access to a vast collection of translated doujinshi and hentai manga. It functions as a comprehensive digital archive, posting full-length, English-translated works directly to the channel. The primary goal is to make niche fan-created content easily discoverable and readable for English-speaking audiences.\n\nIts standout features include a meticulously organized structure where works are tagged by source series, artist, and genre, and a powerful searchable index bot. Users can interact with this bot to find specific titles, artists, or genres quickly without scrolling through the entire channel. Furthermore, the channel actively accepts and fulfills translation requests from its community, directly shaping its growing library based on user demand.\n\nThis tool is for anime and manga fans seeking doujinshi content beyond mainstream platforms, particularly those who prefer the convenience of Telegram and require English translations. It is also valuable for readers with specific interests in certain pairings, artists, or genres who need a reliable way to find that content.\n\nThe main benefit is centralized, hassle-free access. A typical use case is a fan looking for doujinshi of a specific rare pair from a popular series. Instead of searching across scattered websites with inconsistent quality, they can use the index bot to search by the series name, find all available translated works, and read them immediately in a single, familiar app. This saves significant time and effort while ensuring a consistent reading experience.",
   "category": "Hentai & Anime",
   "url": "https://t.me/doujinshilibrary",
   "members": "250K+",
-  "pricing": { "model": "free" },
-  "features": ["Full doujinshi scans", "English translations", "Searchable index bot", "Series organization", "Translation requests", "Genre categorization"],
-  "pros": ["Full-length works", "Quality translations", "Searchable database", "Takes requests"],
-  "cons": ["Translations can be slow", "Some works untranslated", "Large file sizes", "Copyright grey area"],
+  "pricing": {
+    "model": "free"
+  },
+  "features": [
+    "Full doujinshi scans",
+    "English translations",
+    "Searchable index bot",
+    "Series organization",
+    "Translation requests",
+    "Genre categorization"
+  ],
+  "pros": [
+    "Full-length works",
+    "Quality translations",
+    "Searchable database",
+    "Takes requests"
+  ],
+  "cons": [
+    "Translations can be slow",
+    "Some works untranslated",
+    "Large file sizes",
+    "Copyright grey area"
+  ],
   "rating": 4.2,
   "lastUpdated": "2026-02-24",
-  "tags": ["doujinshi", "hentai manga", "translated hentai", "anime nsfw"]
+  "tags": [
+    "doujinshi",
+    "hentai manga",
+    "translated hentai",
+    "anime nsfw"
+  ]
 }
