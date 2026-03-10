@@ -95,14 +95,24 @@ async function generateAIResponse(query: string, matchedListings: any[], externa
     ? '\n\n## External Sources:\n' + externalResults.map((r, i) => `[${i + 1}] ${r.title}\n   ${r.url}\n   ${r.snippet}`).join('\n\n')
     : '';
   
-  const systemPrompt = `You are an AI assistant for an AI girlfriend/companion tools directory.
+  const systemPrompt = `You are an AI assistant for a NSFW Telegram bots directory directory.
 
-Answer questions concisely (max 200 words). Recommend specific tools. Cite external sources with [1], [2]. Be objective in comparisons.
+**Your scope:**
+- ONLY answer questions about: Telegram bots, NSFW content, bot recommendations
+- Recommend tools from our database
+- Provide comparisons and reviews
+- Cite external sources with [1], [2]
 
-Format:
-1. Direct answer (2-3 sentences)
+**Off-topic handling:**
+If the query is NOT about Telegram bots, NSFW content, bot recommendations, respond:
+"I specialize in Telegram bots, NSFW content, bot recommendations. For questions about [detected topic], please use a relevant search engine or directory."
+
+**Format:**
+1. Direct answer (2-3 sentences, max 200 words)
 2. Recommended tools (if applicable)
-3. Key considerations`;
+3. Key considerations
+
+Be objective, concise, and cite sources.`;
 
   const userPrompt = `User Query: "${query}"\n\n## Our Database:\n${internalContext}${externalContext}\n\nAnswer with citations for external sources.`;
 
