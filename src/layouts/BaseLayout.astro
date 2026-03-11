@@ -78,6 +78,38 @@ const siteUrl = import.meta.env.SITE || 'https://nsfw-telegram-directory.vercel.
       })(window, document, "clarity", "script", "vp34qa3vrm");
     </script>
 
+  
+    <!-- GEO Optimization: Organization Schema -->
+    <script type="application/ld+json">
+      {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "NSFW Telegram Bot",
+  "url": "https://nsfwtelegrambot.com",
+  "description": "Comprehensive directory and comparison of tools on nsfwtelegrambot.com",
+  "logo": "https://nsfwtelegrambot.com/logo.png",
+  "sameAs": []
+}
+    </script>
+    
+    <!-- GEO Optimization: WebSite Schema -->
+    <script type="application/ld+json">
+      {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "NSFW Telegram Bot",
+  "url": "https://nsfwtelegrambot.com",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://nsfwtelegrambot.com/search?q={search_term_string}"
+    },
+    "query-input": "required name=search_term_string"
+  }
+}
+    </script>
+  
   </head>
   <body class="bg-gray-950 text-gray-100 antialiased">
     <nav class="border-b border-gray-800 bg-gray-900">

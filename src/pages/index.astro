@@ -15,12 +15,21 @@ const schema = {
   description: 'Find the best NSFW Telegram channels, groups, and bots. Compare features, member counts, and reviews.',
   url: Astro.url.origin,
 };
+
+const itemListSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "NSFW Telegram Channels 2026",
+  "description": "Compare and review the top 20 tools in this category",
+  "numberOfItems": 20,
+  "url": "https://nsfwtelegrambot.com"
+};
 ---
 
 <BaseLayout
   title="Best NSFW Telegram Channels & Groups Directory (2026)"
   description="Discover and compare the best NSFW Telegram channels, adult groups, dating channels, and NSFW bots. Updated directory with reviews, ratings, and member counts for 30+ channels."
-  schema={schema}
+  schema={itemListSchema}
 >
   <!-- Hero -->
   <section class="text-center py-12">
