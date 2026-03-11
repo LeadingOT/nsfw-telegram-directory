@@ -52,7 +52,7 @@ const faqs = [
   },
   {
     question: `Which is cheaper, ${toolA.name} or ${toolB.name}?`,
-    answer: `${toolA.name} uses a ${toolA.pricing?.model || "flexible"} pricing model${toolA.pricing.startingPrice ? ` starting at ${toolA.pricing.startingPrice}` : ''}. ${toolB.name} uses a ${toolB.pricing?.model || "flexible"} model${toolB.pricing.startingPrice ? ` starting at ${toolB.pricing.startingPrice}` : ''}. Compare both for the best value.`,
+    answer: `${toolA.name} uses a ${toolA.pricing?.model || "flexible"} pricing model${toolA.pricing?.startingPrice ? ` starting at ${toolA.pricing?.startingPrice}` : ''}. ${toolB.name} uses a ${toolB.pricing?.model || "flexible"} model${toolB.pricing?.startingPrice ? ` starting at ${toolB.pricing?.startingPrice}` : ''}. Compare both for the best value.`,
   },
   {
     question: `What are the main differences between ${toolA.name} and ${toolB.name}?`,
@@ -103,7 +103,7 @@ function renderStars(rating: number) {
           <h2 class="text-xl font-semibold mb-1">{tool.name}</h2>
           <p class="text-sm text-gray-600 mb-3">{tool.tagline}</p>
           <div class="text-yellow-600 mb-2">{renderStars(tool.rating)} <span class="text-gray-500 text-sm">{tool.rating}/5</span></div>
-          <p class="text-sm"><strong>Pricing:</strong> {tool.pricing.model}{tool.pricing.startingPrice ? ` from ${tool.pricing.startingPrice}` : ''}</p>
+          <p class="text-sm"><strong>Pricing:</strong> {tool.pricing.model}{tool.pricing?.startingPrice ? ` from ${tool.pricing?.startingPrice}` : ''}</p>
           <a href={`/listing/${tool.slug}`} class="inline-block mt-3 text-sm text-blue-600 hover:underline">Full Review →</a>
         </div>
       ))}
@@ -129,8 +129,8 @@ function renderStars(rating: number) {
             </tr>
             <tr class="border-b bg-gray-50">
               <td class="p-3 font-medium">Pricing Model</td>
-              <td class="p-3">{toolA.pricing?.model || "Custom"}{toolA.pricing.startingPrice ? ` from ${toolA.pricing.startingPrice}` : ''}</td>
-              <td class="p-3">{toolB.pricing?.model || "Custom"}{toolB.pricing.startingPrice ? ` from ${toolB.pricing.startingPrice}` : ''}</td>
+              <td class="p-3">{toolA.pricing?.model || "Custom"}{toolA.pricing?.startingPrice ? ` from ${toolA.pricing?.startingPrice}` : ''}</td>
+              <td class="p-3">{toolB.pricing?.model || "Custom"}{toolB.pricing?.startingPrice ? ` from ${toolB.pricing?.startingPrice}` : ''}</td>
             </tr>
             <tr class="border-b">
               <td class="p-3 font-medium">Key Features</td>
