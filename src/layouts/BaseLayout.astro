@@ -11,7 +11,8 @@ interface Props {
 }
 
 const { title, description, canonical, ogImage, schema } = Astro.props;
-const siteUrl = import.meta.env.SITE || 'https://nsfw-telegram-directory.vercel.app';
+const siteUrl = import.meta.env.SITE || 'https://nsfwtelegrambot.com';
+const canonicalURL = canonical || new URL(Astro.url.pathname, siteUrl).href;
 ---
 
 <!doctype html>
@@ -21,7 +22,7 @@ const siteUrl = import.meta.env.SITE || 'https://nsfw-telegram-directory.vercel.
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{title}</title>
     <meta name="description" content={description} />
-    <link rel="canonical" href={canonical || Astro.url.href} />
+    <link rel="canonical" href={canonicalURL} />
     <meta name="rating" content="adult" />
     <meta name="robots" content="index, follow" />
 
@@ -29,7 +30,7 @@ const siteUrl = import.meta.env.SITE || 'https://nsfw-telegram-directory.vercel.
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content={canonical || Astro.url.href} />
+    <meta property="og:url" content={canonicalURL} />
     {ogImage && <meta property="og:image" content={ogImage} />}
 
     <!-- Twitter -->
