@@ -129,19 +129,19 @@ function renderStars(rating: number) {
             </tr>
             <tr class="border-b bg-gray-50">
               <td class="p-3 font-medium">Pricing Model</td>
-              <td class="p-3">{toolA.pricing.model}{toolA.pricing.startingPrice ? ` from ${toolA.pricing.startingPrice}` : ''}</td>
-              <td class="p-3">{toolB.pricing.model}{toolB.pricing.startingPrice ? ` from ${toolB.pricing.startingPrice}` : ''}</td>
+              <td class="p-3">{toolA.pricing?.model || "Custom"}{toolA.pricing.startingPrice ? ` from ${toolA.pricing.startingPrice}` : ''}</td>
+              <td class="p-3">{toolB.pricing?.model || "Custom"}{toolB.pricing.startingPrice ? ` from ${toolB.pricing.startingPrice}` : ''}</td>
             </tr>
             <tr class="border-b">
               <td class="p-3 font-medium">Key Features</td>
               <td class="p-3">
                 <ul class="space-y-1">
-                  {toolA.features.map((f: string) => <li class="flex items-start gap-1"><span class="text-green-600 shrink-0">✓</span> {f}</li>)}
+                  {(toolA.features || []).map((f: string) => <li class="flex items-start gap-1"><span class="text-green-600 shrink-0">✓</span> {f}</li>)}
                 </ul>
               </td>
               <td class="p-3">
                 <ul class="space-y-1">
-                  {toolB.features.map((f: string) => <li class="flex items-start gap-1"><span class="text-green-600 shrink-0">✓</span> {f}</li>)}
+                  {(toolB.features || []).map((f: string) => <li class="flex items-start gap-1"><span class="text-green-600 shrink-0">✓</span> {f}</li>)}
                 </ul>
               </td>
             </tr>
