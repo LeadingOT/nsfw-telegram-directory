@@ -1,0 +1,62 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+
+# AI Crawler Access (GEO Optimization)
+User-agent: GPTBot
+Allow: /
+Disallow: /api/
+
+User-agent: ClaudeBot
+Allow: /
+Disallow: /api/
+
+User-agent: PerplexityBot
+Allow: /
+Disallow: /api/
+
+User-agent: Google-Extended
+Allow: /
+Disallow: /api/
+
+User-agent: anthropic-ai
+Allow: /
+Disallow: /api/
+
+User-agent: ChatGPT-User
+Allow: /
+Disallow: /api/
+
+User-agent: cohere-ai
+Allow: /
+Disallow: /api/
+
+User-agent: Omgilibot
+Allow: /
+Disallow: /api/
+
+User-agent: FacebookBot
+Allow: /
+Disallow: /api/
+
+User-agent: Applebot-Extended
+Allow: /
+Disallow: /api/
+
+User-agent: Bytespider
+Allow: /
+Disallow: /api/
+
+User-agent: CCBot
+Allow: /
+Disallow: /api/
+
+User-agent: Diffbot
+Allow: /
+Disallow: /api/
+
+User-agent: ImagesiftBot
+Allow: /
+Disallow: /api/
+
+Sitemap: https://realestateai.tools/sitemap-index.xml
