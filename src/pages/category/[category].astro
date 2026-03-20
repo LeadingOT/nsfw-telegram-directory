@@ -17,6 +17,8 @@ export async function getStaticPaths() {
 
 const { category, listings } = Astro.props;
 ---
+export const prerender = true;
+
 
 <BaseLayout
   title={`Best ${category} on Telegram (2026) — Directory & Reviews`}
