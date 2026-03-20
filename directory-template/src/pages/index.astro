@@ -1,0 +1,54 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ListingCard from '../components/ListingCard.astro';
+import { getCollection } from 'astro:content';
+
+const allListings = await getCollection('listings');
+const categories = [...new Set(allListings.map((l) => l.data.category))];
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: 'Directory',
+  description: 'Find the best tools and services',
+  url: Astro.url.origin,
+};
+---
+
+<BaseLayout
+  title="Directory - Find the Best Tools"
+  description="Comprehensive directory of the best tools and services. Compare features, pricing, and reviews."
+  schema={schema}
+>
+  <!-- Hero -->
+  <section class="text-center py-12">
+    <h1 class="text-4xl font-bold mb-4">Find the Best Tools for Your Needs</h1>
+    <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+      Compare features, pricing, and reviews. Updated regularly.
+    </p>
+  </section>
+
+  <!-- Categories -->
+  <section class="mb-12">
+    <div class="flex flex-wrap gap-2 justify-center">
+      {categories.map((cat) => (
+        <a
+          href={`/category/${cat.toLowerCase().replace(/\s+/g, '-')}`}
+          class="px-4 py-2 bg-gray-100 rounded-full text-sm hover:bg-blue-100 hover:text-blue-700 transition-colors"
+        >
+          {cat}
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <!-- Listings Grid -->
+  <section>
+    <h2 class="text-2xl font-bold mb-6">All Listings</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      {allListings.map((listing) => (
+        <ListingCard {...listing.data} />
+      ))}
+    </div>
+  </section>
+</BaseLayout>

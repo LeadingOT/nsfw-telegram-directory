@@ -1,0 +1,67 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description: string;
+  canonical?: string;
+  ogImage?: string;
+  schema?: object;
+}
+
+const { title, description, canonical, ogImage, schema } = Astro.props;
+const siteUrl = import.meta.env.SITE || 'https://example.com';
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical || Astro.url.href} />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonical || Astro.url.href} />
+    {ogImage && <meta property="og:image" content={ogImage} />}
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+
+    <!-- Schema.org JSON-LD -->
+    {schema && (
+      <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+    )}
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  </head>
+  <body class="bg-white text-gray-900 antialiased">
+    <nav class="border-b border-gray-200 bg-white">
+      <div class="mx-auto max-w-6xl px-4 py-4 flex items-center justify-between">
+        <a href="/" class="text-xl font-bold" id="site-name">Directory</a>
+        <div class="flex gap-6 text-sm">
+          <a href="/" class="hover:text-blue-600">Home</a>
+          <a href="/categories" class="hover:text-blue-600">Categories</a>
+          <a href="/compare" class="hover:text-blue-600">Compare</a>
+        </div>
+      </div>
+    </nav>
+
+    <main class="mx-auto max-w-6xl px-4 py-8">
+      <slot />
+    </main>
+
+    <footer class="border-t border-gray-200 bg-gray-50 mt-16">
+      <div class="mx-auto max-w-6xl px-4 py-8 text-sm text-gray-500">
+        <p>&copy; {new Date().getFullYear()} All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

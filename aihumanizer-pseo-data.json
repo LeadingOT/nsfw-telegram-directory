@@ -1,0 +1,33 @@
+{
+  "mainTools": [
+    "undetectable-ai",
+    "humbot",
+    "stealth-writer",
+    "bypassgpt",
+    "smodin",
+    "quillbot",
+    "paraphraser-io",
+    "wordtune",
+    "spinbot",
+    "ai-text-humanizer"
+  ],
+  "comparisons": [
+    ["undetectable-ai", "humbot"],
+    ["bypassgpt", "undetectable-ai"],
+    ["stealth-writer", "humbot"],
+    ["smodin", "quillbot"],
+    ["quillbot", "wordtune"],
+    ["undetectable-ai", "quillbot"],
+    ["humbot", "bypassgpt"],
+    ["paraphraser-io", "smodin"],
+    ["wordtune", "undetectable-ai"],
+    ["stealth-writer", "bypassgpt"]
+  ],
+  "alternatives": [
+    "undetectable-ai",
+    "humbot",
+    "bypassgpt",
+    "quillbot",
+    "smodin"
+  ]
+}

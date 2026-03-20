@@ -1,0 +1,27 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const listings = await getCollection('listings');
+const categoryMap = new Map<string, number>();
+listings.forEach((l) => {
+  const count = categoryMap.get(l.data.category) || 0;
+  categoryMap.set(l.data.category, count + 1);
+});
+const categories = [...categoryMap.entries()].sort((a, b) => b[1] - a[1]);
+---
+
+<BaseLayout title="All Categories" description="Browse all categories in our directory.">
+  <h1 class="text-3xl font-bold mb-8">All Categories</h1>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+    {categories.map(([cat, count]) => (
+      <a
+        href={`/category/${cat.toLowerCase().replace(/\s+/g, '-')}`}
+        class="block border border-gray-200 rounded-lg p-5 hover:shadow-md hover:border-blue-300 transition-all"
+      >
+        <h2 class="text-lg font-semibold">{cat}</h2>
+        <p class="text-sm text-gray-500">{count} tools</p>
+      </a>
+    ))}
+  </div>
+</BaseLayout>

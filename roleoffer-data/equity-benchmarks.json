@@ -1,0 +1,77 @@
+{
+  "source": "Carta State of Equity 2024 + SaaStr benchmarks (public reports)",
+  "updated_at": "2026-02-25",
+  "benchmarks": [
+    {
+      "role": "Software Engineer",
+      "level": "IC2-IC3",
+      "stage": "Seed",
+      "equity_pct": {"p25": 0.05, "p50": 0.10, "p75": 0.20},
+      "vesting": "4yr/1yr cliff"
+    },
+    {
+      "role": "Software Engineer", 
+      "level": "IC2-IC3",
+      "stage": "Series A",
+      "equity_pct": {"p25": 0.03, "p50": 0.07, "p75": 0.15},
+      "vesting": "4yr/1yr cliff"
+    },
+    {
+      "role": "Software Engineer",
+      "level": "IC2-IC3", 
+      "stage": "Series B",
+      "equity_pct": {"p25": 0.02, "p50": 0.05, "p75": 0.10},
+      "vesting": "4yr/1yr cliff"
+    },
+    {
+      "role": "Senior Software Engineer",
+      "level": "IC4-IC5",
+      "stage": "Seed",
+      "equity_pct": {"p25": 0.10, "p50": 0.25, "p75": 0.50},
+      "vesting": "4yr/1yr cliff"
+    },
+    {
+      "role": "Senior Software Engineer",
+      "level": "IC4-IC5",
+      "stage": "Series A",
+      "equity_pct": {"p25": 0.05, "p50": 0.15, "p75": 0.30},
+      "vesting": "4yr/1yr cliff"
+    },
+    {
+      "role": "Senior Software Engineer",
+      "level": "IC4-IC5",
+      "stage": "Series B",
+      "equity_pct": {"p25": 0.03, "p50": 0.10, "p75": 0.20},
+      "vesting": "4yr/1yr cliff"
+    },
+    {
+      "role": "Product Manager",
+      "level": "IC3-IC4",
+      "stage": "Seed",
+      "equity_pct": {"p25": 0.08, "p50": 0.15, "p75": 0.30},
+      "vesting": "4yr/1yr cliff"
+    },
+    {
+      "role": "Product Manager",
+      "level": "IC3-IC4",
+      "stage": "Series A",
+      "equity_pct": {"p25": 0.05, "p50": 0.10, "p75": 0.20},
+      "vesting": "4yr/1yr cliff"
+    },
+    {
+      "role": "Engineering Manager",
+      "level": "M1-M2",
+      "stage": "Seed",
+      "equity_pct": {"p25": 0.20, "p50": 0.40, "p75": 0.80},
+      "vesting": "4yr/1yr cliff"
+    },
+    {
+      "role": "Engineering Manager",
+      "level": "M1-M2",
+      "stage": "Series A",
+      "equity_pct": {"p25": 0.10, "p50": 0.25, "p75": 0.50},
+      "vesting": "4yr/1yr cliff"
+    }
+  ],
+  "notes": "Based on public Carta reports, SaaStr data, and industry benchmarks. Real data to be updated post-MVP."
+}

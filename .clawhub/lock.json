@@ -1,0 +1,125 @@
+{
+  "version": 1,
+  "skills": {
+    "keyword-research": {
+      "version": "2.0.0",
+      "installedAt": 1771828994779
+    },
+    "seo-competitor-analysis": {
+      "version": "1.0.0",
+      "installedAt": 1771829007315
+    },
+    "serp-analysis": {
+      "version": "2.0.0",
+      "installedAt": 1771829011985
+    },
+    "on-page-seo-auditor": {
+      "version": "2.0.0",
+      "installedAt": 1771829026015
+    },
+    "seo-content-brief": {
+      "version": "0.1.5",
+      "installedAt": 1771829060670
+    },
+    "dataforseo-cli": {
+      "version": "1.0.7",
+      "installedAt": 1771829076908
+    },
+    "gsc": {
+      "version": "1.0.0",
+      "installedAt": 1771836269692
+    },
+    "technical-seo-checker": {
+      "version": "2.0.0",
+      "installedAt": 1771836273049
+    },
+    "seo-content-writer": {
+      "version": "2.0.0",
+      "installedAt": 1771838156687
+    },
+    "github": {
+      "version": "1.0.0",
+      "installedAt": 1771838162642
+    },
+    "deep-scraper": {
+      "version": "1.0.1",
+      "installedAt": 1771838168516
+    },
+    "schema-markup-generator": {
+      "version": "2.0.0",
+      "installedAt": 1771838191664
+    },
+    "deep-research-pro": {
+      "version": "1.0.2",
+      "installedAt": 1771872091823
+    },
+    "stock-analysis": {
+      "version": "6.2.0",
+      "installedAt": 1771872097053
+    },
+    "finnhub-pro": {
+      "version": "1.0.1",
+      "installedAt": 1771872098712
+    },
+    "stock-watcher": {
+      "version": "1.0.0",
+      "installedAt": 1771872100412
+    },
+    "cost-report": {
+      "version": "1.0.2",
+      "installedAt": 1772011895781
+    },
+    "stock-price-checker": {
+      "version": "1.0.0",
+      "installedAt": 1772011898246
+    },
+    "schedule": {
+      "version": "1.0.2",
+      "installedAt": 1772011899418
+    },
+    "crawl-for-ai": {
+      "version": "1.0.1",
+      "installedAt": 1772011900439
+    },
+    "macro-monitor": {
+      "version": "1.0.2",
+      "installedAt": 1772011889369
+    },
+    "android-adb": {
+      "version": "1.0.0",
+      "installedAt": 1772011920982
+    },
+    "computer-use": {
+      "version": "1.2.1",
+      "installedAt": 1772011928993
+    },
+    "android-agent": {
+      "version": "1.1.1",
+      "installedAt": 1772011935672
+    },
+    "cloudphone": {
+      "version": "0.0.2",
+      "installedAt": 1772011942787
+    },
+    "midscene-android-automation": {
+      "version": "1.0.1",
+      "installedAt": 1772011952142
+    },
+    "upload-post": {
+      "version": "1.0.0",
+      "installedAt": 1772011958355
+    },
+    "cron-mastery": {
+      "version": "1.0.3",
+      "installedAt": 1772011966051
+    },
+    "tiktok-viral-marketing": {
+      "version": "0.1.0",
+      "installedAt": 1772012003705
+    },
+    "akshare-stock": {
+      "version": "1.0.1",
+      "installedAt": 1773197638070
+    }
+  }
+}

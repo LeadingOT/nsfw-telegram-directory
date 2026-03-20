@@ -1,0 +1,174 @@
+{
+  "sites": [
+    {
+      "name": "AI Girlfriend Tools",
+      "domain": "aigirlfriend.tools",
+      "url": "https://aigirlfriend.tools",
+      "tagline": "Discover the best AI girlfriend & companion apps",
+      "description": "Curated directory of AI girlfriend and companion tools. Compare features, pricing, and alternatives for AI chatbots like Replika, Character.AI, and more. Find the perfect virtual companion.",
+      "category": "AI Tools",
+      "subcategory": "AI Companions",
+      "tags": ["ai girlfriend", "ai companion", "chatbot", "virtual girlfriend", "ai chat"],
+      "twitter": "",
+      "logo": "https://aigirlfriend.tools/og-image.png"
+    },
+    {
+      "name": "Accounting AI Tools",
+      "domain": "accountingai.tools",
+      "url": "https://accountingai.tools",
+      "tagline": "Best AI tools for accounting and finance professionals",
+      "description": "Comprehensive directory of AI-powered accounting tools. Compare bookkeeping automation, expense tracking, tax software, and financial analytics platforms. Save time with AI accounting.",
+      "category": "AI Tools",
+      "subcategory": "Finance & Accounting",
+      "tags": ["accounting ai", "bookkeeping", "tax software", "finance automation", "ai accounting"],
+      "twitter": "",
+      "logo": "https://accountingai.tools/og-image.png"
+    },
+    {
+      "name": "Legal AI Tools",
+      "domain": "legalai.tools",
+      "url": "https://legalai.tools",
+      "tagline": "AI-powered legal research and contract analysis tools",
+      "description": "Directory of AI tools for legal professionals. Find contract review software, legal research assistants, document automation, and compliance tools. Compare features and pricing.",
+      "category": "AI Tools",
+      "subcategory": "Legal Tech",
+      "tags": ["legal ai", "contract review", "legal research", "document automation", "compliance"],
+      "twitter": "",
+      "logo": "https://legalai.tools/og-image.png"
+    },
+    {
+      "name": "HR AI Tools",
+      "domain": "hrai.tools",
+      "url": "https://hrai.tools",
+      "tagline": "AI tools for HR, recruiting, and talent management",
+      "description": "Discover AI-powered HR tools for recruiting, onboarding, performance management, and employee engagement. Compare applicant tracking systems, resume screening, and HR analytics platforms.",
+      "category": "AI Tools",
+      "subcategory": "HR & Recruiting",
+      "tags": ["hr ai", "recruiting", "ats", "talent management", "hr automation"],
+      "twitter": "",
+      "logo": "https://hrai.tools/og-image.png"
+    },
+    {
+      "name": "Real Estate AI Tools",
+      "domain": "realestateai.tools",
+      "url": "https://realestateai.tools",
+      "tagline": "AI tools for real estate agents and property management",
+      "description": "Directory of AI tools for real estate professionals. Find property valuation software, virtual staging tools, lead generation platforms, and CRM systems. Boost productivity with AI.",
+      "category": "AI Tools",
+      "subcategory": "Real Estate",
+      "tags": ["real estate ai", "property management", "virtual staging", "real estate crm", "valuation"],
+      "twitter": "",
+      "logo": "https://realestateai.tools/og-image.png"
+    },
+    {
+      "name": "Best Writing Tools",
+      "domain": "bestwriting.tools",
+      "url": "https://bestwriting.tools",
+      "tagline": "Best AI writing assistants and content creation tools",
+      "description": "Curated directory of AI writing tools. Compare grammar checkers, content generators, copywriting assistants, and paraphrasing tools. Find the best AI writer for your needs.",
+      "category": "AI Tools",
+      "subcategory": "Writing & Content",
+      "tags": ["ai writing", "content creation", "grammar checker", "copywriting", "ai writer"],
+      "twitter": "",
+      "logo": "https://bestwriting.tools/og-image.png"
+    },
+    {
+      "name": "NSFW Telegram Bots",
+      "domain": "nsfwtelegrambot.com",
+      "url": "https://nsfwtelegrambot.com",
+      "tagline": "Directory of Telegram bots and channels for adults",
+      "description": "Curated collection of NSFW Telegram bots, channels, and groups. Find adult content, dating bots, and entertainment channels. 18+ only.",
+      "category": "Social & Communication",
+      "subcategory": "Telegram",
+      "tags": ["telegram bots", "nsfw", "adult content", "telegram channels", "dating bots"],
+      "twitter": "",
+      "logo": "https://nsfwtelegrambot.com/og-image.png"
+    },
+    {
+      "name": "Best Anime Sites",
+      "domain": "bestanime.info",
+      "url": "https://bestanime.info",
+      "tagline": "Best anime streaming sites and manga readers",
+      "description": "Directory of the best anime streaming platforms, manga reading sites, and anime communities. Compare features, catalogs, and pricing. Find your next favorite anime.",
+      "category": "Entertainment",
+      "subcategory": "Anime & Manga",
+      "tags": ["anime", "manga", "streaming", "anime sites", "manga reader"],
+      "twitter": "",
+      "logo": "https://bestanime.info/og-image.png"
+    },
+    {
+      "name": "Best Nootropics",
+      "domain": "bestnootropics.info",
+      "url": "https://bestnootropics.info",
+      "tagline": "Evidence-based nootropics and cognitive enhancement supplements",
+      "description": "Comprehensive guide to nootropics and smart drugs. Compare cognitive enhancers, brain supplements, and memory boosters. Find science-backed nootropics for focus and productivity.",
+      "category": "Health & Wellness",
+      "subcategory": "Supplements",
+      "tags": ["nootropics", "brain supplements", "cognitive enhancement", "smart drugs", "focus"],
+      "twitter": "",
+      "logo": "https://bestnootropics.info/og-image.png"
+    },
+    {
+      "name": "Best OnlyFans",
+      "domain": "bestonlyfans.info",
+      "url": "https://bestonlyfans.info",
+      "tagline": "Top-rated OnlyFans creators and alternatives",
+      "description": "Directory of top OnlyFans creators, alternative platforms, and subscription sites. Find the best content creators by category. 18+ adult content.",
+      "category": "Entertainment",
+      "subcategory": "Adult Content",
+      "tags": ["onlyfans", "content creators", "subscription", "adult content", "creators"],
+      "twitter": "",
+      "logo": "https://bestonlyfans.info/og-image.png"
+    },
+    {
+      "name": "Best Podcasts",
+      "domain": "bestofpodcasts.com",
+      "url": "https://bestofpodcasts.com",
+      "tagline": "Discover the best podcasts across all categories",
+      "description": "Curated directory of top podcasts. Find the best shows for business, comedy, true crime, education, and more. Compare podcast platforms and apps.",
+      "category": "Entertainment",
+      "subcategory": "Podcasts",
+      "tags": ["podcasts", "audio", "podcast directory", "best podcasts", "podcast apps"],
+      "twitter": "",
+      "logo": "https://bestofpodcasts.com/og-image.png"
+    },
+    {
+      "name": "Mattress Rankings",
+      "domain": "mattressrank.info",
+      "url": "https://mattressrank.info",
+      "tagline": "Expert mattress reviews and sleep product comparisons",
+      "description": "In-depth mattress reviews and rankings. Compare memory foam, hybrid, and latex mattresses. Find the best mattress for your sleep style and budget.",
+      "category": "Home & Living",
+      "subcategory": "Sleep & Bedding",
+      "tags": ["mattress", "sleep", "mattress reviews", "bedding", "sleep products"],
+      "twitter": "",
+      "logo": "https://mattressrank.info/og-image.png"
+    }
+  ],
+  "directories": [
+    {
+      "name": "AlternativeTo",
+      "url": "https://alternativeto.net/add-app/",
+      "priority": 5,
+      "free": true
+    },
+    {
+      "name": "Toolify",
+      "url": "https://www.toolify.ai/submit",
+      "priority": 5,
+      "free": true
+    },
+    {
+      "name": "SaaSHub",
+      "url": "https://www.saashub.com/submit",
+      "priority": 4,
+      "free": true
+    },
+    {
+      "name": "Futurepedia",
+      "url": "https://www.futurepedia.io/submit-tool",
+      "priority": 3,
+      "free": "maybe"
+    }
+  ]
+}

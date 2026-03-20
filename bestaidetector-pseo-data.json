@@ -1,0 +1,33 @@
+{
+  "mainTools": [
+    "gptzero",
+    "originality-ai",
+    "winston-ai",
+    "turnitin",
+    "copyleaks",
+    "content-at-scale-ai-detector",
+    "writer-ai-detector",
+    "sapling-ai-detector",
+    "crossplag",
+    "ai-detector-pro"
+  ],
+  "comparisons": [
+    ["gptzero", "originality-ai"],
+    ["winston-ai", "turnitin"],
+    ["gptzero", "winston-ai"],
+    ["originality-ai", "copyleaks"],
+    ["turnitin", "copyleaks"],
+    ["gptzero", "turnitin"],
+    ["content-at-scale-ai-detector", "originality-ai"],
+    ["winston-ai", "copyleaks"],
+    ["writer-ai-detector", "gptzero"],
+    ["sapling-ai-detector", "originality-ai"]
+  ],
+  "alternatives": [
+    "gptzero",
+    "originality-ai",
+    "turnitin",
+    "winston-ai",
+    "copyleaks"
+  ]
+}

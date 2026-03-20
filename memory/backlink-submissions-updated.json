@@ -1,0 +1,92 @@
+{
+  "lastUpdated": "2026-02-27",
+  "submissions": {
+    "accountingai.tools": [
+      {"directory": "awesome-ai-tools", "url": "https://github.com/mahseema/awesome-ai-tools/pull/658", "type": "github-pr", "status": "pending", "date": "2026-02-24"},
+      {"directory": "best-of-ai/ai-directories", "url": "https://github.com/best-of-ai/ai-directories/pull/230", "type": "github-pr", "status": "pending", "date": "2026-02-24"}
+    ],
+    "aigirlfriend.tools": [
+      {"directory": "best-of-ai/ai-directories", "url": "https://github.com/best-of-ai/ai-directories/pull/230", "type": "github-pr", "status": "pending", "date": "2026-02-24"}
+    ],
+    "realestateai.tools": [
+      {"directory": "awesome-ai-tools", "url": "https://github.com/mahseema/awesome-ai-tools/pull/658", "type": "github-pr", "status": "pending", "date": "2026-02-24"},
+      {"directory": "best-of-ai/ai-directories", "url": "https://github.com/best-of-ai/ai-directories/pull/230", "type": "github-pr", "status": "pending", "date": "2026-02-24"}
+    ],
+    "hrai.tools": [
+      {"directory": "awesome-ai-tools", "url": "https://github.com/mahseema/awesome-ai-tools/pull/658", "type": "github-pr", "status": "pending", "date": "2026-02-24"},
+      {"directory": "best-of-ai/ai-directories", "url": "https://github.com/best-of-ai/ai-directories/pull/230", "type": "github-pr", "status": "pending", "date": "2026-02-24"}
+    ],
+    "legalai.tools": [
+      {"directory": "awesome-ai-tools", "url": "https://github.com/mahseema/awesome-ai-tools/pull/658", "type": "github-pr", "status": "pending", "date": "2026-02-24"},
+      {"directory": "best-of-ai/ai-directories", "url": "https://github.com/best-of-ai/ai-directories/pull/230", "type": "github-pr", "status": "pending", "date": "2026-02-24"}
+    ],
+    "bestnootropics.info": []
+  },
+  "pendingManualSubmissions": {
+    "email": [
+      {
+        "platform": "AI Tools Hunt",
+        "email": "aitoolshunt@gmail.com",
+        "status": "ready",
+        "template": "/tmp/backlink-email-1.txt",
+        "sites": "all 6"
+      },
+      {
+        "platform": "AI Tools Directory", 
+        "email": "hello@aitoolsdirectory.com",
+        "status": "ready",
+        "template": "/tmp/backlink-email-2.txt",
+        "sites": "all 6"
+      }
+    ],
+    "browser": [
+      {
+        "platform": "Futurepedia",
+        "url": "https://www.futurepedia.io/submit-tool",
+        "status": "pending",
+        "sites_to_submit": 6,
+        "est_time": "30min"
+      },
+      {
+        "platform": "Toolify",
+        "url": "https://www.toolify.ai/submit",
+        "status": "pending",
+        "sites_to_submit": 6,
+        "est_time": "15min"
+      },
+      {
+        "platform": "BetaList",
+        "url": "https://betalist.com/submit",
+        "status": "pending",
+        "sites_to_submit": 6,
+        "est_time": "20min"
+      },
+      {
+        "platform": "SaaSHub",
+        "url": "https://www.saashub.com/submit",
+        "status": "pending",
+        "sites_to_submit": 6,
+        "est_time": "15min"
+      },
+      {
+        "platform": "AlternativeTo",
+        "url": "https://alternativeto.net/add-app/",
+        "status": "pending",
+        "sites_to_submit": 6,
+        "est_time": "20min"
+      }
+    ],
+    "weekly_launch": [
+      {
+        "platform": "Product Hunt",
+        "week": 1,
+        "site": "accountingai.tools",
+        "scheduled_date": "TBD",
+        "status": "pending"
+      }
+    ]
+  },
+  "actionPlan": "/tmp/backlink-action-plan.md",
+  "totalPending": 8,
+  "estimatedTime": "2 hours"
+}

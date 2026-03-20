@@ -1,0 +1,12 @@
+# Memory Abstract Index — main agent
+# Auto-maintained. Maps memory files → topics + priority lifecycle tags.
+# P0 = permanent (identity, credentials, strategy) — never expires
+# P1 = active (current projects, open tasks) — review monthly, archive if stale
+# P2 = ephemeral (session logs, temp notes) — auto-archive after 14 days
+
+## Entries
+
+  - Topics: bill-intro, directory-factory, seo-research, domain-purchases, sub-agent-builds
+  - Summary: Day 1 session. Bill intro, directory factory strategy, real estate AI launched, 5 new domains bought, parallel builds kicked off.
+  - Key entities: realestateai.tools, hrai.tools, accountingai.tools, legalai.tools, aigirlfriend.tools, bestnootropics.info
+  - Cross-refs: MEMORY.md (distilled version)

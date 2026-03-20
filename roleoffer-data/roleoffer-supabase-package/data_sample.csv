@@ -1,0 +1,1001 @@
+stage,stage_label,location,location_label,role,role_label,level,level_label,level_name,percentile,salary,total_cash,equity_pct
+seed,$1M-$10M,san_francisco,"San Francisco, CA",engineering,Engineering,ic1,IC 1,Entry,p25,70840,78200,0.0032
+seed,$1M-$10M,san_francisco,"San Francisco, CA",engineering,Engineering,ic1,IC 1,Entry,p50,92000,102120,0.0328
+seed,$1M-$10M,san_francisco,"San Francisco, CA",engineering,Engineering,ic1,IC 1,Entry,p75,106720,117760,0.1536
+seed,$1M-$10M,san_francisco,"San Francisco, CA",engineering,Engineering,ic1,IC 1,Entry,p90,124200,137080,0.1924
+seed,$1M-$10M,san_francisco,"San Francisco, CA",engineering,Engineering,ic2,IC 2,Mid 1 (Developing),p25,103809,115238,0.0196
+seed,$1M-$10M,san_francisco,"San Francisco, CA",engineering,Engineering,ic2,IC 2,Mid 1 (Developing),p50,120000,132380,0.068
+seed,$1M-$10M,san_francisco,"San Francisco, CA",engineering,Engineering,ic2,IC 2,Mid 1 (Developing),p75,141904,157142,0.1728
+seed,$1M-$10M,san_francisco,"San Francisco, CA",engineering,Engineering,ic2,IC 2,Mid 1 (Developing),p90,150476,166666,0.274
+seed,$1M-$10M,san_francisco,"San Francisco, CA",engineering,Engineering,ic3,IC 3,Mid 2 (Proficient),p25,108701,120097,0.0356
+seed,$1M-$10M,san_francisco,"San Francisco, CA",engineering,Engineering,ic3,IC 3,Mid 2 (Proficient),p50,135000,149025,0.0828
+seed,$1M-$10M,san_francisco,"San Francisco, CA",engineering,Engineering,ic3,IC 3,Mid 2 (Proficient),p75,149902,165681,0.1864
+seed,$1M-$10M,san_francisco,"San Francisco, CA",engineering,Engineering,ic3,IC 3,Mid 2 (Proficient),p90,180584,199870,0.3668
+seed,$1M-$10M,san_francisco,"San Francisco, CA",engineering,Engineering,ic4,IC 4,Senior 1 (Skilled),p25,116982,129389,0.0388
+seed,$1M-$10M,san_francisco,"San Francisco, CA",engineering,Engineering,ic4,IC 4,Senior 1 (Skilled),p50,148000,163952,0.0856
+seed,$1M-$10M,san_francisco,"San Francisco, CA",engineering,Engineering,ic4,IC 4,Senior 1 (Skilled),p75,173700,192311,0.206
+seed,$1M-$10M,san_francisco,"San Francisco, CA",engineering,Engineering,ic4,IC 4,Senior 1 (Skilled),p90,203832,225101,0.4228
+seed,$1M-$10M,san_francisco,"San Francisco, CA",engineering,Engineering,ic5,IC 5,Senior 2 (Advanced),p25,145192,160576,0.0448
+seed,$1M-$10M,san_francisco,"San Francisco, CA",engineering,Engineering,ic5,IC 5,Senior 2 (Advanced),p50,175000,194230,0.1
+seed,$1M-$10M,san_francisco,"San Francisco, CA",engineering,Engineering,ic5,IC 5,Senior 2 (Advanced),p75,208653,231730,0.2244
+seed,$1M-$10M,san_francisco,"San Francisco, CA",engineering,Engineering,ic5,IC 5,Senior 2 (Advanced),p90,232692,258653,0.4988
+seed,$1M-$10M,san_francisco,"San Francisco, CA",engineering,Engineering,ic6,IC 6,Staff (Expert),p25,194123,214885,0.0472
+seed,$1M-$10M,san_francisco,"San Francisco, CA",engineering,Engineering,ic6,IC 6,Staff (Expert),p50,218000,241876,0.1372
+seed,$1M-$10M,san_francisco,"San Francisco, CA",engineering,Engineering,ic6,IC 6,Staff (Expert),p75,242914,269904,0.4172
+seed,$1M-$10M,san_francisco,"San Francisco, CA",engineering,Engineering,ic6,IC 6,Staff (Expert),p90,287552,318695,0.6248
+seed,$1M-$10M,san_francisco,"San Francisco, CA",engineering,Engineering,ic7,IC 7,Senior Staff (Advisor),p25,202538,234827,0.0596
+seed,$1M-$10M,san_francisco,"San Francisco, CA",engineering,Engineering,ic7,IC 7,Senior Staff (Advisor),p50,227000,263202,0.2172
+seed,$1M-$10M,san_francisco,"San Francisco, CA",engineering,Engineering,ic7,IC 7,Senior Staff (Advisor),p75,266137,308211,0.8372
+seed,$1M-$10M,san_francisco,"San Francisco, CA",engineering,Engineering,ic7,IC 7,Senior Staff (Advisor),p90,285706,330715,1.024
+seed,$1M-$10M,san_francisco,"San Francisco, CA",engineering,Engineering,ic8,IC 8,Principal (Strategist),p25,219457,254275,0.0712
+seed,$1M-$10M,san_francisco,"San Francisco, CA",engineering,Engineering,ic8,IC 8,Principal (Strategist),p50,249000,289093,0.3228
+seed,$1M-$10M,san_francisco,"San Francisco, CA",engineering,Engineering,ic8,IC 8,Principal (Strategist),p75,293313,339737,1.9208
+seed,$1M-$10M,san_francisco,"San Francisco, CA",engineering,Engineering,ic8,IC 8,Principal (Strategist),p90,349233,404097,2.3692
+seed,$1M-$10M,san_francisco,"San Francisco, CA",engineering,Engineering,ic9,IC 9,Distinguished (Thought Leader),p25,224302,273795,0.3488
+seed,$1M-$10M,san_francisco,"San Francisco, CA",engineering,Engineering,ic9,IC 9,Distinguished (Thought Leader),p50,258000,314865,0.8608
+seed,$1M-$10M,san_francisco,"San Francisco, CA",engineering,Engineering,ic9,IC 9,Distinguished (Thought Leader),p75,304334,371730,1.9836
+seed,$1M-$10M,san_francisco,"San Francisco, CA",engineering,Engineering,ic9,IC 9,Distinguished (Thought Leader),p90,363306,443338,2.5624
+seed,$1M-$10M,san_francisco,"San Francisco, CA",product,Product,ic1,IC 1,Entry,p25,72965,80546,0.0032
+seed,$1M-$10M,san_francisco,"San Francisco, CA",product,Product,ic1,IC 1,Entry,p50,94760,105183,0.0328
+seed,$1M-$10M,san_francisco,"San Francisco, CA",product,Product,ic1,IC 1,Entry,p75,109921,121292,0.1536
+seed,$1M-$10M,san_francisco,"San Francisco, CA",product,Product,ic1,IC 1,Entry,p90,127926,141192,0.1924
+seed,$1M-$10M,san_francisco,"San Francisco, CA",product,Product,ic2,IC 2,Mid 1 (Developing),p25,106923,118695,0.0196
+seed,$1M-$10M,san_francisco,"San Francisco, CA",product,Product,ic2,IC 2,Mid 1 (Developing),p50,123600,136352,0.068
+seed,$1M-$10M,san_francisco,"San Francisco, CA",product,Product,ic2,IC 2,Mid 1 (Developing),p75,146161,161857,0.1728
+seed,$1M-$10M,san_francisco,"San Francisco, CA",product,Product,ic2,IC 2,Mid 1 (Developing),p90,154990,171666,0.274
+seed,$1M-$10M,san_francisco,"San Francisco, CA",product,Product,ic3,IC 3,Mid 2 (Proficient),p25,111962,123700,0.0356
+seed,$1M-$10M,san_francisco,"San Francisco, CA",product,Product,ic3,IC 3,Mid 2 (Proficient),p50,139050,153496,0.0828
+seed,$1M-$10M,san_francisco,"San Francisco, CA",product,Product,ic3,IC 3,Mid 2 (Proficient),p75,154399,170652,0.1864
+seed,$1M-$10M,san_francisco,"San Francisco, CA",product,Product,ic3,IC 3,Mid 2 (Proficient),p90,186001,205866,0.3668
+seed,$1M-$10M,san_francisco,"San Francisco, CA",product,Product,ic4,IC 4,Senior 1 (Skilled),p25,120491,133270,0.0388
+seed,$1M-$10M,san_francisco,"San Francisco, CA",product,Product,ic4,IC 4,Senior 1 (Skilled),p50,152440,168870,0.0856
+seed,$1M-$10M,san_francisco,"San Francisco, CA",product,Product,ic4,IC 4,Senior 1 (Skilled),p75,178911,198080,0.206
+seed,$1M-$10M,san_francisco,"San Francisco, CA",product,Product,ic4,IC 4,Senior 1 (Skilled),p90,209947,231854,0.4228
+seed,$1M-$10M,san_francisco,"San Francisco, CA",product,Product,ic5,IC 5,Senior 2 (Advanced),p25,149548,165394,0.0448
+seed,$1M-$10M,san_francisco,"San Francisco, CA",product,Product,ic5,IC 5,Senior 2 (Advanced),p50,180250,200057,0.1
+seed,$1M-$10M,san_francisco,"San Francisco, CA",product,Product,ic5,IC 5,Senior 2 (Advanced),p75,214913,238682,0.2244
+seed,$1M-$10M,san_francisco,"San Francisco, CA",product,Product,ic5,IC 5,Senior 2 (Advanced),p90,239673,266413,0.4988
+seed,$1M-$10M,san_francisco,"San Francisco, CA",product,Product,ic6,IC 6,Staff (Expert),p25,199947,221332,0.0472
+seed,$1M-$10M,san_francisco,"San Francisco, CA",product,Product,ic6,IC 6,Staff (Expert),p50,224540,249132,0.1372
+seed,$1M-$10M,san_francisco,"San Francisco, CA",product,Product,ic6,IC 6,Staff (Expert),p75,250201,278001,0.4172
+seed,$1M-$10M,san_francisco,"San Francisco, CA",product,Product,ic6,IC 6,Staff (Expert),p90,296178,328256,0.6248
+seed,$1M-$10M,san_francisco,"San Francisco, CA",product,Product,ic7,IC 7,Senior Staff (Advisor),p25,208614,241872,0.0596
+seed,$1M-$10M,san_francisco,"San Francisco, CA",product,Product,ic7,IC 7,Senior Staff (Advisor),p50,233810,271098,0.2172
+seed,$1M-$10M,san_francisco,"San Francisco, CA",product,Product,ic7,IC 7,Senior Staff (Advisor),p75,274122,317457,0.8372
+seed,$1M-$10M,san_francisco,"San Francisco, CA",product,Product,ic7,IC 7,Senior Staff (Advisor),p90,294278,340636,1.024
+seed,$1M-$10M,san_francisco,"San Francisco, CA",product,Product,ic8,IC 8,Principal (Strategist),p25,226041,261903,0.0712
+seed,$1M-$10M,san_francisco,"San Francisco, CA",product,Product,ic8,IC 8,Principal (Strategist),p50,256470,297766,0.3228
+seed,$1M-$10M,san_francisco,"San Francisco, CA",product,Product,ic8,IC 8,Principal (Strategist),p75,302112,349929,1.9208
+seed,$1M-$10M,san_francisco,"San Francisco, CA",product,Product,ic8,IC 8,Principal (Strategist),p90,359710,416220,2.3692
+seed,$1M-$10M,san_francisco,"San Francisco, CA",product,Product,ic9,IC 9,Distinguished (Thought Leader),p25,231031,282009,0.3488
+seed,$1M-$10M,san_francisco,"San Francisco, CA",product,Product,ic9,IC 9,Distinguished (Thought Leader),p50,265740,324311,0.8608
+seed,$1M-$10M,san_francisco,"San Francisco, CA",product,Product,ic9,IC 9,Distinguished (Thought Leader),p75,313464,382882,1.9836
+seed,$1M-$10M,san_francisco,"San Francisco, CA",product,Product,ic9,IC 9,Distinguished (Thought Leader),p90,374205,456638,2.5624
+seed,$1M-$10M,san_francisco,"San Francisco, CA",design,Design,ic1,IC 1,Entry,p25,50296,55522,0.0032
+seed,$1M-$10M,san_francisco,"San Francisco, CA",design,Design,ic1,IC 1,Entry,p50,65320,72505,0.0328
+seed,$1M-$10M,san_francisco,"San Francisco, CA",design,Design,ic1,IC 1,Entry,p75,75771,83609,0.1536
+seed,$1M-$10M,san_francisco,"San Francisco, CA",design,Design,ic1,IC 1,Entry,p90,88182,97326,0.1924
+seed,$1M-$10M,san_francisco,"San Francisco, CA",design,Design,ic2,IC 2,Mid 1 (Developing),p25,73704,81819,0.0196
+seed,$1M-$10M,san_francisco,"San Francisco, CA",design,Design,ic2,IC 2,Mid 1 (Developing),p50,85199,93990,0.068
+seed,$1M-$10M,san_francisco,"San Francisco, CA",design,Design,ic2,IC 2,Mid 1 (Developing),p75,100752,111571,0.1728
+seed,$1M-$10M,san_francisco,"San Francisco, CA",design,Design,ic2,IC 2,Mid 1 (Developing),p90,106838,118333,0.274
+seed,$1M-$10M,san_francisco,"San Francisco, CA",design,Design,ic3,IC 3,Mid 2 (Proficient),p25,77177,85269,0.0356
+seed,$1M-$10M,san_francisco,"San Francisco, CA",design,Design,ic3,IC 3,Mid 2 (Proficient),p50,95850,105808,0.0828
+seed,$1M-$10M,san_francisco,"San Francisco, CA",design,Design,ic3,IC 3,Mid 2 (Proficient),p75,106430,117634,0.1864
+seed,$1M-$10M,san_francisco,"San Francisco, CA",design,Design,ic3,IC 3,Mid 2 (Proficient),p90,128214,141907,0.3668
+seed,$1M-$10M,san_francisco,"San Francisco, CA",design,Design,ic4,IC 4,Senior 1 (Skilled),p25,83057,91866,0.0388
+seed,$1M-$10M,san_francisco,"San Francisco, CA",design,Design,ic4,IC 4,Senior 1 (Skilled),p50,105079,116405,0.0856
+seed,$1M-$10M,san_francisco,"San Francisco, CA",design,Design,ic4,IC 4,Senior 1 (Skilled),p75,123327,136541,0.206
+seed,$1M-$10M,san_francisco,"San Francisco, CA",design,Design,ic4,IC 4,Senior 1 (Skilled),p90,144720,159822,0.4228
+seed,$1M-$10M,san_francisco,"San Francisco, CA",design,Design,ic5,IC 5,Senior 2 (Advanced),p25,103086,114009,0.0448
+seed,$1M-$10M,san_francisco,"San Francisco, CA",design,Design,ic5,IC 5,Senior 2 (Advanced),p50,124250,137903,0.1
+seed,$1M-$10M,san_francisco,"San Francisco, CA",design,Design,ic5,IC 5,Senior 2 (Advanced),p75,148144,164528,0.2244
+seed,$1M-$10M,san_francisco,"San Francisco, CA",design,Design,ic5,IC 5,Senior 2 (Advanced),p90,165211,183644,0.4988
+seed,$1M-$10M,san_francisco,"San Francisco, CA",design,Design,ic6,IC 6,Staff (Expert),p25,137827,152568,0.0472
+seed,$1M-$10M,san_francisco,"San Francisco, CA",design,Design,ic6,IC 6,Staff (Expert),p50,154780,171732,0.1372
+seed,$1M-$10M,san_francisco,"San Francisco, CA",design,Design,ic6,IC 6,Staff (Expert),p75,172469,191632,0.4172
+seed,$1M-$10M,san_francisco,"San Francisco, CA",design,Design,ic6,IC 6,Staff (Expert),p90,204162,226273,0.6248
+seed,$1M-$10M,san_francisco,"San Francisco, CA",design,Design,ic7,IC 7,Senior Staff (Advisor),p25,143802,166727,0.0596
+seed,$1M-$10M,san_francisco,"San Francisco, CA",design,Design,ic7,IC 7,Senior Staff (Advisor),p50,161169,186873,0.2172
+seed,$1M-$10M,san_francisco,"San Francisco, CA",design,Design,ic7,IC 7,Senior Staff (Advisor),p75,188957,218829,0.8372
+seed,$1M-$10M,san_francisco,"San Francisco, CA",design,Design,ic7,IC 7,Senior Staff (Advisor),p90,202851,234808,1.024
+seed,$1M-$10M,san_francisco,"San Francisco, CA",design,Design,ic8,IC 8,Principal (Strategist),p25,155814,180535,0.0712
+seed,$1M-$10M,san_francisco,"San Francisco, CA",design,Design,ic8,IC 8,Principal (Strategist),p50,176790,205256,0.3228
+seed,$1M-$10M,san_francisco,"San Francisco, CA",design,Design,ic8,IC 8,Principal (Strategist),p75,208252,241213,1.9208
+seed,$1M-$10M,san_francisco,"San Francisco, CA",design,Design,ic8,IC 8,Principal (Strategist),p90,247955,286909,2.3692
+seed,$1M-$10M,san_francisco,"San Francisco, CA",design,Design,ic9,IC 9,Distinguished (Thought Leader),p25,159254,194395,0.3488
+seed,$1M-$10M,san_francisco,"San Francisco, CA",design,Design,ic9,IC 9,Distinguished (Thought Leader),p50,183179,223554,0.8608
+seed,$1M-$10M,san_francisco,"San Francisco, CA",design,Design,ic9,IC 9,Distinguished (Thought Leader),p75,216077,263928,1.9836
+seed,$1M-$10M,san_francisco,"San Francisco, CA",design,Design,ic9,IC 9,Distinguished (Thought Leader),p90,257947,314770,2.5624
+seed,$1M-$10M,san_francisco,"San Francisco, CA",sales,Sales,ic1,IC 1,Entry,p25,50296,55522,0.0032
+seed,$1M-$10M,san_francisco,"San Francisco, CA",sales,Sales,ic1,IC 1,Entry,p50,65320,72505,0.0328
+seed,$1M-$10M,san_francisco,"San Francisco, CA",sales,Sales,ic1,IC 1,Entry,p75,75771,83609,0.1536
+seed,$1M-$10M,san_francisco,"San Francisco, CA",sales,Sales,ic1,IC 1,Entry,p90,88182,97326,0.1924
+seed,$1M-$10M,san_francisco,"San Francisco, CA",sales,Sales,ic2,IC 2,Mid 1 (Developing),p25,73704,81819,0.0196
+seed,$1M-$10M,san_francisco,"San Francisco, CA",sales,Sales,ic2,IC 2,Mid 1 (Developing),p50,85199,93990,0.068
+seed,$1M-$10M,san_francisco,"San Francisco, CA",sales,Sales,ic2,IC 2,Mid 1 (Developing),p75,100752,111571,0.1728
+seed,$1M-$10M,san_francisco,"San Francisco, CA",sales,Sales,ic2,IC 2,Mid 1 (Developing),p90,106838,118333,0.274
+seed,$1M-$10M,san_francisco,"San Francisco, CA",sales,Sales,ic3,IC 3,Mid 2 (Proficient),p25,77177,85269,0.0356
+seed,$1M-$10M,san_francisco,"San Francisco, CA",sales,Sales,ic3,IC 3,Mid 2 (Proficient),p50,95850,105808,0.0828
+seed,$1M-$10M,san_francisco,"San Francisco, CA",sales,Sales,ic3,IC 3,Mid 2 (Proficient),p75,106430,117634,0.1864
+seed,$1M-$10M,san_francisco,"San Francisco, CA",sales,Sales,ic3,IC 3,Mid 2 (Proficient),p90,128214,141907,0.3668
+seed,$1M-$10M,san_francisco,"San Francisco, CA",sales,Sales,ic4,IC 4,Senior 1 (Skilled),p25,83057,91866,0.0388
+seed,$1M-$10M,san_francisco,"San Francisco, CA",sales,Sales,ic4,IC 4,Senior 1 (Skilled),p50,105079,116405,0.0856
+seed,$1M-$10M,san_francisco,"San Francisco, CA",sales,Sales,ic4,IC 4,Senior 1 (Skilled),p75,123327,136541,0.206
+seed,$1M-$10M,san_francisco,"San Francisco, CA",sales,Sales,ic4,IC 4,Senior 1 (Skilled),p90,144720,159822,0.4228
+seed,$1M-$10M,san_francisco,"San Francisco, CA",sales,Sales,ic5,IC 5,Senior 2 (Advanced),p25,103086,114009,0.0448
+seed,$1M-$10M,san_francisco,"San Francisco, CA",sales,Sales,ic5,IC 5,Senior 2 (Advanced),p50,124250,137903,0.1
+seed,$1M-$10M,san_francisco,"San Francisco, CA",sales,Sales,ic5,IC 5,Senior 2 (Advanced),p75,148144,164528,0.2244
+seed,$1M-$10M,san_francisco,"San Francisco, CA",sales,Sales,ic5,IC 5,Senior 2 (Advanced),p90,165211,183644,0.4988
+seed,$1M-$10M,san_francisco,"San Francisco, CA",sales,Sales,ic6,IC 6,Staff (Expert),p25,137827,152568,0.0472
+seed,$1M-$10M,san_francisco,"San Francisco, CA",sales,Sales,ic6,IC 6,Staff (Expert),p50,154780,171732,0.1372
+seed,$1M-$10M,san_francisco,"San Francisco, CA",sales,Sales,ic6,IC 6,Staff (Expert),p75,172469,191632,0.4172
+seed,$1M-$10M,san_francisco,"San Francisco, CA",sales,Sales,ic6,IC 6,Staff (Expert),p90,204162,226273,0.6248
+seed,$1M-$10M,san_francisco,"San Francisco, CA",sales,Sales,ic7,IC 7,Senior Staff (Advisor),p25,143802,166727,0.0596
+seed,$1M-$10M,san_francisco,"San Francisco, CA",sales,Sales,ic7,IC 7,Senior Staff (Advisor),p50,161169,186873,0.2172
+seed,$1M-$10M,san_francisco,"San Francisco, CA",sales,Sales,ic7,IC 7,Senior Staff (Advisor),p75,188957,218829,0.8372
+seed,$1M-$10M,san_francisco,"San Francisco, CA",sales,Sales,ic7,IC 7,Senior Staff (Advisor),p90,202851,234808,1.024
+seed,$1M-$10M,san_francisco,"San Francisco, CA",sales,Sales,ic8,IC 8,Principal (Strategist),p25,155814,180535,0.0712
+seed,$1M-$10M,san_francisco,"San Francisco, CA",sales,Sales,ic8,IC 8,Principal (Strategist),p50,176790,205256,0.3228
+seed,$1M-$10M,san_francisco,"San Francisco, CA",sales,Sales,ic8,IC 8,Principal (Strategist),p75,208252,241213,1.9208
+seed,$1M-$10M,san_francisco,"San Francisco, CA",sales,Sales,ic8,IC 8,Principal (Strategist),p90,247955,286909,2.3692
+seed,$1M-$10M,san_francisco,"San Francisco, CA",sales,Sales,ic9,IC 9,Distinguished (Thought Leader),p25,159254,194395,0.3488
+seed,$1M-$10M,san_francisco,"San Francisco, CA",sales,Sales,ic9,IC 9,Distinguished (Thought Leader),p50,183179,223554,0.8608
+seed,$1M-$10M,san_francisco,"San Francisco, CA",sales,Sales,ic9,IC 9,Distinguished (Thought Leader),p75,216077,263928,1.9836
+seed,$1M-$10M,san_francisco,"San Francisco, CA",sales,Sales,ic9,IC 9,Distinguished (Thought Leader),p90,257947,314770,2.5624
+seed,$1M-$10M,san_francisco,"San Francisco, CA",marketing,Marketing,ic1,IC 1,Entry,p25,48171,53176,0.0032
+seed,$1M-$10M,san_francisco,"San Francisco, CA",marketing,Marketing,ic1,IC 1,Entry,p50,62560,69441,0.0328
+seed,$1M-$10M,san_francisco,"San Francisco, CA",marketing,Marketing,ic1,IC 1,Entry,p75,72569,80076,0.1536
+seed,$1M-$10M,san_francisco,"San Francisco, CA",marketing,Marketing,ic1,IC 1,Entry,p90,84456,93214,0.1924
+seed,$1M-$10M,san_francisco,"San Francisco, CA",marketing,Marketing,ic2,IC 2,Mid 1 (Developing),p25,70590,78361,0.0196
+seed,$1M-$10M,san_francisco,"San Francisco, CA",marketing,Marketing,ic2,IC 2,Mid 1 (Developing),p50,81600,90019,0.068
+seed,$1M-$10M,san_francisco,"San Francisco, CA",marketing,Marketing,ic2,IC 2,Mid 1 (Developing),p75,96495,106857,0.1728
+seed,$1M-$10M,san_francisco,"San Francisco, CA",marketing,Marketing,ic2,IC 2,Mid 1 (Developing),p90,102323,113333,0.274
+seed,$1M-$10M,san_francisco,"San Francisco, CA",marketing,Marketing,ic3,IC 3,Mid 2 (Proficient),p25,73916,81666,0.0356
+seed,$1M-$10M,san_francisco,"San Francisco, CA",marketing,Marketing,ic3,IC 3,Mid 2 (Proficient),p50,91800,101337,0.0828
+seed,$1M-$10M,san_francisco,"San Francisco, CA",marketing,Marketing,ic3,IC 3,Mid 2 (Proficient),p75,101933,112663,0.1864
+seed,$1M-$10M,san_francisco,"San Francisco, CA",marketing,Marketing,ic3,IC 3,Mid 2 (Proficient),p90,122797,135911,0.3668
+seed,$1M-$10M,san_francisco,"San Francisco, CA",marketing,Marketing,ic4,IC 4,Senior 1 (Skilled),p25,79547,87984,0.0388
+seed,$1M-$10M,san_francisco,"San Francisco, CA",marketing,Marketing,ic4,IC 4,Senior 1 (Skilled),p50,100640,111487,0.0856
+seed,$1M-$10M,san_francisco,"San Francisco, CA",marketing,Marketing,ic4,IC 4,Senior 1 (Skilled),p75,118116,130771,0.206
+seed,$1M-$10M,san_francisco,"San Francisco, CA",marketing,Marketing,ic4,IC 4,Senior 1 (Skilled),p90,138605,153069,0.4228
+seed,$1M-$10M,san_francisco,"San Francisco, CA",marketing,Marketing,ic5,IC 5,Senior 2 (Advanced),p25,98730,109192,0.0448
+seed,$1M-$10M,san_francisco,"San Francisco, CA",marketing,Marketing,ic5,IC 5,Senior 2 (Advanced),p50,119000,132076,0.1
+seed,$1M-$10M,san_francisco,"San Francisco, CA",marketing,Marketing,ic5,IC 5,Senior 2 (Advanced),p75,141884,157576,0.2244
+seed,$1M-$10M,san_francisco,"San Francisco, CA",marketing,Marketing,ic5,IC 5,Senior 2 (Advanced),p90,158230,175884,0.4988
+seed,$1M-$10M,san_francisco,"San Francisco, CA",marketing,Marketing,ic6,IC 6,Staff (Expert),p25,132004,146122,0.0472
+seed,$1M-$10M,san_francisco,"San Francisco, CA",marketing,Marketing,ic6,IC 6,Staff (Expert),p50,148240,164475,0.1372
+seed,$1M-$10M,san_francisco,"San Francisco, CA",marketing,Marketing,ic6,IC 6,Staff (Expert),p75,165181,183535,0.4172
+seed,$1M-$10M,san_francisco,"San Francisco, CA",marketing,Marketing,ic6,IC 6,Staff (Expert),p90,195535,216712,0.6248
+seed,$1M-$10M,san_francisco,"San Francisco, CA",marketing,Marketing,ic7,IC 7,Senior Staff (Advisor),p25,137726,159682,0.0596
+seed,$1M-$10M,san_francisco,"San Francisco, CA",marketing,Marketing,ic7,IC 7,Senior Staff (Advisor),p50,154360,178977,0.2172
+seed,$1M-$10M,san_francisco,"San Francisco, CA",marketing,Marketing,ic7,IC 7,Senior Staff (Advisor),p75,180973,209583,0.8372
+seed,$1M-$10M,san_francisco,"San Francisco, CA",marketing,Marketing,ic7,IC 7,Senior Staff (Advisor),p90,194280,224886,1.024
+seed,$1M-$10M,san_francisco,"San Francisco, CA",marketing,Marketing,ic8,IC 8,Principal (Strategist),p25,149231,172907,0.0712
+seed,$1M-$10M,san_francisco,"San Francisco, CA",marketing,Marketing,ic8,IC 8,Principal (Strategist),p50,169320,196583,0.3228
+seed,$1M-$10M,san_francisco,"San Francisco, CA",marketing,Marketing,ic8,IC 8,Principal (Strategist),p75,199453,231021,1.9208
+seed,$1M-$10M,san_francisco,"San Francisco, CA",marketing,Marketing,ic8,IC 8,Principal (Strategist),p90,237478,274786,2.3692
+seed,$1M-$10M,san_francisco,"San Francisco, CA",marketing,Marketing,ic9,IC 9,Distinguished (Thought Leader),p25,152525,186181,0.3488
+seed,$1M-$10M,san_francisco,"San Francisco, CA",marketing,Marketing,ic9,IC 9,Distinguished (Thought Leader),p50,175440,214108,0.8608
+seed,$1M-$10M,san_francisco,"San Francisco, CA",marketing,Marketing,ic9,IC 9,Distinguished (Thought Leader),p75,206947,252776,1.9836
+seed,$1M-$10M,san_francisco,"San Francisco, CA",marketing,Marketing,ic9,IC 9,Distinguished (Thought Leader),p90,247048,301470,2.5624
+seed,$1M-$10M,new_york,"New York, NY",engineering,Engineering,ic1,IC 1,Entry,p25,70840,78200,0.0032
+seed,$1M-$10M,new_york,"New York, NY",engineering,Engineering,ic1,IC 1,Entry,p50,92000,102120,0.0328
+seed,$1M-$10M,new_york,"New York, NY",engineering,Engineering,ic1,IC 1,Entry,p75,106720,117760,0.1536
+seed,$1M-$10M,new_york,"New York, NY",engineering,Engineering,ic1,IC 1,Entry,p90,124200,137080,0.1924
+seed,$1M-$10M,new_york,"New York, NY",engineering,Engineering,ic2,IC 2,Mid 1 (Developing),p25,103809,115238,0.0196
+seed,$1M-$10M,new_york,"New York, NY",engineering,Engineering,ic2,IC 2,Mid 1 (Developing),p50,120000,132380,0.068
+seed,$1M-$10M,new_york,"New York, NY",engineering,Engineering,ic2,IC 2,Mid 1 (Developing),p75,141904,157142,0.1728
+seed,$1M-$10M,new_york,"New York, NY",engineering,Engineering,ic2,IC 2,Mid 1 (Developing),p90,150476,166666,0.274
+seed,$1M-$10M,new_york,"New York, NY",engineering,Engineering,ic3,IC 3,Mid 2 (Proficient),p25,108701,120097,0.0356
+seed,$1M-$10M,new_york,"New York, NY",engineering,Engineering,ic3,IC 3,Mid 2 (Proficient),p50,135000,149025,0.0828
+seed,$1M-$10M,new_york,"New York, NY",engineering,Engineering,ic3,IC 3,Mid 2 (Proficient),p75,149902,165681,0.1864
+seed,$1M-$10M,new_york,"New York, NY",engineering,Engineering,ic3,IC 3,Mid 2 (Proficient),p90,180584,199870,0.3668
+seed,$1M-$10M,new_york,"New York, NY",engineering,Engineering,ic4,IC 4,Senior 1 (Skilled),p25,116982,129389,0.0388
+seed,$1M-$10M,new_york,"New York, NY",engineering,Engineering,ic4,IC 4,Senior 1 (Skilled),p50,148000,163952,0.0856
+seed,$1M-$10M,new_york,"New York, NY",engineering,Engineering,ic4,IC 4,Senior 1 (Skilled),p75,173700,192311,0.206
+seed,$1M-$10M,new_york,"New York, NY",engineering,Engineering,ic4,IC 4,Senior 1 (Skilled),p90,203832,225101,0.4228
+seed,$1M-$10M,new_york,"New York, NY",engineering,Engineering,ic5,IC 5,Senior 2 (Advanced),p25,145192,160576,0.0448
+seed,$1M-$10M,new_york,"New York, NY",engineering,Engineering,ic5,IC 5,Senior 2 (Advanced),p50,175000,194230,0.1
+seed,$1M-$10M,new_york,"New York, NY",engineering,Engineering,ic5,IC 5,Senior 2 (Advanced),p75,208653,231730,0.2244
+seed,$1M-$10M,new_york,"New York, NY",engineering,Engineering,ic5,IC 5,Senior 2 (Advanced),p90,232692,258653,0.4988
+seed,$1M-$10M,new_york,"New York, NY",engineering,Engineering,ic6,IC 6,Staff (Expert),p25,194123,214885,0.0472
+seed,$1M-$10M,new_york,"New York, NY",engineering,Engineering,ic6,IC 6,Staff (Expert),p50,218000,241876,0.1372
+seed,$1M-$10M,new_york,"New York, NY",engineering,Engineering,ic6,IC 6,Staff (Expert),p75,242914,269904,0.4172
+seed,$1M-$10M,new_york,"New York, NY",engineering,Engineering,ic6,IC 6,Staff (Expert),p90,287552,318695,0.6248
+seed,$1M-$10M,new_york,"New York, NY",engineering,Engineering,ic7,IC 7,Senior Staff (Advisor),p25,202538,234827,0.0596
+seed,$1M-$10M,new_york,"New York, NY",engineering,Engineering,ic7,IC 7,Senior Staff (Advisor),p50,227000,263202,0.2172
+seed,$1M-$10M,new_york,"New York, NY",engineering,Engineering,ic7,IC 7,Senior Staff (Advisor),p75,266137,308211,0.8372
+seed,$1M-$10M,new_york,"New York, NY",engineering,Engineering,ic7,IC 7,Senior Staff (Advisor),p90,285706,330715,1.024
+seed,$1M-$10M,new_york,"New York, NY",engineering,Engineering,ic8,IC 8,Principal (Strategist),p25,219457,254275,0.0712
+seed,$1M-$10M,new_york,"New York, NY",engineering,Engineering,ic8,IC 8,Principal (Strategist),p50,249000,289093,0.3228
+seed,$1M-$10M,new_york,"New York, NY",engineering,Engineering,ic8,IC 8,Principal (Strategist),p75,293313,339737,1.9208
+seed,$1M-$10M,new_york,"New York, NY",engineering,Engineering,ic8,IC 8,Principal (Strategist),p90,349233,404097,2.3692
+seed,$1M-$10M,new_york,"New York, NY",engineering,Engineering,ic9,IC 9,Distinguished (Thought Leader),p25,224302,273795,0.3488
+seed,$1M-$10M,new_york,"New York, NY",engineering,Engineering,ic9,IC 9,Distinguished (Thought Leader),p50,258000,314865,0.8608
+seed,$1M-$10M,new_york,"New York, NY",engineering,Engineering,ic9,IC 9,Distinguished (Thought Leader),p75,304334,371730,1.9836
+seed,$1M-$10M,new_york,"New York, NY",engineering,Engineering,ic9,IC 9,Distinguished (Thought Leader),p90,363306,443338,2.5624
+seed,$1M-$10M,new_york,"New York, NY",product,Product,ic1,IC 1,Entry,p25,72965,80546,0.0032
+seed,$1M-$10M,new_york,"New York, NY",product,Product,ic1,IC 1,Entry,p50,94760,105183,0.0328
+seed,$1M-$10M,new_york,"New York, NY",product,Product,ic1,IC 1,Entry,p75,109921,121292,0.1536
+seed,$1M-$10M,new_york,"New York, NY",product,Product,ic1,IC 1,Entry,p90,127926,141192,0.1924
+seed,$1M-$10M,new_york,"New York, NY",product,Product,ic2,IC 2,Mid 1 (Developing),p25,106923,118695,0.0196
+seed,$1M-$10M,new_york,"New York, NY",product,Product,ic2,IC 2,Mid 1 (Developing),p50,123600,136352,0.068
+seed,$1M-$10M,new_york,"New York, NY",product,Product,ic2,IC 2,Mid 1 (Developing),p75,146161,161857,0.1728
+seed,$1M-$10M,new_york,"New York, NY",product,Product,ic2,IC 2,Mid 1 (Developing),p90,154990,171666,0.274
+seed,$1M-$10M,new_york,"New York, NY",product,Product,ic3,IC 3,Mid 2 (Proficient),p25,111962,123700,0.0356
+seed,$1M-$10M,new_york,"New York, NY",product,Product,ic3,IC 3,Mid 2 (Proficient),p50,139050,153496,0.0828
+seed,$1M-$10M,new_york,"New York, NY",product,Product,ic3,IC 3,Mid 2 (Proficient),p75,154399,170652,0.1864
+seed,$1M-$10M,new_york,"New York, NY",product,Product,ic3,IC 3,Mid 2 (Proficient),p90,186001,205866,0.3668
+seed,$1M-$10M,new_york,"New York, NY",product,Product,ic4,IC 4,Senior 1 (Skilled),p25,120491,133270,0.0388
+seed,$1M-$10M,new_york,"New York, NY",product,Product,ic4,IC 4,Senior 1 (Skilled),p50,152440,168870,0.0856
+seed,$1M-$10M,new_york,"New York, NY",product,Product,ic4,IC 4,Senior 1 (Skilled),p75,178911,198080,0.206
+seed,$1M-$10M,new_york,"New York, NY",product,Product,ic4,IC 4,Senior 1 (Skilled),p90,209947,231854,0.4228
+seed,$1M-$10M,new_york,"New York, NY",product,Product,ic5,IC 5,Senior 2 (Advanced),p25,149548,165394,0.0448
+seed,$1M-$10M,new_york,"New York, NY",product,Product,ic5,IC 5,Senior 2 (Advanced),p50,180250,200057,0.1
+seed,$1M-$10M,new_york,"New York, NY",product,Product,ic5,IC 5,Senior 2 (Advanced),p75,214913,238682,0.2244
+seed,$1M-$10M,new_york,"New York, NY",product,Product,ic5,IC 5,Senior 2 (Advanced),p90,239673,266413,0.4988
+seed,$1M-$10M,new_york,"New York, NY",product,Product,ic6,IC 6,Staff (Expert),p25,199947,221332,0.0472
+seed,$1M-$10M,new_york,"New York, NY",product,Product,ic6,IC 6,Staff (Expert),p50,224540,249132,0.1372
+seed,$1M-$10M,new_york,"New York, NY",product,Product,ic6,IC 6,Staff (Expert),p75,250201,278001,0.4172
+seed,$1M-$10M,new_york,"New York, NY",product,Product,ic6,IC 6,Staff (Expert),p90,296178,328256,0.6248
+seed,$1M-$10M,new_york,"New York, NY",product,Product,ic7,IC 7,Senior Staff (Advisor),p25,208614,241872,0.0596
+seed,$1M-$10M,new_york,"New York, NY",product,Product,ic7,IC 7,Senior Staff (Advisor),p50,233810,271098,0.2172
+seed,$1M-$10M,new_york,"New York, NY",product,Product,ic7,IC 7,Senior Staff (Advisor),p75,274122,317457,0.8372
+seed,$1M-$10M,new_york,"New York, NY",product,Product,ic7,IC 7,Senior Staff (Advisor),p90,294278,340636,1.024
+seed,$1M-$10M,new_york,"New York, NY",product,Product,ic8,IC 8,Principal (Strategist),p25,226041,261903,0.0712
+seed,$1M-$10M,new_york,"New York, NY",product,Product,ic8,IC 8,Principal (Strategist),p50,256470,297766,0.3228
+seed,$1M-$10M,new_york,"New York, NY",product,Product,ic8,IC 8,Principal (Strategist),p75,302112,349929,1.9208
+seed,$1M-$10M,new_york,"New York, NY",product,Product,ic8,IC 8,Principal (Strategist),p90,359710,416220,2.3692
+seed,$1M-$10M,new_york,"New York, NY",product,Product,ic9,IC 9,Distinguished (Thought Leader),p25,231031,282009,0.3488
+seed,$1M-$10M,new_york,"New York, NY",product,Product,ic9,IC 9,Distinguished (Thought Leader),p50,265740,324311,0.8608
+seed,$1M-$10M,new_york,"New York, NY",product,Product,ic9,IC 9,Distinguished (Thought Leader),p75,313464,382882,1.9836
+seed,$1M-$10M,new_york,"New York, NY",product,Product,ic9,IC 9,Distinguished (Thought Leader),p90,374205,456638,2.5624
+seed,$1M-$10M,new_york,"New York, NY",design,Design,ic1,IC 1,Entry,p25,50296,55522,0.0032
+seed,$1M-$10M,new_york,"New York, NY",design,Design,ic1,IC 1,Entry,p50,65320,72505,0.0328
+seed,$1M-$10M,new_york,"New York, NY",design,Design,ic1,IC 1,Entry,p75,75771,83609,0.1536
+seed,$1M-$10M,new_york,"New York, NY",design,Design,ic1,IC 1,Entry,p90,88182,97326,0.1924
+seed,$1M-$10M,new_york,"New York, NY",design,Design,ic2,IC 2,Mid 1 (Developing),p25,73704,81819,0.0196
+seed,$1M-$10M,new_york,"New York, NY",design,Design,ic2,IC 2,Mid 1 (Developing),p50,85199,93990,0.068
+seed,$1M-$10M,new_york,"New York, NY",design,Design,ic2,IC 2,Mid 1 (Developing),p75,100752,111571,0.1728
+seed,$1M-$10M,new_york,"New York, NY",design,Design,ic2,IC 2,Mid 1 (Developing),p90,106838,118333,0.274
+seed,$1M-$10M,new_york,"New York, NY",design,Design,ic3,IC 3,Mid 2 (Proficient),p25,77177,85269,0.0356
+seed,$1M-$10M,new_york,"New York, NY",design,Design,ic3,IC 3,Mid 2 (Proficient),p50,95850,105808,0.0828
+seed,$1M-$10M,new_york,"New York, NY",design,Design,ic3,IC 3,Mid 2 (Proficient),p75,106430,117634,0.1864
+seed,$1M-$10M,new_york,"New York, NY",design,Design,ic3,IC 3,Mid 2 (Proficient),p90,128214,141907,0.3668
+seed,$1M-$10M,new_york,"New York, NY",design,Design,ic4,IC 4,Senior 1 (Skilled),p25,83057,91866,0.0388
+seed,$1M-$10M,new_york,"New York, NY",design,Design,ic4,IC 4,Senior 1 (Skilled),p50,105079,116405,0.0856
+seed,$1M-$10M,new_york,"New York, NY",design,Design,ic4,IC 4,Senior 1 (Skilled),p75,123327,136541,0.206
+seed,$1M-$10M,new_york,"New York, NY",design,Design,ic4,IC 4,Senior 1 (Skilled),p90,144720,159822,0.4228
+seed,$1M-$10M,new_york,"New York, NY",design,Design,ic5,IC 5,Senior 2 (Advanced),p25,103086,114009,0.0448
+seed,$1M-$10M,new_york,"New York, NY",design,Design,ic5,IC 5,Senior 2 (Advanced),p50,124250,137903,0.1
+seed,$1M-$10M,new_york,"New York, NY",design,Design,ic5,IC 5,Senior 2 (Advanced),p75,148144,164528,0.2244
+seed,$1M-$10M,new_york,"New York, NY",design,Design,ic5,IC 5,Senior 2 (Advanced),p90,165211,183644,0.4988
+seed,$1M-$10M,new_york,"New York, NY",design,Design,ic6,IC 6,Staff (Expert),p25,137827,152568,0.0472
+seed,$1M-$10M,new_york,"New York, NY",design,Design,ic6,IC 6,Staff (Expert),p50,154780,171732,0.1372
+seed,$1M-$10M,new_york,"New York, NY",design,Design,ic6,IC 6,Staff (Expert),p75,172469,191632,0.4172
+seed,$1M-$10M,new_york,"New York, NY",design,Design,ic6,IC 6,Staff (Expert),p90,204162,226273,0.6248
+seed,$1M-$10M,new_york,"New York, NY",design,Design,ic7,IC 7,Senior Staff (Advisor),p25,143802,166727,0.0596
+seed,$1M-$10M,new_york,"New York, NY",design,Design,ic7,IC 7,Senior Staff (Advisor),p50,161169,186873,0.2172
+seed,$1M-$10M,new_york,"New York, NY",design,Design,ic7,IC 7,Senior Staff (Advisor),p75,188957,218829,0.8372
+seed,$1M-$10M,new_york,"New York, NY",design,Design,ic7,IC 7,Senior Staff (Advisor),p90,202851,234808,1.024
+seed,$1M-$10M,new_york,"New York, NY",design,Design,ic8,IC 8,Principal (Strategist),p25,155814,180535,0.0712
+seed,$1M-$10M,new_york,"New York, NY",design,Design,ic8,IC 8,Principal (Strategist),p50,176790,205256,0.3228
+seed,$1M-$10M,new_york,"New York, NY",design,Design,ic8,IC 8,Principal (Strategist),p75,208252,241213,1.9208
+seed,$1M-$10M,new_york,"New York, NY",design,Design,ic8,IC 8,Principal (Strategist),p90,247955,286909,2.3692
+seed,$1M-$10M,new_york,"New York, NY",design,Design,ic9,IC 9,Distinguished (Thought Leader),p25,159254,194395,0.3488
+seed,$1M-$10M,new_york,"New York, NY",design,Design,ic9,IC 9,Distinguished (Thought Leader),p50,183179,223554,0.8608
+seed,$1M-$10M,new_york,"New York, NY",design,Design,ic9,IC 9,Distinguished (Thought Leader),p75,216077,263928,1.9836
+seed,$1M-$10M,new_york,"New York, NY",design,Design,ic9,IC 9,Distinguished (Thought Leader),p90,257947,314770,2.5624
+seed,$1M-$10M,new_york,"New York, NY",sales,Sales,ic1,IC 1,Entry,p25,50296,55522,0.0032
+seed,$1M-$10M,new_york,"New York, NY",sales,Sales,ic1,IC 1,Entry,p50,65320,72505,0.0328
+seed,$1M-$10M,new_york,"New York, NY",sales,Sales,ic1,IC 1,Entry,p75,75771,83609,0.1536
+seed,$1M-$10M,new_york,"New York, NY",sales,Sales,ic1,IC 1,Entry,p90,88182,97326,0.1924
+seed,$1M-$10M,new_york,"New York, NY",sales,Sales,ic2,IC 2,Mid 1 (Developing),p25,73704,81819,0.0196
+seed,$1M-$10M,new_york,"New York, NY",sales,Sales,ic2,IC 2,Mid 1 (Developing),p50,85199,93990,0.068
+seed,$1M-$10M,new_york,"New York, NY",sales,Sales,ic2,IC 2,Mid 1 (Developing),p75,100752,111571,0.1728
+seed,$1M-$10M,new_york,"New York, NY",sales,Sales,ic2,IC 2,Mid 1 (Developing),p90,106838,118333,0.274
+seed,$1M-$10M,new_york,"New York, NY",sales,Sales,ic3,IC 3,Mid 2 (Proficient),p25,77177,85269,0.0356
+seed,$1M-$10M,new_york,"New York, NY",sales,Sales,ic3,IC 3,Mid 2 (Proficient),p50,95850,105808,0.0828
+seed,$1M-$10M,new_york,"New York, NY",sales,Sales,ic3,IC 3,Mid 2 (Proficient),p75,106430,117634,0.1864
+seed,$1M-$10M,new_york,"New York, NY",sales,Sales,ic3,IC 3,Mid 2 (Proficient),p90,128214,141907,0.3668
+seed,$1M-$10M,new_york,"New York, NY",sales,Sales,ic4,IC 4,Senior 1 (Skilled),p25,83057,91866,0.0388
+seed,$1M-$10M,new_york,"New York, NY",sales,Sales,ic4,IC 4,Senior 1 (Skilled),p50,105079,116405,0.0856
+seed,$1M-$10M,new_york,"New York, NY",sales,Sales,ic4,IC 4,Senior 1 (Skilled),p75,123327,136541,0.206
+seed,$1M-$10M,new_york,"New York, NY",sales,Sales,ic4,IC 4,Senior 1 (Skilled),p90,144720,159822,0.4228
+seed,$1M-$10M,new_york,"New York, NY",sales,Sales,ic5,IC 5,Senior 2 (Advanced),p25,103086,114009,0.0448
+seed,$1M-$10M,new_york,"New York, NY",sales,Sales,ic5,IC 5,Senior 2 (Advanced),p50,124250,137903,0.1
+seed,$1M-$10M,new_york,"New York, NY",sales,Sales,ic5,IC 5,Senior 2 (Advanced),p75,148144,164528,0.2244
+seed,$1M-$10M,new_york,"New York, NY",sales,Sales,ic5,IC 5,Senior 2 (Advanced),p90,165211,183644,0.4988
+seed,$1M-$10M,new_york,"New York, NY",sales,Sales,ic6,IC 6,Staff (Expert),p25,137827,152568,0.0472
+seed,$1M-$10M,new_york,"New York, NY",sales,Sales,ic6,IC 6,Staff (Expert),p50,154780,171732,0.1372
+seed,$1M-$10M,new_york,"New York, NY",sales,Sales,ic6,IC 6,Staff (Expert),p75,172469,191632,0.4172
+seed,$1M-$10M,new_york,"New York, NY",sales,Sales,ic6,IC 6,Staff (Expert),p90,204162,226273,0.6248
+seed,$1M-$10M,new_york,"New York, NY",sales,Sales,ic7,IC 7,Senior Staff (Advisor),p25,143802,166727,0.0596
+seed,$1M-$10M,new_york,"New York, NY",sales,Sales,ic7,IC 7,Senior Staff (Advisor),p50,161169,186873,0.2172
+seed,$1M-$10M,new_york,"New York, NY",sales,Sales,ic7,IC 7,Senior Staff (Advisor),p75,188957,218829,0.8372
+seed,$1M-$10M,new_york,"New York, NY",sales,Sales,ic7,IC 7,Senior Staff (Advisor),p90,202851,234808,1.024
+seed,$1M-$10M,new_york,"New York, NY",sales,Sales,ic8,IC 8,Principal (Strategist),p25,155814,180535,0.0712
+seed,$1M-$10M,new_york,"New York, NY",sales,Sales,ic8,IC 8,Principal (Strategist),p50,176790,205256,0.3228
+seed,$1M-$10M,new_york,"New York, NY",sales,Sales,ic8,IC 8,Principal (Strategist),p75,208252,241213,1.9208
+seed,$1M-$10M,new_york,"New York, NY",sales,Sales,ic8,IC 8,Principal (Strategist),p90,247955,286909,2.3692
+seed,$1M-$10M,new_york,"New York, NY",sales,Sales,ic9,IC 9,Distinguished (Thought Leader),p25,159254,194395,0.3488
+seed,$1M-$10M,new_york,"New York, NY",sales,Sales,ic9,IC 9,Distinguished (Thought Leader),p50,183179,223554,0.8608
+seed,$1M-$10M,new_york,"New York, NY",sales,Sales,ic9,IC 9,Distinguished (Thought Leader),p75,216077,263928,1.9836
+seed,$1M-$10M,new_york,"New York, NY",sales,Sales,ic9,IC 9,Distinguished (Thought Leader),p90,257947,314770,2.5624
+seed,$1M-$10M,new_york,"New York, NY",marketing,Marketing,ic1,IC 1,Entry,p25,48171,53176,0.0032
+seed,$1M-$10M,new_york,"New York, NY",marketing,Marketing,ic1,IC 1,Entry,p50,62560,69441,0.0328
+seed,$1M-$10M,new_york,"New York, NY",marketing,Marketing,ic1,IC 1,Entry,p75,72569,80076,0.1536
+seed,$1M-$10M,new_york,"New York, NY",marketing,Marketing,ic1,IC 1,Entry,p90,84456,93214,0.1924
+seed,$1M-$10M,new_york,"New York, NY",marketing,Marketing,ic2,IC 2,Mid 1 (Developing),p25,70590,78361,0.0196
+seed,$1M-$10M,new_york,"New York, NY",marketing,Marketing,ic2,IC 2,Mid 1 (Developing),p50,81600,90019,0.068
+seed,$1M-$10M,new_york,"New York, NY",marketing,Marketing,ic2,IC 2,Mid 1 (Developing),p75,96495,106857,0.1728
+seed,$1M-$10M,new_york,"New York, NY",marketing,Marketing,ic2,IC 2,Mid 1 (Developing),p90,102323,113333,0.274
+seed,$1M-$10M,new_york,"New York, NY",marketing,Marketing,ic3,IC 3,Mid 2 (Proficient),p25,73916,81666,0.0356
+seed,$1M-$10M,new_york,"New York, NY",marketing,Marketing,ic3,IC 3,Mid 2 (Proficient),p50,91800,101337,0.0828
+seed,$1M-$10M,new_york,"New York, NY",marketing,Marketing,ic3,IC 3,Mid 2 (Proficient),p75,101933,112663,0.1864
+seed,$1M-$10M,new_york,"New York, NY",marketing,Marketing,ic3,IC 3,Mid 2 (Proficient),p90,122797,135911,0.3668
+seed,$1M-$10M,new_york,"New York, NY",marketing,Marketing,ic4,IC 4,Senior 1 (Skilled),p25,79547,87984,0.0388
+seed,$1M-$10M,new_york,"New York, NY",marketing,Marketing,ic4,IC 4,Senior 1 (Skilled),p50,100640,111487,0.0856
+seed,$1M-$10M,new_york,"New York, NY",marketing,Marketing,ic4,IC 4,Senior 1 (Skilled),p75,118116,130771,0.206
+seed,$1M-$10M,new_york,"New York, NY",marketing,Marketing,ic4,IC 4,Senior 1 (Skilled),p90,138605,153069,0.4228
+seed,$1M-$10M,new_york,"New York, NY",marketing,Marketing,ic5,IC 5,Senior 2 (Advanced),p25,98730,109192,0.0448
+seed,$1M-$10M,new_york,"New York, NY",marketing,Marketing,ic5,IC 5,Senior 2 (Advanced),p50,119000,132076,0.1
+seed,$1M-$10M,new_york,"New York, NY",marketing,Marketing,ic5,IC 5,Senior 2 (Advanced),p75,141884,157576,0.2244
+seed,$1M-$10M,new_york,"New York, NY",marketing,Marketing,ic5,IC 5,Senior 2 (Advanced),p90,158230,175884,0.4988
+seed,$1M-$10M,new_york,"New York, NY",marketing,Marketing,ic6,IC 6,Staff (Expert),p25,132004,146122,0.0472
+seed,$1M-$10M,new_york,"New York, NY",marketing,Marketing,ic6,IC 6,Staff (Expert),p50,148240,164475,0.1372
+seed,$1M-$10M,new_york,"New York, NY",marketing,Marketing,ic6,IC 6,Staff (Expert),p75,165181,183535,0.4172
+seed,$1M-$10M,new_york,"New York, NY",marketing,Marketing,ic6,IC 6,Staff (Expert),p90,195535,216712,0.6248
+seed,$1M-$10M,new_york,"New York, NY",marketing,Marketing,ic7,IC 7,Senior Staff (Advisor),p25,137726,159682,0.0596
+seed,$1M-$10M,new_york,"New York, NY",marketing,Marketing,ic7,IC 7,Senior Staff (Advisor),p50,154360,178977,0.2172
+seed,$1M-$10M,new_york,"New York, NY",marketing,Marketing,ic7,IC 7,Senior Staff (Advisor),p75,180973,209583,0.8372
+seed,$1M-$10M,new_york,"New York, NY",marketing,Marketing,ic7,IC 7,Senior Staff (Advisor),p90,194280,224886,1.024
+seed,$1M-$10M,new_york,"New York, NY",marketing,Marketing,ic8,IC 8,Principal (Strategist),p25,149231,172907,0.0712
+seed,$1M-$10M,new_york,"New York, NY",marketing,Marketing,ic8,IC 8,Principal (Strategist),p50,169320,196583,0.3228
+seed,$1M-$10M,new_york,"New York, NY",marketing,Marketing,ic8,IC 8,Principal (Strategist),p75,199453,231021,1.9208
+seed,$1M-$10M,new_york,"New York, NY",marketing,Marketing,ic8,IC 8,Principal (Strategist),p90,237478,274786,2.3692
+seed,$1M-$10M,new_york,"New York, NY",marketing,Marketing,ic9,IC 9,Distinguished (Thought Leader),p25,152525,186181,0.3488
+seed,$1M-$10M,new_york,"New York, NY",marketing,Marketing,ic9,IC 9,Distinguished (Thought Leader),p50,175440,214108,0.8608
+seed,$1M-$10M,new_york,"New York, NY",marketing,Marketing,ic9,IC 9,Distinguished (Thought Leader),p75,206947,252776,1.9836
+seed,$1M-$10M,new_york,"New York, NY",marketing,Marketing,ic9,IC 9,Distinguished (Thought Leader),p90,247048,301470,2.5624
+seed,$1M-$10M,seattle,"Seattle, WA",engineering,Engineering,ic1,IC 1,Entry,p25,67298,74290,0.0032
+seed,$1M-$10M,seattle,"Seattle, WA",engineering,Engineering,ic1,IC 1,Entry,p50,87400,97014,0.0328
+seed,$1M-$10M,seattle,"Seattle, WA",engineering,Engineering,ic1,IC 1,Entry,p75,101384,111872,0.1536
+seed,$1M-$10M,seattle,"Seattle, WA",engineering,Engineering,ic1,IC 1,Entry,p90,117990,130226,0.1924
+seed,$1M-$10M,seattle,"Seattle, WA",engineering,Engineering,ic2,IC 2,Mid 1 (Developing),p25,98619,109476,0.0196
+seed,$1M-$10M,seattle,"Seattle, WA",engineering,Engineering,ic2,IC 2,Mid 1 (Developing),p50,113999,125761,0.068
+seed,$1M-$10M,seattle,"Seattle, WA",engineering,Engineering,ic2,IC 2,Mid 1 (Developing),p75,134809,149285,0.1728
+seed,$1M-$10M,seattle,"Seattle, WA",engineering,Engineering,ic2,IC 2,Mid 1 (Developing),p90,142952,158333,0.274
+seed,$1M-$10M,seattle,"Seattle, WA",engineering,Engineering,ic3,IC 3,Mid 2 (Proficient),p25,103266,114092,0.0356
+seed,$1M-$10M,seattle,"Seattle, WA",engineering,Engineering,ic3,IC 3,Mid 2 (Proficient),p50,128250,141574,0.0828
+seed,$1M-$10M,seattle,"Seattle, WA",engineering,Engineering,ic3,IC 3,Mid 2 (Proficient),p75,142407,157397,0.1864
+seed,$1M-$10M,seattle,"Seattle, WA",engineering,Engineering,ic3,IC 3,Mid 2 (Proficient),p90,171555,189876,0.3668
+seed,$1M-$10M,seattle,"Seattle, WA",engineering,Engineering,ic4,IC 4,Senior 1 (Skilled),p25,111132,122919,0.0388
+seed,$1M-$10M,seattle,"Seattle, WA",engineering,Engineering,ic4,IC 4,Senior 1 (Skilled),p50,140600,155754,0.0856
+seed,$1M-$10M,seattle,"Seattle, WA",engineering,Engineering,ic4,IC 4,Senior 1 (Skilled),p75,165015,182695,0.206
+seed,$1M-$10M,seattle,"Seattle, WA",engineering,Engineering,ic4,IC 4,Senior 1 (Skilled),p90,193640,213846,0.4228
+seed,$1M-$10M,seattle,"Seattle, WA",engineering,Engineering,ic5,IC 5,Senior 2 (Advanced),p25,137932,152548,0.0448
+seed,$1M-$10M,seattle,"Seattle, WA",engineering,Engineering,ic5,IC 5,Senior 2 (Advanced),p50,166250,184519,0.1
+seed,$1M-$10M,seattle,"Seattle, WA",engineering,Engineering,ic5,IC 5,Senior 2 (Advanced),p75,198221,220144,0.2244
+seed,$1M-$10M,seattle,"Seattle, WA",engineering,Engineering,ic5,IC 5,Senior 2 (Advanced),p90,221057,245721,0.4988
+seed,$1M-$10M,seattle,"Seattle, WA",engineering,Engineering,ic6,IC 6,Staff (Expert),p25,184417,204141,0.0472
+seed,$1M-$10M,seattle,"Seattle, WA",engineering,Engineering,ic6,IC 6,Staff (Expert),p50,207100,229782,0.1372
+seed,$1M-$10M,seattle,"Seattle, WA",engineering,Engineering,ic6,IC 6,Staff (Expert),p75,230768,256409,0.4172
+seed,$1M-$10M,seattle,"Seattle, WA",engineering,Engineering,ic6,IC 6,Staff (Expert),p90,273174,302760,0.6248
+seed,$1M-$10M,seattle,"Seattle, WA",engineering,Engineering,ic7,IC 7,Senior Staff (Advisor),p25,192411,223086,0.0596
+seed,$1M-$10M,seattle,"Seattle, WA",engineering,Engineering,ic7,IC 7,Senior Staff (Advisor),p50,215650,250042,0.2172
+seed,$1M-$10M,seattle,"Seattle, WA",engineering,Engineering,ic7,IC 7,Senior Staff (Advisor),p75,252831,292800,0.8372
+seed,$1M-$10M,seattle,"Seattle, WA",engineering,Engineering,ic7,IC 7,Senior Staff (Advisor),p90,271421,314179,1.024
+seed,$1M-$10M,seattle,"Seattle, WA",engineering,Engineering,ic8,IC 8,Principal (Strategist),p25,208484,241561,0.0712
+seed,$1M-$10M,seattle,"Seattle, WA",engineering,Engineering,ic8,IC 8,Principal (Strategist),p50,236550,274638,0.3228
+seed,$1M-$10M,seattle,"Seattle, WA",engineering,Engineering,ic8,IC 8,Principal (Strategist),p75,278647,322750,1.9208
+seed,$1M-$10M,seattle,"Seattle, WA",engineering,Engineering,ic8,IC 8,Principal (Strategist),p90,331771,383892,2.3692
+seed,$1M-$10M,seattle,"Seattle, WA",engineering,Engineering,ic9,IC 9,Distinguished (Thought Leader),p25,213086,260106,0.3488
+seed,$1M-$10M,seattle,"Seattle, WA",engineering,Engineering,ic9,IC 9,Distinguished (Thought Leader),p50,245100,299122,0.8608
+seed,$1M-$10M,seattle,"Seattle, WA",engineering,Engineering,ic9,IC 9,Distinguished (Thought Leader),p75,289117,353144,1.9836
+seed,$1M-$10M,seattle,"Seattle, WA",engineering,Engineering,ic9,IC 9,Distinguished (Thought Leader),p90,345140,421171,2.5624
+seed,$1M-$10M,seattle,"Seattle, WA",product,Product,ic1,IC 1,Entry,p25,69316,76518,0.0032
+seed,$1M-$10M,seattle,"Seattle, WA",product,Product,ic1,IC 1,Entry,p50,90022,99924,0.0328
+seed,$1M-$10M,seattle,"Seattle, WA",product,Product,ic1,IC 1,Entry,p75,104425,115228,0.1536
+seed,$1M-$10M,seattle,"Seattle, WA",product,Product,ic1,IC 1,Entry,p90,121529,134132,0.1924
+seed,$1M-$10M,seattle,"Seattle, WA",product,Product,ic2,IC 2,Mid 1 (Developing),p25,101577,112760,0.0196
+seed,$1M-$10M,seattle,"Seattle, WA",product,Product,ic2,IC 2,Mid 1 (Developing),p50,117419,129534,0.068
+seed,$1M-$10M,seattle,"Seattle, WA",product,Product,ic2,IC 2,Mid 1 (Developing),p75,138853,153764,0.1728
+seed,$1M-$10M,seattle,"Seattle, WA",product,Product,ic2,IC 2,Mid 1 (Developing),p90,147240,163083,0.274
+seed,$1M-$10M,seattle,"Seattle, WA",product,Product,ic3,IC 3,Mid 2 (Proficient),p25,106364,117515,0.0356
+seed,$1M-$10M,seattle,"Seattle, WA",product,Product,ic3,IC 3,Mid 2 (Proficient),p50,132097,145821,0.0828
+seed,$1M-$10M,seattle,"Seattle, WA",product,Product,ic3,IC 3,Mid 2 (Proficient),p75,146679,162119,0.1864
+seed,$1M-$10M,seattle,"Seattle, WA",product,Product,ic3,IC 3,Mid 2 (Proficient),p90,176701,195572,0.3668
+seed,$1M-$10M,seattle,"Seattle, WA",product,Product,ic4,IC 4,Senior 1 (Skilled),p25,114466,126607,0.0388
+seed,$1M-$10M,seattle,"Seattle, WA",product,Product,ic4,IC 4,Senior 1 (Skilled),p50,144818,160427,0.0856
+seed,$1M-$10M,seattle,"Seattle, WA",product,Product,ic4,IC 4,Senior 1 (Skilled),p75,169966,188176,0.206
+seed,$1M-$10M,seattle,"Seattle, WA",product,Product,ic4,IC 4,Senior 1 (Skilled),p90,199449,220262,0.4228
+seed,$1M-$10M,seattle,"Seattle, WA",product,Product,ic5,IC 5,Senior 2 (Advanced),p25,142070,157124,0.0448
+seed,$1M-$10M,seattle,"Seattle, WA",product,Product,ic5,IC 5,Senior 2 (Advanced),p50,171237,190054,0.1
+seed,$1M-$10M,seattle,"Seattle, WA",product,Product,ic5,IC 5,Senior 2 (Advanced),p75,204167,226748,0.2244
+seed,$1M-$10M,seattle,"Seattle, WA",product,Product,ic5,IC 5,Senior 2 (Advanced),p90,227689,253092,0.4988
+seed,$1M-$10M,seattle,"Seattle, WA",product,Product,ic6,IC 6,Staff (Expert),p25,189950,210265,0.0472
+seed,$1M-$10M,seattle,"Seattle, WA",product,Product,ic6,IC 6,Staff (Expert),p50,213312,236675,0.1372
+seed,$1M-$10M,seattle,"Seattle, WA",product,Product,ic6,IC 6,Staff (Expert),p75,237691,264101,0.4172
+seed,$1M-$10M,seattle,"Seattle, WA",product,Product,ic6,IC 6,Staff (Expert),p90,281370,311843,0.6248
+seed,$1M-$10M,seattle,"Seattle, WA",product,Product,ic7,IC 7,Senior Staff (Advisor),p25,198184,229778,0.0596
+seed,$1M-$10M,seattle,"Seattle, WA",product,Product,ic7,IC 7,Senior Staff (Advisor),p50,222119,257543,0.2172
+seed,$1M-$10M,seattle,"Seattle, WA",product,Product,ic7,IC 7,Senior Staff (Advisor),p75,260415,301584,0.8372
+seed,$1M-$10M,seattle,"Seattle, WA",product,Product,ic7,IC 7,Senior Staff (Advisor),p90,279564,323605,1.024
+seed,$1M-$10M,seattle,"Seattle, WA",product,Product,ic8,IC 8,Principal (Strategist),p25,214739,248808,0.0712
+seed,$1M-$10M,seattle,"Seattle, WA",product,Product,ic8,IC 8,Principal (Strategist),p50,243646,282877,0.3228
+seed,$1M-$10M,seattle,"Seattle, WA",product,Product,ic8,IC 8,Principal (Strategist),p75,287007,332432,1.9208
+seed,$1M-$10M,seattle,"Seattle, WA",product,Product,ic8,IC 8,Principal (Strategist),p90,341724,395409,2.3692
+seed,$1M-$10M,seattle,"Seattle, WA",product,Product,ic9,IC 9,Distinguished (Thought Leader),p25,219479,267909,0.3488
+seed,$1M-$10M,seattle,"Seattle, WA",product,Product,ic9,IC 9,Distinguished (Thought Leader),p50,252453,308095,0.8608
+seed,$1M-$10M,seattle,"Seattle, WA",product,Product,ic9,IC 9,Distinguished (Thought Leader),p75,297791,363738,1.9836
+seed,$1M-$10M,seattle,"Seattle, WA",product,Product,ic9,IC 9,Distinguished (Thought Leader),p90,355495,433806,2.5624
+seed,$1M-$10M,seattle,"Seattle, WA",design,Design,ic1,IC 1,Entry,p25,47781,52745,0.0032
+seed,$1M-$10M,seattle,"Seattle, WA",design,Design,ic1,IC 1,Entry,p50,62054,68879,0.0328
+seed,$1M-$10M,seattle,"Seattle, WA",design,Design,ic1,IC 1,Entry,p75,71982,79429,0.1536
+seed,$1M-$10M,seattle,"Seattle, WA",design,Design,ic1,IC 1,Entry,p90,83772,92460,0.1924
+seed,$1M-$10M,seattle,"Seattle, WA",design,Design,ic2,IC 2,Mid 1 (Developing),p25,70019,77728,0.0196
+seed,$1M-$10M,seattle,"Seattle, WA",design,Design,ic2,IC 2,Mid 1 (Developing),p50,80939,89290,0.068
+seed,$1M-$10M,seattle,"Seattle, WA",design,Design,ic2,IC 2,Mid 1 (Developing),p75,95714,105992,0.1728
+seed,$1M-$10M,seattle,"Seattle, WA",design,Design,ic2,IC 2,Mid 1 (Developing),p90,101496,112416,0.274
+seed,$1M-$10M,seattle,"Seattle, WA",design,Design,ic3,IC 3,Mid 2 (Proficient),p25,73319,81005,0.0356
+seed,$1M-$10M,seattle,"Seattle, WA",design,Design,ic3,IC 3,Mid 2 (Proficient),p50,91057,100518,0.0828
+seed,$1M-$10M,seattle,"Seattle, WA",design,Design,ic3,IC 3,Mid 2 (Proficient),p75,101109,111752,0.1864
+seed,$1M-$10M,seattle,"Seattle, WA",design,Design,ic3,IC 3,Mid 2 (Proficient),p90,121804,134812,0.3668
+seed,$1M-$10M,seattle,"Seattle, WA",design,Design,ic4,IC 4,Senior 1 (Skilled),p25,78904,87273,0.0388
+seed,$1M-$10M,seattle,"Seattle, WA",design,Design,ic4,IC 4,Senior 1 (Skilled),p50,99825,110585,0.0856
+seed,$1M-$10M,seattle,"Seattle, WA",design,Design,ic4,IC 4,Senior 1 (Skilled),p75,117161,129714,0.206
+seed,$1M-$10M,seattle,"Seattle, WA",design,Design,ic4,IC 4,Senior 1 (Skilled),p90,137484,151831,0.4228
+seed,$1M-$10M,seattle,"Seattle, WA",design,Design,ic5,IC 5,Senior 2 (Advanced),p25,97932,108309,0.0448
+seed,$1M-$10M,seattle,"Seattle, WA",design,Design,ic5,IC 5,Senior 2 (Advanced),p50,118037,131008,0.1
+seed,$1M-$10M,seattle,"Seattle, WA",design,Design,ic5,IC 5,Senior 2 (Advanced),p75,140737,156302,0.2244
+seed,$1M-$10M,seattle,"Seattle, WA",design,Design,ic5,IC 5,Senior 2 (Advanced),p90,156950,174462,0.4988
+seed,$1M-$10M,seattle,"Seattle, WA",design,Design,ic6,IC 6,Staff (Expert),p25,130936,144940,0.0472
+seed,$1M-$10M,seattle,"Seattle, WA",design,Design,ic6,IC 6,Staff (Expert),p50,147041,163145,0.1372
+seed,$1M-$10M,seattle,"Seattle, WA",design,Design,ic6,IC 6,Staff (Expert),p75,163845,182050,0.4172
+seed,$1M-$10M,seattle,"Seattle, WA",design,Design,ic6,IC 6,Staff (Expert),p90,193954,214959,0.6248
+seed,$1M-$10M,seattle,"Seattle, WA",design,Design,ic7,IC 7,Senior Staff (Advisor),p25,136612,158391,0.0596
+seed,$1M-$10M,seattle,"Seattle, WA",design,Design,ic7,IC 7,Senior Staff (Advisor),p50,153111,177530,0.2172
+seed,$1M-$10M,seattle,"Seattle, WA",design,Design,ic7,IC 7,Senior Staff (Advisor),p75,179510,207888,0.8372
+seed,$1M-$10M,seattle,"Seattle, WA",design,Design,ic7,IC 7,Senior Staff (Advisor),p90,192709,223067,1.024
+seed,$1M-$10M,seattle,"Seattle, WA",design,Design,ic8,IC 8,Principal (Strategist),p25,148024,171508,0.0712
+seed,$1M-$10M,seattle,"Seattle, WA",design,Design,ic8,IC 8,Principal (Strategist),p50,167950,194993,0.3228
+seed,$1M-$10M,seattle,"Seattle, WA",design,Design,ic8,IC 8,Principal (Strategist),p75,197839,229152,1.9208
+seed,$1M-$10M,seattle,"Seattle, WA",design,Design,ic8,IC 8,Principal (Strategist),p90,235557,272563,2.3692
+seed,$1M-$10M,seattle,"Seattle, WA",design,Design,ic9,IC 9,Distinguished (Thought Leader),p25,151291,184675,0.3488
+seed,$1M-$10M,seattle,"Seattle, WA",design,Design,ic9,IC 9,Distinguished (Thought Leader),p50,174020,212376,0.8608
+seed,$1M-$10M,seattle,"Seattle, WA",design,Design,ic9,IC 9,Distinguished (Thought Leader),p75,205273,250732,1.9836
+seed,$1M-$10M,seattle,"Seattle, WA",design,Design,ic9,IC 9,Distinguished (Thought Leader),p90,245049,299032,2.5624
+seed,$1M-$10M,seattle,"Seattle, WA",sales,Sales,ic1,IC 1,Entry,p25,47781,52745,0.0032
+seed,$1M-$10M,seattle,"Seattle, WA",sales,Sales,ic1,IC 1,Entry,p50,62054,68879,0.0328
+seed,$1M-$10M,seattle,"Seattle, WA",sales,Sales,ic1,IC 1,Entry,p75,71982,79429,0.1536
+seed,$1M-$10M,seattle,"Seattle, WA",sales,Sales,ic1,IC 1,Entry,p90,83772,92460,0.1924
+seed,$1M-$10M,seattle,"Seattle, WA",sales,Sales,ic2,IC 2,Mid 1 (Developing),p25,70019,77728,0.0196
+seed,$1M-$10M,seattle,"Seattle, WA",sales,Sales,ic2,IC 2,Mid 1 (Developing),p50,80939,89290,0.068
+seed,$1M-$10M,seattle,"Seattle, WA",sales,Sales,ic2,IC 2,Mid 1 (Developing),p75,95714,105992,0.1728
+seed,$1M-$10M,seattle,"Seattle, WA",sales,Sales,ic2,IC 2,Mid 1 (Developing),p90,101496,112416,0.274
+seed,$1M-$10M,seattle,"Seattle, WA",sales,Sales,ic3,IC 3,Mid 2 (Proficient),p25,73319,81005,0.0356
+seed,$1M-$10M,seattle,"Seattle, WA",sales,Sales,ic3,IC 3,Mid 2 (Proficient),p50,91057,100518,0.0828
+seed,$1M-$10M,seattle,"Seattle, WA",sales,Sales,ic3,IC 3,Mid 2 (Proficient),p75,101109,111752,0.1864
+seed,$1M-$10M,seattle,"Seattle, WA",sales,Sales,ic3,IC 3,Mid 2 (Proficient),p90,121804,134812,0.3668
+seed,$1M-$10M,seattle,"Seattle, WA",sales,Sales,ic4,IC 4,Senior 1 (Skilled),p25,78904,87273,0.0388
+seed,$1M-$10M,seattle,"Seattle, WA",sales,Sales,ic4,IC 4,Senior 1 (Skilled),p50,99825,110585,0.0856
+seed,$1M-$10M,seattle,"Seattle, WA",sales,Sales,ic4,IC 4,Senior 1 (Skilled),p75,117161,129714,0.206
+seed,$1M-$10M,seattle,"Seattle, WA",sales,Sales,ic4,IC 4,Senior 1 (Skilled),p90,137484,151831,0.4228
+seed,$1M-$10M,seattle,"Seattle, WA",sales,Sales,ic5,IC 5,Senior 2 (Advanced),p25,97932,108309,0.0448
+seed,$1M-$10M,seattle,"Seattle, WA",sales,Sales,ic5,IC 5,Senior 2 (Advanced),p50,118037,131008,0.1
+seed,$1M-$10M,seattle,"Seattle, WA",sales,Sales,ic5,IC 5,Senior 2 (Advanced),p75,140737,156302,0.2244
+seed,$1M-$10M,seattle,"Seattle, WA",sales,Sales,ic5,IC 5,Senior 2 (Advanced),p90,156950,174462,0.4988
+seed,$1M-$10M,seattle,"Seattle, WA",sales,Sales,ic6,IC 6,Staff (Expert),p25,130936,144940,0.0472
+seed,$1M-$10M,seattle,"Seattle, WA",sales,Sales,ic6,IC 6,Staff (Expert),p50,147041,163145,0.1372
+seed,$1M-$10M,seattle,"Seattle, WA",sales,Sales,ic6,IC 6,Staff (Expert),p75,163845,182050,0.4172
+seed,$1M-$10M,seattle,"Seattle, WA",sales,Sales,ic6,IC 6,Staff (Expert),p90,193954,214959,0.6248
+seed,$1M-$10M,seattle,"Seattle, WA",sales,Sales,ic7,IC 7,Senior Staff (Advisor),p25,136612,158391,0.0596
+seed,$1M-$10M,seattle,"Seattle, WA",sales,Sales,ic7,IC 7,Senior Staff (Advisor),p50,153111,177530,0.2172
+seed,$1M-$10M,seattle,"Seattle, WA",sales,Sales,ic7,IC 7,Senior Staff (Advisor),p75,179510,207888,0.8372
+seed,$1M-$10M,seattle,"Seattle, WA",sales,Sales,ic7,IC 7,Senior Staff (Advisor),p90,192709,223067,1.024
+seed,$1M-$10M,seattle,"Seattle, WA",sales,Sales,ic8,IC 8,Principal (Strategist),p25,148024,171508,0.0712
+seed,$1M-$10M,seattle,"Seattle, WA",sales,Sales,ic8,IC 8,Principal (Strategist),p50,167950,194993,0.3228
+seed,$1M-$10M,seattle,"Seattle, WA",sales,Sales,ic8,IC 8,Principal (Strategist),p75,197839,229152,1.9208
+seed,$1M-$10M,seattle,"Seattle, WA",sales,Sales,ic8,IC 8,Principal (Strategist),p90,235557,272563,2.3692
+seed,$1M-$10M,seattle,"Seattle, WA",sales,Sales,ic9,IC 9,Distinguished (Thought Leader),p25,151291,184675,0.3488
+seed,$1M-$10M,seattle,"Seattle, WA",sales,Sales,ic9,IC 9,Distinguished (Thought Leader),p50,174020,212376,0.8608
+seed,$1M-$10M,seattle,"Seattle, WA",sales,Sales,ic9,IC 9,Distinguished (Thought Leader),p75,205273,250732,1.9836
+seed,$1M-$10M,seattle,"Seattle, WA",sales,Sales,ic9,IC 9,Distinguished (Thought Leader),p90,245049,299032,2.5624
+seed,$1M-$10M,seattle,"Seattle, WA",marketing,Marketing,ic1,IC 1,Entry,p25,45762,50517,0.0032
+seed,$1M-$10M,seattle,"Seattle, WA",marketing,Marketing,ic1,IC 1,Entry,p50,59432,65969,0.0328
+seed,$1M-$10M,seattle,"Seattle, WA",marketing,Marketing,ic1,IC 1,Entry,p75,68941,76072,0.1536
+seed,$1M-$10M,seattle,"Seattle, WA",marketing,Marketing,ic1,IC 1,Entry,p90,80233,88553,0.1924
+seed,$1M-$10M,seattle,"Seattle, WA",marketing,Marketing,ic2,IC 2,Mid 1 (Developing),p25,67060,74443,0.0196
+seed,$1M-$10M,seattle,"Seattle, WA",marketing,Marketing,ic2,IC 2,Mid 1 (Developing),p50,77520,85518,0.068
+seed,$1M-$10M,seattle,"Seattle, WA",marketing,Marketing,ic2,IC 2,Mid 1 (Developing),p75,91670,101514,0.1728
+seed,$1M-$10M,seattle,"Seattle, WA",marketing,Marketing,ic2,IC 2,Mid 1 (Developing),p90,97207,107666,0.274
+seed,$1M-$10M,seattle,"Seattle, WA",marketing,Marketing,ic3,IC 3,Mid 2 (Proficient),p25,70221,77582,0.0356
+seed,$1M-$10M,seattle,"Seattle, WA",marketing,Marketing,ic3,IC 3,Mid 2 (Proficient),p50,87210,96270,0.0828
+seed,$1M-$10M,seattle,"Seattle, WA",marketing,Marketing,ic3,IC 3,Mid 2 (Proficient),p75,96837,107030,0.1864
+seed,$1M-$10M,seattle,"Seattle, WA",marketing,Marketing,ic3,IC 3,Mid 2 (Proficient),p90,116657,129116,0.3668
+seed,$1M-$10M,seattle,"Seattle, WA",marketing,Marketing,ic4,IC 4,Senior 1 (Skilled),p25,75570,83585,0.0388
+seed,$1M-$10M,seattle,"Seattle, WA",marketing,Marketing,ic4,IC 4,Senior 1 (Skilled),p50,95608,105913,0.0856
+seed,$1M-$10M,seattle,"Seattle, WA",marketing,Marketing,ic4,IC 4,Senior 1 (Skilled),p75,112210,124233,0.206
+seed,$1M-$10M,seattle,"Seattle, WA",marketing,Marketing,ic4,IC 4,Senior 1 (Skilled),p90,131675,145415,0.4228
+seed,$1M-$10M,seattle,"Seattle, WA",marketing,Marketing,ic5,IC 5,Senior 2 (Advanced),p25,93794,103732,0.0448
+seed,$1M-$10M,seattle,"Seattle, WA",marketing,Marketing,ic5,IC 5,Senior 2 (Advanced),p50,113050,125473,0.1
+seed,$1M-$10M,seattle,"Seattle, WA",marketing,Marketing,ic5,IC 5,Senior 2 (Advanced),p75,134790,149698,0.2244
+seed,$1M-$10M,seattle,"Seattle, WA",marketing,Marketing,ic5,IC 5,Senior 2 (Advanced),p90,150319,167090,0.4988
+seed,$1M-$10M,seattle,"Seattle, WA",marketing,Marketing,ic6,IC 6,Staff (Expert),p25,125403,138816,0.0472
+seed,$1M-$10M,seattle,"Seattle, WA",marketing,Marketing,ic6,IC 6,Staff (Expert),p50,140828,156252,0.1372
+seed,$1M-$10M,seattle,"Seattle, WA",marketing,Marketing,ic6,IC 6,Staff (Expert),p75,156922,174358,0.4172
+seed,$1M-$10M,seattle,"Seattle, WA",marketing,Marketing,ic6,IC 6,Staff (Expert),p90,185758,205877,0.6248
+seed,$1M-$10M,seattle,"Seattle, WA",marketing,Marketing,ic7,IC 7,Senior Staff (Advisor),p25,130840,151698,0.0596
+seed,$1M-$10M,seattle,"Seattle, WA",marketing,Marketing,ic7,IC 7,Senior Staff (Advisor),p50,146642,170028,0.2172
+seed,$1M-$10M,seattle,"Seattle, WA",marketing,Marketing,ic7,IC 7,Senior Staff (Advisor),p75,171925,199104,0.8372
+seed,$1M-$10M,seattle,"Seattle, WA",marketing,Marketing,ic7,IC 7,Senior Staff (Advisor),p90,184566,213642,1.024
+seed,$1M-$10M,seattle,"Seattle, WA",marketing,Marketing,ic8,IC 8,Principal (Strategist),p25,141769,164261,0.0712
+seed,$1M-$10M,seattle,"Seattle, WA",marketing,Marketing,ic8,IC 8,Principal (Strategist),p50,160854,186754,0.3228
+seed,$1M-$10M,seattle,"Seattle, WA",marketing,Marketing,ic8,IC 8,Principal (Strategist),p75,189480,219470,1.9208
+seed,$1M-$10M,seattle,"Seattle, WA",marketing,Marketing,ic8,IC 8,Principal (Strategist),p90,225604,261046,2.3692
+seed,$1M-$10M,seattle,"Seattle, WA",marketing,Marketing,ic9,IC 9,Distinguished (Thought Leader),p25,144899,176872,0.3488
+seed,$1M-$10M,seattle,"Seattle, WA",marketing,Marketing,ic9,IC 9,Distinguished (Thought Leader),p50,166668,203402,0.8608
+seed,$1M-$10M,seattle,"Seattle, WA",marketing,Marketing,ic9,IC 9,Distinguished (Thought Leader),p75,196600,240137,1.9836
+seed,$1M-$10M,seattle,"Seattle, WA",marketing,Marketing,ic9,IC 9,Distinguished (Thought Leader),p90,234695,286396,2.5624
+seed,$1M-$10M,austin,"Austin, TX",engineering,Engineering,ic1,IC 1,Entry,p25,61630,68034,0.0032
+seed,$1M-$10M,austin,"Austin, TX",engineering,Engineering,ic1,IC 1,Entry,p50,80040,88844,0.0328
+seed,$1M-$10M,austin,"Austin, TX",engineering,Engineering,ic1,IC 1,Entry,p75,92846,102451,0.1536
+seed,$1M-$10M,austin,"Austin, TX",engineering,Engineering,ic1,IC 1,Entry,p90,108054,119259,0.1924
+seed,$1M-$10M,austin,"Austin, TX",engineering,Engineering,ic2,IC 2,Mid 1 (Developing),p25,90314,100257,0.0196
+seed,$1M-$10M,austin,"Austin, TX",engineering,Engineering,ic2,IC 2,Mid 1 (Developing),p50,104400,115171,0.068
+seed,$1M-$10M,austin,"Austin, TX",engineering,Engineering,ic2,IC 2,Mid 1 (Developing),p75,123457,136714,0.1728
+seed,$1M-$10M,austin,"Austin, TX",engineering,Engineering,ic2,IC 2,Mid 1 (Developing),p90,130914,145000,0.274
+seed,$1M-$10M,austin,"Austin, TX",engineering,Engineering,ic3,IC 3,Mid 2 (Proficient),p25,94570,104484,0.0356
+seed,$1M-$10M,austin,"Austin, TX",engineering,Engineering,ic3,IC 3,Mid 2 (Proficient),p50,117450,129652,0.0828
+seed,$1M-$10M,austin,"Austin, TX",engineering,Engineering,ic3,IC 3,Mid 2 (Proficient),p75,130415,144143,0.1864
+seed,$1M-$10M,austin,"Austin, TX",engineering,Engineering,ic3,IC 3,Mid 2 (Proficient),p90,157108,173887,0.3668
+seed,$1M-$10M,austin,"Austin, TX",engineering,Engineering,ic4,IC 4,Senior 1 (Skilled),p25,101774,112568,0.0388
+seed,$1M-$10M,austin,"Austin, TX",engineering,Engineering,ic4,IC 4,Senior 1 (Skilled),p50,128760,142638,0.0856
+seed,$1M-$10M,austin,"Austin, TX",engineering,Engineering,ic4,IC 4,Senior 1 (Skilled),p75,151119,167310,0.206
+seed,$1M-$10M,austin,"Austin, TX",engineering,Engineering,ic4,IC 4,Senior 1 (Skilled),p90,177334,195838,0.4228
+seed,$1M-$10M,austin,"Austin, TX",engineering,Engineering,ic5,IC 5,Senior 2 (Advanced),p25,126317,139701,0.0448
+seed,$1M-$10M,austin,"Austin, TX",engineering,Engineering,ic5,IC 5,Senior 2 (Advanced),p50,152250,168980,0.1
+seed,$1M-$10M,austin,"Austin, TX",engineering,Engineering,ic5,IC 5,Senior 2 (Advanced),p75,181528,201605,0.2244
+seed,$1M-$10M,austin,"Austin, TX",engineering,Engineering,ic5,IC 5,Senior 2 (Advanced),p90,202442,225028,0.4988
+seed,$1M-$10M,austin,"Austin, TX",engineering,Engineering,ic6,IC 6,Staff (Expert),p25,168887,186950,0.0472
+seed,$1M-$10M,austin,"Austin, TX",engineering,Engineering,ic6,IC 6,Staff (Expert),p50,189660,210432,0.1372
+seed,$1M-$10M,austin,"Austin, TX",engineering,Engineering,ic6,IC 6,Staff (Expert),p75,211335,234817,0.4172
+seed,$1M-$10M,austin,"Austin, TX",engineering,Engineering,ic6,IC 6,Staff (Expert),p90,250170,277264,0.6248
+seed,$1M-$10M,austin,"Austin, TX",engineering,Engineering,ic7,IC 7,Senior Staff (Advisor),p25,176208,204300,0.0596
+seed,$1M-$10M,austin,"Austin, TX",engineering,Engineering,ic7,IC 7,Senior Staff (Advisor),p50,197490,228986,0.2172
+seed,$1M-$10M,austin,"Austin, TX",engineering,Engineering,ic7,IC 7,Senior Staff (Advisor),p75,231540,268143,0.8372
+seed,$1M-$10M,austin,"Austin, TX",engineering,Engineering,ic7,IC 7,Senior Staff (Advisor),p90,248565,287722,1.024
+seed,$1M-$10M,austin,"Austin, TX",engineering,Engineering,ic8,IC 8,Principal (Strategist),p25,190928,221219,0.0712
+seed,$1M-$10M,austin,"Austin, TX",engineering,Engineering,ic8,IC 8,Principal (Strategist),p50,216630,251511,0.3228
+seed,$1M-$10M,austin,"Austin, TX",engineering,Engineering,ic8,IC 8,Principal (Strategist),p75,255182,295571,1.9208
+seed,$1M-$10M,austin,"Austin, TX",engineering,Engineering,ic8,IC 8,Principal (Strategist),p90,303832,351564,2.3692
+seed,$1M-$10M,austin,"Austin, TX",engineering,Engineering,ic9,IC 9,Distinguished (Thought Leader),p25,195142,238202,0.3488
+seed,$1M-$10M,austin,"Austin, TX",engineering,Engineering,ic9,IC 9,Distinguished (Thought Leader),p50,224460,273932,0.8608
+seed,$1M-$10M,austin,"Austin, TX",engineering,Engineering,ic9,IC 9,Distinguished (Thought Leader),p75,264771,323405,1.9836
+seed,$1M-$10M,austin,"Austin, TX",engineering,Engineering,ic9,IC 9,Distinguished (Thought Leader),p90,316076,385704,2.5624
+seed,$1M-$10M,austin,"Austin, TX",product,Product,ic1,IC 1,Entry,p25,63479,70075,0.0032
+seed,$1M-$10M,austin,"Austin, TX",product,Product,ic1,IC 1,Entry,p50,82441,91509,0.0328
+seed,$1M-$10M,austin,"Austin, TX",product,Product,ic1,IC 1,Entry,p75,95631,105524,0.1536
+seed,$1M-$10M,austin,"Austin, TX",product,Product,ic1,IC 1,Entry,p90,111295,122837,0.1924
+seed,$1M-$10M,austin,"Austin, TX",product,Product,ic2,IC 2,Mid 1 (Developing),p25,93023,103264,0.0196
+seed,$1M-$10M,austin,"Austin, TX",product,Product,ic2,IC 2,Mid 1 (Developing),p50,107532,118626,0.068
+seed,$1M-$10M,austin,"Austin, TX",product,Product,ic2,IC 2,Mid 1 (Developing),p75,127160,140815,0.1728
+seed,$1M-$10M,austin,"Austin, TX",product,Product,ic2,IC 2,Mid 1 (Developing),p90,134841,149350,0.274
+seed,$1M-$10M,austin,"Austin, TX",product,Product,ic3,IC 3,Mid 2 (Proficient),p25,97407,107619,0.0356
+seed,$1M-$10M,austin,"Austin, TX",product,Product,ic3,IC 3,Mid 2 (Proficient),p50,120973,133542,0.0828
+seed,$1M-$10M,austin,"Austin, TX",product,Product,ic3,IC 3,Mid 2 (Proficient),p75,134327,148467,0.1864
+seed,$1M-$10M,austin,"Austin, TX",product,Product,ic3,IC 3,Mid 2 (Proficient),p90,161821,179103,0.3668
+seed,$1M-$10M,austin,"Austin, TX",product,Product,ic4,IC 4,Senior 1 (Skilled),p25,104827,115945,0.0388
+seed,$1M-$10M,austin,"Austin, TX",product,Product,ic4,IC 4,Senior 1 (Skilled),p50,132622,146917,0.0856
+seed,$1M-$10M,austin,"Austin, TX",product,Product,ic4,IC 4,Senior 1 (Skilled),p75,155653,172330,0.206
+seed,$1M-$10M,austin,"Austin, TX",product,Product,ic4,IC 4,Senior 1 (Skilled),p90,182654,201713,0.4228
+seed,$1M-$10M,austin,"Austin, TX",product,Product,ic5,IC 5,Senior 2 (Advanced),p25,130106,143892,0.0448
+seed,$1M-$10M,austin,"Austin, TX",product,Product,ic5,IC 5,Senior 2 (Advanced),p50,156817,174050,0.1
+seed,$1M-$10M,austin,"Austin, TX",product,Product,ic5,IC 5,Senior 2 (Advanced),p75,186974,207653,0.2244
+seed,$1M-$10M,austin,"Austin, TX",product,Product,ic5,IC 5,Senior 2 (Advanced),p90,208515,231779,0.4988
+seed,$1M-$10M,austin,"Austin, TX",product,Product,ic6,IC 6,Staff (Expert),p25,173954,192559,0.0472
+seed,$1M-$10M,austin,"Austin, TX",product,Product,ic6,IC 6,Staff (Expert),p50,195349,216745,0.1372
+seed,$1M-$10M,austin,"Austin, TX",product,Product,ic6,IC 6,Staff (Expert),p75,217675,241861,0.4172
+seed,$1M-$10M,austin,"Austin, TX",product,Product,ic6,IC 6,Staff (Expert),p90,257675,285582,0.6248
+seed,$1M-$10M,austin,"Austin, TX",product,Product,ic7,IC 7,Senior Staff (Advisor),p25,181495,210429,0.0596
+seed,$1M-$10M,austin,"Austin, TX",product,Product,ic7,IC 7,Senior Staff (Advisor),p50,203414,235855,0.2172
+seed,$1M-$10M,austin,"Austin, TX",product,Product,ic7,IC 7,Senior Staff (Advisor),p75,238486,276188,0.8372
+seed,$1M-$10M,austin,"Austin, TX",product,Product,ic7,IC 7,Senior Staff (Advisor),p90,256021,296354,1.024
+seed,$1M-$10M,austin,"Austin, TX",product,Product,ic8,IC 8,Principal (Strategist),p25,196655,227856,0.0712
+seed,$1M-$10M,austin,"Austin, TX",product,Product,ic8,IC 8,Principal (Strategist),p50,223128,259056,0.3228
+seed,$1M-$10M,austin,"Austin, TX",product,Product,ic8,IC 8,Principal (Strategist),p75,262838,304438,1.9208
+seed,$1M-$10M,austin,"Austin, TX",product,Product,ic8,IC 8,Principal (Strategist),p90,312947,362111,2.3692
+seed,$1M-$10M,austin,"Austin, TX",product,Product,ic9,IC 9,Distinguished (Thought Leader),p25,200997,245348,0.3488
+seed,$1M-$10M,austin,"Austin, TX",product,Product,ic9,IC 9,Distinguished (Thought Leader),p50,231193,282150,0.8608
+seed,$1M-$10M,austin,"Austin, TX",product,Product,ic9,IC 9,Distinguished (Thought Leader),p75,272714,333107,1.9836
+seed,$1M-$10M,austin,"Austin, TX",product,Product,ic9,IC 9,Distinguished (Thought Leader),p90,325558,397275,2.5624
+seed,$1M-$10M,austin,"Austin, TX",design,Design,ic1,IC 1,Entry,p25,43757,48304,0.0032
+seed,$1M-$10M,austin,"Austin, TX",design,Design,ic1,IC 1,Entry,p50,56828,63079,0.0328
+seed,$1M-$10M,austin,"Austin, TX",design,Design,ic1,IC 1,Entry,p75,65920,72740,0.1536
+seed,$1M-$10M,austin,"Austin, TX",design,Design,ic1,IC 1,Entry,p90,76718,84674,0.1924
+seed,$1M-$10M,austin,"Austin, TX",design,Design,ic2,IC 2,Mid 1 (Developing),p25,64123,71182,0.0196
+seed,$1M-$10M,austin,"Austin, TX",design,Design,ic2,IC 2,Mid 1 (Developing),p50,74123,81771,0.068
+seed,$1M-$10M,austin,"Austin, TX",design,Design,ic2,IC 2,Mid 1 (Developing),p75,87654,97067,0.1728
+seed,$1M-$10M,austin,"Austin, TX",design,Design,ic2,IC 2,Mid 1 (Developing),p90,92949,102949,0.274
+seed,$1M-$10M,austin,"Austin, TX",design,Design,ic3,IC 3,Mid 2 (Proficient),p25,67144,74184,0.0356
+seed,$1M-$10M,austin,"Austin, TX",design,Design,ic3,IC 3,Mid 2 (Proficient),p50,83389,92053,0.0828
+seed,$1M-$10M,austin,"Austin, TX",design,Design,ic3,IC 3,Mid 2 (Proficient),p75,92594,102341,0.1864
+seed,$1M-$10M,austin,"Austin, TX",design,Design,ic3,IC 3,Mid 2 (Proficient),p90,111546,123459,0.3668
+seed,$1M-$10M,austin,"Austin, TX",design,Design,ic4,IC 4,Senior 1 (Skilled),p25,72259,79923,0.0388
+seed,$1M-$10M,austin,"Austin, TX",design,Design,ic4,IC 4,Senior 1 (Skilled),p50,91419,101273,0.0856
+seed,$1M-$10M,austin,"Austin, TX",design,Design,ic4,IC 4,Senior 1 (Skilled),p75,107294,118790,0.206
+seed,$1M-$10M,austin,"Austin, TX",design,Design,ic4,IC 4,Senior 1 (Skilled),p90,125907,139045,0.4228
+seed,$1M-$10M,austin,"Austin, TX",design,Design,ic5,IC 5,Senior 2 (Advanced),p25,89685,99188,0.0448
+seed,$1M-$10M,austin,"Austin, TX",design,Design,ic5,IC 5,Senior 2 (Advanced),p50,108097,119976,0.1
+seed,$1M-$10M,austin,"Austin, TX",design,Design,ic5,IC 5,Senior 2 (Advanced),p75,128885,143140,0.2244
+seed,$1M-$10M,austin,"Austin, TX",design,Design,ic5,IC 5,Senior 2 (Advanced),p90,143734,159770,0.4988
+seed,$1M-$10M,austin,"Austin, TX",design,Design,ic6,IC 6,Staff (Expert),p25,119910,132734,0.0472
+seed,$1M-$10M,austin,"Austin, TX",design,Design,ic6,IC 6,Staff (Expert),p50,134658,149406,0.1372
+seed,$1M-$10M,austin,"Austin, TX",design,Design,ic6,IC 6,Staff (Expert),p75,150048,166720,0.4172
+seed,$1M-$10M,austin,"Austin, TX",design,Design,ic6,IC 6,Staff (Expert),p90,177621,196858,0.6248
+seed,$1M-$10M,austin,"Austin, TX",design,Design,ic7,IC 7,Senior Staff (Advisor),p25,125108,145053,0.0596
+seed,$1M-$10M,austin,"Austin, TX",design,Design,ic7,IC 7,Senior Staff (Advisor),p50,140217,162580,0.2172
+seed,$1M-$10M,austin,"Austin, TX",design,Design,ic7,IC 7,Senior Staff (Advisor),p75,164393,190382,0.8372
+seed,$1M-$10M,austin,"Austin, TX",design,Design,ic7,IC 7,Senior Staff (Advisor),p90,176481,204282,1.024
+seed,$1M-$10M,austin,"Austin, TX",design,Design,ic8,IC 8,Principal (Strategist),p25,135558,157065,0.0712
+seed,$1M-$10M,austin,"Austin, TX",design,Design,ic8,IC 8,Principal (Strategist),p50,153807,178572,0.3228
+seed,$1M-$10M,austin,"Austin, TX",design,Design,ic8,IC 8,Principal (Strategist),p75,181179,209855,1.9208
+seed,$1M-$10M,austin,"Austin, TX",design,Design,ic8,IC 8,Principal (Strategist),p90,215721,249610,2.3692
+seed,$1M-$10M,austin,"Austin, TX",design,Design,ic9,IC 9,Distinguished (Thought Leader),p25,138551,169123,0.3488
+seed,$1M-$10M,austin,"Austin, TX",design,Design,ic9,IC 9,Distinguished (Thought Leader),p50,159366,194492,0.8608
+seed,$1M-$10M,austin,"Austin, TX",design,Design,ic9,IC 9,Distinguished (Thought Leader),p75,187987,229617,1.9836
+seed,$1M-$10M,austin,"Austin, TX",design,Design,ic9,IC 9,Distinguished (Thought Leader),p90,224414,273850,2.5624
+seed,$1M-$10M,austin,"Austin, TX",sales,Sales,ic1,IC 1,Entry,p25,43757,48304,0.0032
+seed,$1M-$10M,austin,"Austin, TX",sales,Sales,ic1,IC 1,Entry,p50,56828,63079,0.0328
+seed,$1M-$10M,austin,"Austin, TX",sales,Sales,ic1,IC 1,Entry,p75,65920,72740,0.1536
+seed,$1M-$10M,austin,"Austin, TX",sales,Sales,ic1,IC 1,Entry,p90,76718,84674,0.1924
+seed,$1M-$10M,austin,"Austin, TX",sales,Sales,ic2,IC 2,Mid 1 (Developing),p25,64123,71182,0.0196
+seed,$1M-$10M,austin,"Austin, TX",sales,Sales,ic2,IC 2,Mid 1 (Developing),p50,74123,81771,0.068
+seed,$1M-$10M,austin,"Austin, TX",sales,Sales,ic2,IC 2,Mid 1 (Developing),p75,87654,97067,0.1728
+seed,$1M-$10M,austin,"Austin, TX",sales,Sales,ic2,IC 2,Mid 1 (Developing),p90,92949,102949,0.274
+seed,$1M-$10M,austin,"Austin, TX",sales,Sales,ic3,IC 3,Mid 2 (Proficient),p25,67144,74184,0.0356
+seed,$1M-$10M,austin,"Austin, TX",sales,Sales,ic3,IC 3,Mid 2 (Proficient),p50,83389,92053,0.0828
+seed,$1M-$10M,austin,"Austin, TX",sales,Sales,ic3,IC 3,Mid 2 (Proficient),p75,92594,102341,0.1864
+seed,$1M-$10M,austin,"Austin, TX",sales,Sales,ic3,IC 3,Mid 2 (Proficient),p90,111546,123459,0.3668
+seed,$1M-$10M,austin,"Austin, TX",sales,Sales,ic4,IC 4,Senior 1 (Skilled),p25,72259,79923,0.0388
+seed,$1M-$10M,austin,"Austin, TX",sales,Sales,ic4,IC 4,Senior 1 (Skilled),p50,91419,101273,0.0856
+seed,$1M-$10M,austin,"Austin, TX",sales,Sales,ic4,IC 4,Senior 1 (Skilled),p75,107294,118790,0.206
+seed,$1M-$10M,austin,"Austin, TX",sales,Sales,ic4,IC 4,Senior 1 (Skilled),p90,125907,139045,0.4228
+seed,$1M-$10M,austin,"Austin, TX",sales,Sales,ic5,IC 5,Senior 2 (Advanced),p25,89685,99188,0.0448
+seed,$1M-$10M,austin,"Austin, TX",sales,Sales,ic5,IC 5,Senior 2 (Advanced),p50,108097,119976,0.1
+seed,$1M-$10M,austin,"Austin, TX",sales,Sales,ic5,IC 5,Senior 2 (Advanced),p75,128885,143140,0.2244
+seed,$1M-$10M,austin,"Austin, TX",sales,Sales,ic5,IC 5,Senior 2 (Advanced),p90,143734,159770,0.4988
+seed,$1M-$10M,austin,"Austin, TX",sales,Sales,ic6,IC 6,Staff (Expert),p25,119910,132734,0.0472
+seed,$1M-$10M,austin,"Austin, TX",sales,Sales,ic6,IC 6,Staff (Expert),p50,134658,149406,0.1372
+seed,$1M-$10M,austin,"Austin, TX",sales,Sales,ic6,IC 6,Staff (Expert),p75,150048,166720,0.4172
+seed,$1M-$10M,austin,"Austin, TX",sales,Sales,ic6,IC 6,Staff (Expert),p90,177621,196858,0.6248
+seed,$1M-$10M,austin,"Austin, TX",sales,Sales,ic7,IC 7,Senior Staff (Advisor),p25,125108,145053,0.0596
+seed,$1M-$10M,austin,"Austin, TX",sales,Sales,ic7,IC 7,Senior Staff (Advisor),p50,140217,162580,0.2172
+seed,$1M-$10M,austin,"Austin, TX",sales,Sales,ic7,IC 7,Senior Staff (Advisor),p75,164393,190382,0.8372
+seed,$1M-$10M,austin,"Austin, TX",sales,Sales,ic7,IC 7,Senior Staff (Advisor),p90,176481,204282,1.024
+seed,$1M-$10M,austin,"Austin, TX",sales,Sales,ic8,IC 8,Principal (Strategist),p25,135558,157065,0.0712
+seed,$1M-$10M,austin,"Austin, TX",sales,Sales,ic8,IC 8,Principal (Strategist),p50,153807,178572,0.3228
+seed,$1M-$10M,austin,"Austin, TX",sales,Sales,ic8,IC 8,Principal (Strategist),p75,181179,209855,1.9208
+seed,$1M-$10M,austin,"Austin, TX",sales,Sales,ic8,IC 8,Principal (Strategist),p90,215721,249610,2.3692
+seed,$1M-$10M,austin,"Austin, TX",sales,Sales,ic9,IC 9,Distinguished (Thought Leader),p25,138551,169123,0.3488
+seed,$1M-$10M,austin,"Austin, TX",sales,Sales,ic9,IC 9,Distinguished (Thought Leader),p50,159366,194492,0.8608
+seed,$1M-$10M,austin,"Austin, TX",sales,Sales,ic9,IC 9,Distinguished (Thought Leader),p75,187987,229617,1.9836
+seed,$1M-$10M,austin,"Austin, TX",sales,Sales,ic9,IC 9,Distinguished (Thought Leader),p90,224414,273850,2.5624
+seed,$1M-$10M,austin,"Austin, TX",marketing,Marketing,ic1,IC 1,Entry,p25,41908,46263,0.0032
+seed,$1M-$10M,austin,"Austin, TX",marketing,Marketing,ic1,IC 1,Entry,p50,54427,60414,0.0328
+seed,$1M-$10M,austin,"Austin, TX",marketing,Marketing,ic1,IC 1,Entry,p75,63135,69666,0.1536
+seed,$1M-$10M,austin,"Austin, TX",marketing,Marketing,ic1,IC 1,Entry,p90,73476,81096,0.1924
+seed,$1M-$10M,austin,"Austin, TX",marketing,Marketing,ic2,IC 2,Mid 1 (Developing),p25,61413,68174,0.0196
+seed,$1M-$10M,austin,"Austin, TX",marketing,Marketing,ic2,IC 2,Mid 1 (Developing),p50,70992,78316,0.068
+seed,$1M-$10M,austin,"Austin, TX",marketing,Marketing,ic2,IC 2,Mid 1 (Developing),p75,83950,92965,0.1728
+seed,$1M-$10M,austin,"Austin, TX",marketing,Marketing,ic2,IC 2,Mid 1 (Developing),p90,89021,98600,0.274
+seed,$1M-$10M,austin,"Austin, TX",marketing,Marketing,ic3,IC 3,Mid 2 (Proficient),p25,64307,71049,0.0356
+seed,$1M-$10M,austin,"Austin, TX",marketing,Marketing,ic3,IC 3,Mid 2 (Proficient),p50,79866,88163,0.0828
+seed,$1M-$10M,austin,"Austin, TX",marketing,Marketing,ic3,IC 3,Mid 2 (Proficient),p75,88682,98017,0.1864
+seed,$1M-$10M,austin,"Austin, TX",marketing,Marketing,ic3,IC 3,Mid 2 (Proficient),p90,106833,118243,0.3668
+seed,$1M-$10M,austin,"Austin, TX",marketing,Marketing,ic4,IC 4,Senior 1 (Skilled),p25,69206,76546,0.0388
+seed,$1M-$10M,austin,"Austin, TX",marketing,Marketing,ic4,IC 4,Senior 1 (Skilled),p50,87556,96994,0.0856
+seed,$1M-$10M,austin,"Austin, TX",marketing,Marketing,ic4,IC 4,Senior 1 (Skilled),p75,102761,113771,0.206
+seed,$1M-$10M,austin,"Austin, TX",marketing,Marketing,ic4,IC 4,Senior 1 (Skilled),p90,120587,133170,0.4228
+seed,$1M-$10M,austin,"Austin, TX",marketing,Marketing,ic5,IC 5,Senior 2 (Advanced),p25,85895,94997,0.0448
+seed,$1M-$10M,austin,"Austin, TX",marketing,Marketing,ic5,IC 5,Senior 2 (Advanced),p50,103530,114906,0.1
+seed,$1M-$10M,austin,"Austin, TX",marketing,Marketing,ic5,IC 5,Senior 2 (Advanced),p75,123439,137091,0.2244
+seed,$1M-$10M,austin,"Austin, TX",marketing,Marketing,ic5,IC 5,Senior 2 (Advanced),p90,137660,153019,0.4988
+seed,$1M-$10M,austin,"Austin, TX",marketing,Marketing,ic6,IC 6,Staff (Expert),p25,114843,127126,0.0472
+seed,$1M-$10M,austin,"Austin, TX",marketing,Marketing,ic6,IC 6,Staff (Expert),p50,128968,143093,0.1372
+seed,$1M-$10M,austin,"Austin, TX",marketing,Marketing,ic6,IC 6,Staff (Expert),p75,143708,159675,0.4172
+seed,$1M-$10M,austin,"Austin, TX",marketing,Marketing,ic6,IC 6,Staff (Expert),p90,170115,188540,0.6248
+seed,$1M-$10M,austin,"Austin, TX",marketing,Marketing,ic7,IC 7,Senior Staff (Advisor),p25,119821,138924,0.0596
+seed,$1M-$10M,austin,"Austin, TX",marketing,Marketing,ic7,IC 7,Senior Staff (Advisor),p50,134293,155710,0.2172
+seed,$1M-$10M,austin,"Austin, TX",marketing,Marketing,ic7,IC 7,Senior Staff (Advisor),p75,157447,182337,0.8372
+seed,$1M-$10M,austin,"Austin, TX",marketing,Marketing,ic7,IC 7,Senior Staff (Advisor),p90,169024,195651,1.024
+seed,$1M-$10M,austin,"Austin, TX",marketing,Marketing,ic8,IC 8,Principal (Strategist),p25,129831,150429,0.0712
+seed,$1M-$10M,austin,"Austin, TX",marketing,Marketing,ic8,IC 8,Principal (Strategist),p50,147308,171027,0.3228
+seed,$1M-$10M,austin,"Austin, TX",marketing,Marketing,ic8,IC 8,Principal (Strategist),p75,173524,200988,1.9208
+seed,$1M-$10M,austin,"Austin, TX",marketing,Marketing,ic8,IC 8,Principal (Strategist),p90,206606,239064,2.3692
+seed,$1M-$10M,austin,"Austin, TX",marketing,Marketing,ic9,IC 9,Distinguished (Thought Leader),p25,132697,161977,0.3488
+seed,$1M-$10M,austin,"Austin, TX",marketing,Marketing,ic9,IC 9,Distinguished (Thought Leader),p50,152632,186274,0.8608
+seed,$1M-$10M,austin,"Austin, TX",marketing,Marketing,ic9,IC 9,Distinguished (Thought Leader),p75,180044,219915,1.9836
+seed,$1M-$10M,austin,"Austin, TX",marketing,Marketing,ic9,IC 9,Distinguished (Thought Leader),p90,214931,262279,2.5624
+seed,$1M-$10M,boston,"Boston, MA",engineering,Engineering,ic1,IC 1,Entry,p25,69423,76636,0.0032
+seed,$1M-$10M,boston,"Boston, MA",engineering,Engineering,ic1,IC 1,Entry,p50,90160,100077,0.0328
+seed,$1M-$10M,boston,"Boston, MA",engineering,Engineering,ic1,IC 1,Entry,p75,104585,115404,0.1536
+seed,$1M-$10M,boston,"Boston, MA",engineering,Engineering,ic1,IC 1,Entry,p90,121716,134338,0.1924
+seed,$1M-$10M,boston,"Boston, MA",engineering,Engineering,ic2,IC 2,Mid 1 (Developing),p25,101733,112933,0.0196
+seed,$1M-$10M,boston,"Boston, MA",engineering,Engineering,ic2,IC 2,Mid 1 (Developing),p50,117599,129733,0.068
+seed,$1M-$10M,boston,"Boston, MA",engineering,Engineering,ic2,IC 2,Mid 1 (Developing),p75,139066,153999,0.1728
+seed,$1M-$10M,boston,"Boston, MA",engineering,Engineering,ic2,IC 2,Mid 1 (Developing),p90,147466,163333,0.274
+seed,$1M-$10M,boston,"Boston, MA",engineering,Engineering,ic3,IC 3,Mid 2 (Proficient),p25,106527,117695,0.0356
+seed,$1M-$10M,boston,"Boston, MA",engineering,Engineering,ic3,IC 3,Mid 2 (Proficient),p50,132300,146045,0.0828
+seed,$1M-$10M,boston,"Boston, MA",engineering,Engineering,ic3,IC 3,Mid 2 (Proficient),p75,146904,162368,0.1864
+seed,$1M-$10M,boston,"Boston, MA",engineering,Engineering,ic3,IC 3,Mid 2 (Proficient),p90,176972,195872,0.3668
+seed,$1M-$10M,boston,"Boston, MA",engineering,Engineering,ic4,IC 4,Senior 1 (Skilled),p25,114642,126801,0.0388
+seed,$1M-$10M,boston,"Boston, MA",engineering,Engineering,ic4,IC 4,Senior 1 (Skilled),p50,145040,160673,0.0856
+seed,$1M-$10M,boston,"Boston, MA",engineering,Engineering,ic4,IC 4,Senior 1 (Skilled),p75,170226,188465,0.206
+seed,$1M-$10M,boston,"Boston, MA",engineering,Engineering,ic4,IC 4,Senior 1 (Skilled),p90,199755,220599,0.4228
+seed,$1M-$10M,boston,"Boston, MA",engineering,Engineering,ic5,IC 5,Senior 2 (Advanced),p25,142288,157365,0.0448
+seed,$1M-$10M,boston,"Boston, MA",engineering,Engineering,ic5,IC 5,Senior 2 (Advanced),p50,171500,190346,0.1
+seed,$1M-$10M,boston,"Boston, MA",engineering,Engineering,ic5,IC 5,Senior 2 (Advanced),p75,204480,227096,0.2244
+seed,$1M-$10M,boston,"Boston, MA",engineering,Engineering,ic5,IC 5,Senior 2 (Advanced),p90,228038,253480,0.4988
+seed,$1M-$10M,boston,"Boston, MA",engineering,Engineering,ic6,IC 6,Staff (Expert),p25,190241,210588,0.0472
+seed,$1M-$10M,boston,"Boston, MA",engineering,Engineering,ic6,IC 6,Staff (Expert),p50,213640,237038,0.1372
+seed,$1M-$10M,boston,"Boston, MA",engineering,Engineering,ic6,IC 6,Staff (Expert),p75,238056,264506,0.4172
+seed,$1M-$10M,boston,"Boston, MA",engineering,Engineering,ic6,IC 6,Staff (Expert),p90,281801,312321,0.6248
+seed,$1M-$10M,boston,"Boston, MA",engineering,Engineering,ic7,IC 7,Senior Staff (Advisor),p25,198488,230131,0.0596
+seed,$1M-$10M,boston,"Boston, MA",engineering,Engineering,ic7,IC 7,Senior Staff (Advisor),p50,222460,257938,0.2172
+seed,$1M-$10M,boston,"Boston, MA",engineering,Engineering,ic7,IC 7,Senior Staff (Advisor),p75,260815,302046,0.8372
+seed,$1M-$10M,boston,"Boston, MA",engineering,Engineering,ic7,IC 7,Senior Staff (Advisor),p90,279992,324101,1.024
+seed,$1M-$10M,boston,"Boston, MA",engineering,Engineering,ic8,IC 8,Principal (Strategist),p25,215068,249189,0.0712
+seed,$1M-$10M,boston,"Boston, MA",engineering,Engineering,ic8,IC 8,Principal (Strategist),p50,244020,283311,0.3228
+seed,$1M-$10M,boston,"Boston, MA",engineering,Engineering,ic8,IC 8,Principal (Strategist),p75,287447,332942,1.9208
+seed,$1M-$10M,boston,"Boston, MA",engineering,Engineering,ic8,IC 8,Principal (Strategist),p90,342248,396015,2.3692
+seed,$1M-$10M,boston,"Boston, MA",engineering,Engineering,ic9,IC 9,Distinguished (Thought Leader),p25,219816,268320,0.3488
+seed,$1M-$10M,boston,"Boston, MA",engineering,Engineering,ic9,IC 9,Distinguished (Thought Leader),p50,252840,308568,0.8608
+seed,$1M-$10M,boston,"Boston, MA",engineering,Engineering,ic9,IC 9,Distinguished (Thought Leader),p75,298248,364296,1.9836
+seed,$1M-$10M,boston,"Boston, MA",engineering,Engineering,ic9,IC 9,Distinguished (Thought Leader),p90,356040,434472,2.5624
+seed,$1M-$10M,boston,"Boston, MA",product,Product,ic1,IC 1,Entry,p25,71505,78935,0.0032
+seed,$1M-$10M,boston,"Boston, MA",product,Product,ic1,IC 1,Entry,p50,92864,103079,0.0328
+seed,$1M-$10M,boston,"Boston, MA",product,Product,ic1,IC 1,Entry,p75,107723,118866,0.1536
+seed,$1M-$10M,boston,"Boston, MA",product,Product,ic1,IC 1,Entry,p90,125367,138368,0.1924
+seed,$1M-$10M,boston,"Boston, MA",product,Product,ic2,IC 2,Mid 1 (Developing),p25,104785,116321,0.0196
+seed,$1M-$10M,boston,"Boston, MA",product,Product,ic2,IC 2,Mid 1 (Developing),p50,121127,133625,0.068
+seed,$1M-$10M,boston,"Boston, MA",product,Product,ic2,IC 2,Mid 1 (Developing),p75,143238,158620,0.1728
+seed,$1M-$10M,boston,"Boston, MA",product,Product,ic2,IC 2,Mid 1 (Developing),p90,151890,168233,0.274
+seed,$1M-$10M,boston,"Boston, MA",product,Product,ic3,IC 3,Mid 2 (Proficient),p25,109723,121226,0.0356
+seed,$1M-$10M,boston,"Boston, MA",product,Product,ic3,IC 3,Mid 2 (Proficient),p50,136269,150426,0.0828
+seed,$1M-$10M,boston,"Boston, MA",product,Product,ic3,IC 3,Mid 2 (Proficient),p75,151311,167239,0.1864
+seed,$1M-$10M,boston,"Boston, MA",product,Product,ic3,IC 3,Mid 2 (Proficient),p90,182281,201748,0.3668
+seed,$1M-$10M,boston,"Boston, MA",product,Product,ic4,IC 4,Senior 1 (Skilled),p25,118081,130605,0.0388
+seed,$1M-$10M,boston,"Boston, MA",product,Product,ic4,IC 4,Senior 1 (Skilled),p50,149391,165493,0.0856
+seed,$1M-$10M,boston,"Boston, MA",product,Product,ic4,IC 4,Senior 1 (Skilled),p75,175333,194119,0.206
+seed,$1M-$10M,boston,"Boston, MA",product,Product,ic4,IC 4,Senior 1 (Skilled),p90,205748,227217,0.4228
+seed,$1M-$10M,boston,"Boston, MA",product,Product,ic5,IC 5,Senior 2 (Advanced),p25,146557,162086,0.0448
+seed,$1M-$10M,boston,"Boston, MA",product,Product,ic5,IC 5,Senior 2 (Advanced),p50,176645,196056,0.1
+seed,$1M-$10M,boston,"Boston, MA",product,Product,ic5,IC 5,Senior 2 (Advanced),p75,210615,233909,0.2244
+seed,$1M-$10M,boston,"Boston, MA",product,Product,ic5,IC 5,Senior 2 (Advanced),p90,234879,261085,0.4988
+seed,$1M-$10M,boston,"Boston, MA",product,Product,ic6,IC 6,Staff (Expert),p25,195948,216905,0.0472
+seed,$1M-$10M,boston,"Boston, MA",product,Product,ic6,IC 6,Staff (Expert),p50,220049,244149,0.1372
+seed,$1M-$10M,boston,"Boston, MA",product,Product,ic6,IC 6,Staff (Expert),p75,245197,272441,0.4172
+seed,$1M-$10M,boston,"Boston, MA",product,Product,ic6,IC 6,Staff (Expert),p90,290255,321690,0.6248
+seed,$1M-$10M,boston,"Boston, MA",product,Product,ic7,IC 7,Senior Staff (Advisor),p25,204442,237034,0.0596
+seed,$1M-$10M,boston,"Boston, MA",product,Product,ic7,IC 7,Senior Staff (Advisor),p50,229133,265676,0.2172
+seed,$1M-$10M,boston,"Boston, MA",product,Product,ic7,IC 7,Senior Staff (Advisor),p75,268639,311108,0.8372
+seed,$1M-$10M,boston,"Boston, MA",product,Product,ic7,IC 7,Senior Staff (Advisor),p90,288392,333824,1.024
+seed,$1M-$10M,boston,"Boston, MA",product,Product,ic8,IC 8,Principal (Strategist),p25,221520,256665,0.0712
+seed,$1M-$10M,boston,"Boston, MA",product,Product,ic8,IC 8,Principal (Strategist),p50,251340,291810,0.3228
+seed,$1M-$10M,boston,"Boston, MA",product,Product,ic8,IC 8,Principal (Strategist),p75,296070,342930,1.9208
+seed,$1M-$10M,boston,"Boston, MA",product,Product,ic8,IC 8,Principal (Strategist),p90,352515,407895,2.3692
+seed,$1M-$10M,boston,"Boston, MA",product,Product,ic9,IC 9,Distinguished (Thought Leader),p25,226410,276369,0.3488
+seed,$1M-$10M,boston,"Boston, MA",product,Product,ic9,IC 9,Distinguished (Thought Leader),p50,260425,317825,0.8608
+seed,$1M-$10M,boston,"Boston, MA",product,Product,ic9,IC 9,Distinguished (Thought Leader),p75,307195,375224,1.9836
+seed,$1M-$10M,boston,"Boston, MA",product,Product,ic9,IC 9,Distinguished (Thought Leader),p90,366721,447506,2.5624
+seed,$1M-$10M,boston,"Boston, MA",design,Design,ic1,IC 1,Entry,p25,49290,54411,0.0032
+seed,$1M-$10M,boston,"Boston, MA",design,Design,ic1,IC 1,Entry,p50,64013,71055,0.0328
+seed,$1M-$10M,boston,"Boston, MA",design,Design,ic1,IC 1,Entry,p75,74255,81937,0.1536
+seed,$1M-$10M,boston,"Boston, MA",design,Design,ic1,IC 1,Entry,p90,86418,95380,0.1924
+seed,$1M-$10M,boston,"Boston, MA",design,Design,ic2,IC 2,Mid 1 (Developing),p25,72230,80182,0.0196
+seed,$1M-$10M,boston,"Boston, MA",design,Design,ic2,IC 2,Mid 1 (Developing),p50,83495,92110,0.068
+seed,$1M-$10M,boston,"Boston, MA",design,Design,ic2,IC 2,Mid 1 (Developing),p75,98737,109339,0.1728
+seed,$1M-$10M,boston,"Boston, MA",design,Design,ic2,IC 2,Mid 1 (Developing),p90,104701,115966,0.274
+seed,$1M-$10M,boston,"Boston, MA",design,Design,ic3,IC 3,Mid 2 (Proficient),p25,75634,83563,0.0356
+seed,$1M-$10M,boston,"Boston, MA",design,Design,ic3,IC 3,Mid 2 (Proficient),p50,93933,103692,0.0828
+seed,$1M-$10M,boston,"Boston, MA",design,Design,ic3,IC 3,Mid 2 (Proficient),p75,104302,115281,0.1864
+seed,$1M-$10M,boston,"Boston, MA",design,Design,ic3,IC 3,Mid 2 (Proficient),p90,125650,139069,0.3668
+seed,$1M-$10M,boston,"Boston, MA",design,Design,ic4,IC 4,Senior 1 (Skilled),p25,81396,90029,0.0388
+seed,$1M-$10M,boston,"Boston, MA",design,Design,ic4,IC 4,Senior 1 (Skilled),p50,102978,114077,0.0856
+seed,$1M-$10M,boston,"Boston, MA",design,Design,ic4,IC 4,Senior 1 (Skilled),p75,120860,133810,0.206
+seed,$1M-$10M,boston,"Boston, MA",design,Design,ic4,IC 4,Senior 1 (Skilled),p90,141826,156625,0.4228
+seed,$1M-$10M,boston,"Boston, MA",design,Design,ic5,IC 5,Senior 2 (Advanced),p25,101024,111729,0.0448
+seed,$1M-$10M,boston,"Boston, MA",design,Design,ic5,IC 5,Senior 2 (Advanced),p50,121764,135145,0.1
+seed,$1M-$10M,boston,"Boston, MA",design,Design,ic5,IC 5,Senior 2 (Advanced),p75,145181,161238,0.2244
+seed,$1M-$10M,boston,"Boston, MA",design,Design,ic5,IC 5,Senior 2 (Advanced),p90,161907,179971,0.4988
+seed,$1M-$10M,boston,"Boston, MA",design,Design,ic6,IC 6,Staff (Expert),p25,135071,149517,0.0472
+seed,$1M-$10M,boston,"Boston, MA",design,Design,ic6,IC 6,Staff (Expert),p50,151684,168297,0.1372
+seed,$1M-$10M,boston,"Boston, MA",design,Design,ic6,IC 6,Staff (Expert),p75,169019,187799,0.4172
+seed,$1M-$10M,boston,"Boston, MA",design,Design,ic6,IC 6,Staff (Expert),p90,200078,221748,0.6248
+seed,$1M-$10M,boston,"Boston, MA",design,Design,ic7,IC 7,Senior Staff (Advisor),p25,140926,163393,0.0596
+seed,$1M-$10M,boston,"Boston, MA",design,Design,ic7,IC 7,Senior Staff (Advisor),p50,157946,183136,0.2172
+seed,$1M-$10M,boston,"Boston, MA",design,Design,ic7,IC 7,Senior Staff (Advisor),p75,185178,214453,0.8372
+seed,$1M-$10M,boston,"Boston, MA",design,Design,ic7,IC 7,Senior Staff (Advisor),p90,198794,230111,1.024
+seed,$1M-$10M,boston,"Boston, MA",design,Design,ic8,IC 8,Principal (Strategist),p25,152698,176924,0.0712
+seed,$1M-$10M,boston,"Boston, MA",design,Design,ic8,IC 8,Principal (Strategist),p50,173254,201151,0.3228
+seed,$1M-$10M,boston,"Boston, MA",design,Design,ic8,IC 8,Principal (Strategist),p75,204087,236389,1.9208
+seed,$1M-$10M,boston,"Boston, MA",design,Design,ic8,IC 8,Principal (Strategist),p90,242996,281171,2.3692
+seed,$1M-$10M,boston,"Boston, MA",design,Design,ic9,IC 9,Distinguished (Thought Leader),p25,156069,190507,0.3488
+seed,$1M-$10M,boston,"Boston, MA",design,Design,ic9,IC 9,Distinguished (Thought Leader),p50,179516,219083,0.8608
+seed,$1M-$10M,boston,"Boston, MA",design,Design,ic9,IC 9,Distinguished (Thought Leader),p75,211756,258650,1.9836
+seed,$1M-$10M,boston,"Boston, MA",design,Design,ic9,IC 9,Distinguished (Thought Leader),p90,252788,308475,2.5624
+seed,$1M-$10M,boston,"Boston, MA",sales,Sales,ic1,IC 1,Entry,p25,49290,54411,0.0032
+seed,$1M-$10M,boston,"Boston, MA",sales,Sales,ic1,IC 1,Entry,p50,64013,71055,0.0328
+seed,$1M-$10M,boston,"Boston, MA",sales,Sales,ic1,IC 1,Entry,p75,74255,81937,0.1536
+seed,$1M-$10M,boston,"Boston, MA",sales,Sales,ic1,IC 1,Entry,p90,86418,95380,0.1924
+seed,$1M-$10M,boston,"Boston, MA",sales,Sales,ic2,IC 2,Mid 1 (Developing),p25,72230,80182,0.0196
+seed,$1M-$10M,boston,"Boston, MA",sales,Sales,ic2,IC 2,Mid 1 (Developing),p50,83495,92110,0.068
+seed,$1M-$10M,boston,"Boston, MA",sales,Sales,ic2,IC 2,Mid 1 (Developing),p75,98737,109339,0.1728
+seed,$1M-$10M,boston,"Boston, MA",sales,Sales,ic2,IC 2,Mid 1 (Developing),p90,104701,115966,0.274
+seed,$1M-$10M,boston,"Boston, MA",sales,Sales,ic3,IC 3,Mid 2 (Proficient),p25,75634,83563,0.0356
+seed,$1M-$10M,boston,"Boston, MA",sales,Sales,ic3,IC 3,Mid 2 (Proficient),p50,93933,103692,0.0828
+seed,$1M-$10M,boston,"Boston, MA",sales,Sales,ic3,IC 3,Mid 2 (Proficient),p75,104302,115281,0.1864
+seed,$1M-$10M,boston,"Boston, MA",sales,Sales,ic3,IC 3,Mid 2 (Proficient),p90,125650,139069,0.3668
+seed,$1M-$10M,boston,"Boston, MA",sales,Sales,ic4,IC 4,Senior 1 (Skilled),p25,81396,90029,0.0388
+seed,$1M-$10M,boston,"Boston, MA",sales,Sales,ic4,IC 4,Senior 1 (Skilled),p50,102978,114077,0.0856
+seed,$1M-$10M,boston,"Boston, MA",sales,Sales,ic4,IC 4,Senior 1 (Skilled),p75,120860,133810,0.206
+seed,$1M-$10M,boston,"Boston, MA",sales,Sales,ic4,IC 4,Senior 1 (Skilled),p90,141826,156625,0.4228
+seed,$1M-$10M,boston,"Boston, MA",sales,Sales,ic5,IC 5,Senior 2 (Advanced),p25,101024,111729,0.0448
+seed,$1M-$10M,boston,"Boston, MA",sales,Sales,ic5,IC 5,Senior 2 (Advanced),p50,121764,135145,0.1
+seed,$1M-$10M,boston,"Boston, MA",sales,Sales,ic5,IC 5,Senior 2 (Advanced),p75,145181,161238,0.2244
+seed,$1M-$10M,boston,"Boston, MA",sales,Sales,ic5,IC 5,Senior 2 (Advanced),p90,161907,179971,0.4988
+seed,$1M-$10M,boston,"Boston, MA",sales,Sales,ic6,IC 6,Staff (Expert),p25,135071,149517,0.0472
+seed,$1M-$10M,boston,"Boston, MA",sales,Sales,ic6,IC 6,Staff (Expert),p50,151684,168297,0.1372
+seed,$1M-$10M,boston,"Boston, MA",sales,Sales,ic6,IC 6,Staff (Expert),p75,169019,187799,0.4172
+seed,$1M-$10M,boston,"Boston, MA",sales,Sales,ic6,IC 6,Staff (Expert),p90,200078,221748,0.6248
+seed,$1M-$10M,boston,"Boston, MA",sales,Sales,ic7,IC 7,Senior Staff (Advisor),p25,140926,163393,0.0596
+seed,$1M-$10M,boston,"Boston, MA",sales,Sales,ic7,IC 7,Senior Staff (Advisor),p50,157946,183136,0.2172
+seed,$1M-$10M,boston,"Boston, MA",sales,Sales,ic7,IC 7,Senior Staff (Advisor),p75,185178,214453,0.8372
+seed,$1M-$10M,boston,"Boston, MA",sales,Sales,ic7,IC 7,Senior Staff (Advisor),p90,198794,230111,1.024
+seed,$1M-$10M,boston,"Boston, MA",sales,Sales,ic8,IC 8,Principal (Strategist),p25,152698,176924,0.0712
+seed,$1M-$10M,boston,"Boston, MA",sales,Sales,ic8,IC 8,Principal (Strategist),p50,173254,201151,0.3228
+seed,$1M-$10M,boston,"Boston, MA",sales,Sales,ic8,IC 8,Principal (Strategist),p75,204087,236389,1.9208
+seed,$1M-$10M,boston,"Boston, MA",sales,Sales,ic8,IC 8,Principal (Strategist),p90,242996,281171,2.3692
+seed,$1M-$10M,boston,"Boston, MA",sales,Sales,ic9,IC 9,Distinguished (Thought Leader),p25,156069,190507,0.3488
+seed,$1M-$10M,boston,"Boston, MA",sales,Sales,ic9,IC 9,Distinguished (Thought Leader),p50,179516,219083,0.8608
+seed,$1M-$10M,boston,"Boston, MA",sales,Sales,ic9,IC 9,Distinguished (Thought Leader),p75,211756,258650,1.9836
+seed,$1M-$10M,boston,"Boston, MA",sales,Sales,ic9,IC 9,Distinguished (Thought Leader),p90,252788,308475,2.5624
+seed,$1M-$10M,boston,"Boston, MA",marketing,Marketing,ic1,IC 1,Entry,p25,47207,52112,0.0032
+seed,$1M-$10M,boston,"Boston, MA",marketing,Marketing,ic1,IC 1,Entry,p50,61308,68052,0.0328
+seed,$1M-$10M,boston,"Boston, MA",marketing,Marketing,ic1,IC 1,Entry,p75,71118,78475,0.1536
+seed,$1M-$10M,boston,"Boston, MA",marketing,Marketing,ic1,IC 1,Entry,p90,82766,91350,0.1924
+seed,$1M-$10M,boston,"Boston, MA",marketing,Marketing,ic2,IC 2,Mid 1 (Developing),p25,69178,76794,0.0196
+seed,$1M-$10M,boston,"Boston, MA",marketing,Marketing,ic2,IC 2,Mid 1 (Developing),p50,79967,88218,0.068
+seed,$1M-$10M,boston,"Boston, MA",marketing,Marketing,ic2,IC 2,Mid 1 (Developing),p75,94565,104719,0.1728
+seed,$1M-$10M,boston,"Boston, MA",marketing,Marketing,ic2,IC 2,Mid 1 (Developing),p90,100277,111066,0.274
+seed,$1M-$10M,boston,"Boston, MA",marketing,Marketing,ic3,IC 3,Mid 2 (Proficient),p25,72438,80032,0.0356
+seed,$1M-$10M,boston,"Boston, MA",marketing,Marketing,ic3,IC 3,Mid 2 (Proficient),p50,89964,99310,0.0828
+seed,$1M-$10M,boston,"Boston, MA",marketing,Marketing,ic3,IC 3,Mid 2 (Proficient),p75,99895,110410,0.1864
+seed,$1M-$10M,boston,"Boston, MA",marketing,Marketing,ic3,IC 3,Mid 2 (Proficient),p90,120341,133193,0.3668
+seed,$1M-$10M,boston,"Boston, MA",marketing,Marketing,ic4,IC 4,Senior 1 (Skilled),p25,77956,86224,0.0388
+seed,$1M-$10M,boston,"Boston, MA",marketing,Marketing,ic4,IC 4,Senior 1 (Skilled),p50,98627,109257,0.0856
+seed,$1M-$10M,boston,"Boston, MA",marketing,Marketing,ic4,IC 4,Senior 1 (Skilled),p75,115754,128156,0.206
+seed,$1M-$10M,boston,"Boston, MA",marketing,Marketing,ic4,IC 4,Senior 1 (Skilled),p90,135833,150007,0.4228
+seed,$1M-$10M,boston,"Boston, MA",marketing,Marketing,ic5,IC 5,Senior 2 (Advanced),p25,96756,107008,0.0448
+seed,$1M-$10M,boston,"Boston, MA",marketing,Marketing,ic5,IC 5,Senior 2 (Advanced),p50,116620,129435,0.1
+seed,$1M-$10M,boston,"Boston, MA",marketing,Marketing,ic5,IC 5,Senior 2 (Advanced),p75,139046,154425,0.2244
+seed,$1M-$10M,boston,"Boston, MA",marketing,Marketing,ic5,IC 5,Senior 2 (Advanced),p90,155066,172366,0.4988
+seed,$1M-$10M,boston,"Boston, MA",marketing,Marketing,ic6,IC 6,Staff (Expert),p25,129364,143199,0.0472
+seed,$1M-$10M,boston,"Boston, MA",marketing,Marketing,ic6,IC 6,Staff (Expert),p50,145275,161186,0.1372
+seed,$1M-$10M,boston,"Boston, MA",marketing,Marketing,ic6,IC 6,Staff (Expert),p75,161878,179864,0.4172
+seed,$1M-$10M,boston,"Boston, MA",marketing,Marketing,ic6,IC 6,Staff (Expert),p90,191624,212378,0.6248
+seed,$1M-$10M,boston,"Boston, MA",marketing,Marketing,ic7,IC 7,Senior Staff (Advisor),p25,134971,156489,0.0596
+seed,$1M-$10M,boston,"Boston, MA",marketing,Marketing,ic7,IC 7,Senior Staff (Advisor),p50,151272,175398,0.2172
+seed,$1M-$10M,boston,"Boston, MA",marketing,Marketing,ic7,IC 7,Senior Staff (Advisor),p75,177354,205391,0.8372
+seed,$1M-$10M,boston,"Boston, MA",marketing,Marketing,ic7,IC 7,Senior Staff (Advisor),p90,190395,220388,1.024
+seed,$1M-$10M,boston,"Boston, MA",marketing,Marketing,ic8,IC 8,Principal (Strategist),p25,146246,169449,0.0712
+seed,$1M-$10M,boston,"Boston, MA",marketing,Marketing,ic8,IC 8,Principal (Strategist),p50,165933,192651,0.3228
+seed,$1M-$10M,boston,"Boston, MA",marketing,Marketing,ic8,IC 8,Principal (Strategist),p75,195464,226400,1.9208
+seed,$1M-$10M,boston,"Boston, MA",marketing,Marketing,ic8,IC 8,Principal (Strategist),p90,232728,269290,2.3692
+seed,$1M-$10M,boston,"Boston, MA",marketing,Marketing,ic9,IC 9,Distinguished (Thought Leader),p25,149474,182457,0.3488
+seed,$1M-$10M,boston,"Boston, MA",marketing,Marketing,ic9,IC 9,Distinguished (Thought Leader),p50,171931,209826,0.8608
+seed,$1M-$10M,boston,"Boston, MA",marketing,Marketing,ic9,IC 9,Distinguished (Thought Leader),p75,202808,247721,1.9836
+seed,$1M-$10M,boston,"Boston, MA",marketing,Marketing,ic9,IC 9,Distinguished (Thought Leader),p90,242107,295440,2.5624
+seed,$1M-$10M,los_angeles,"Los Angeles, CA",engineering,Engineering,ic1,IC 1,Entry,p25,68006,75072,0.0032
+seed,$1M-$10M,los_angeles,"Los Angeles, CA",engineering,Engineering,ic1,IC 1,Entry,p50,88320,98035,0.0328
+seed,$1M-$10M,los_angeles,"Los Angeles, CA",engineering,Engineering,ic1,IC 1,Entry,p75,102451,113049,0.1536
+seed,$1M-$10M,los_angeles,"Los Angeles, CA",engineering,Engineering,ic1,IC 1,Entry,p90,119232,131596,0.1924
+seed,$1M-$10M,los_angeles,"Los Angeles, CA",engineering,Engineering,ic2,IC 2,Mid 1 (Developing),p25,99657,110628,0.0196
+seed,$1M-$10M,los_angeles,"Los Angeles, CA",engineering,Engineering,ic2,IC 2,Mid 1 (Developing),p50,115199,127085,0.068
+seed,$1M-$10M,los_angeles,"Los Angeles, CA",engineering,Engineering,ic2,IC 2,Mid 1 (Developing),p75,136228,150857,0.1728
+seed,$1M-$10M,los_angeles,"Los Angeles, CA",engineering,Engineering,ic2,IC 2,Mid 1 (Developing),p90,144457,159999,0.274
+seed,$1M-$10M,los_angeles,"Los Angeles, CA",engineering,Engineering,ic3,IC 3,Mid 2 (Proficient),p25,104353,115293,0.0356
+seed,$1M-$10M,los_angeles,"Los Angeles, CA",engineering,Engineering,ic3,IC 3,Mid 2 (Proficient),p50,129599,143064,0.0828
+seed,$1M-$10M,los_angeles,"Los Angeles, CA",engineering,Engineering,ic3,IC 3,Mid 2 (Proficient),p75,143906,159054,0.1864
+seed,$1M-$10M,los_angeles,"Los Angeles, CA",engineering,Engineering,ic3,IC 3,Mid 2 (Proficient),p90,173361,191875,0.3668
+seed,$1M-$10M,los_angeles,"Los Angeles, CA",engineering,Engineering,ic4,IC 4,Senior 1 (Skilled),p25,112302,124213,0.0388
+seed,$1M-$10M,los_angeles,"Los Angeles, CA",engineering,Engineering,ic4,IC 4,Senior 1 (Skilled),p50,142080,157394,0.0856
+seed,$1M-$10M,los_angeles,"Los Angeles, CA",engineering,Engineering,ic4,IC 4,Senior 1 (Skilled),p75,166752,184618,0.206
+seed,$1M-$10M,los_angeles,"Los Angeles, CA",engineering,Engineering,ic4,IC 4,Senior 1 (Skilled),p90,195679,216097,0.4228
+seed,$1M-$10M,los_angeles,"Los Angeles, CA",engineering,Engineering,ic5,IC 5,Senior 2 (Advanced),p25,139384,154153,0.0448
+seed,$1M-$10M,los_angeles,"Los Angeles, CA",engineering,Engineering,ic5,IC 5,Senior 2 (Advanced),p50,168000,186461,0.1
+seed,$1M-$10M,los_angeles,"Los Angeles, CA",engineering,Engineering,ic5,IC 5,Senior 2 (Advanced),p75,200307,222461,0.2244
+seed,$1M-$10M,los_angeles,"Los Angeles, CA",engineering,Engineering,ic5,IC 5,Senior 2 (Advanced),p90,223384,248307,0.4988
+seed,$1M-$10M,los_angeles,"Los Angeles, CA",engineering,Engineering,ic6,IC 6,Staff (Expert),p25,186358,206290,0.0472
+seed,$1M-$10M,los_angeles,"Los Angeles, CA",engineering,Engineering,ic6,IC 6,Staff (Expert),p50,209280,232201,0.1372
+seed,$1M-$10M,los_angeles,"Los Angeles, CA",engineering,Engineering,ic6,IC 6,Staff (Expert),p75,233197,259108,0.4172
+seed,$1M-$10M,los_angeles,"Los Angeles, CA",engineering,Engineering,ic6,IC 6,Staff (Expert),p90,276050,305947,0.6248
+seed,$1M-$10M,los_angeles,"Los Angeles, CA",engineering,Engineering,ic7,IC 7,Senior Staff (Advisor),p25,194437,225434,0.0596
+seed,$1M-$10M,los_angeles,"Los Angeles, CA",engineering,Engineering,ic7,IC 7,Senior Staff (Advisor),p50,217919,252674,0.2172
+seed,$1M-$10M,los_angeles,"Los Angeles, CA",engineering,Engineering,ic7,IC 7,Senior Staff (Advisor),p75,255492,295882,0.8372
+seed,$1M-$10M,los_angeles,"Los Angeles, CA",engineering,Engineering,ic7,IC 7,Senior Staff (Advisor),p90,274278,317486,1.024
+seed,$1M-$10M,los_angeles,"Los Angeles, CA",engineering,Engineering,ic8,IC 8,Principal (Strategist),p25,210679,244104,0.0712
+seed,$1M-$10M,los_angeles,"Los Angeles, CA",engineering,Engineering,ic8,IC 8,Principal (Strategist),p50,239040,277529,0.3228
+seed,$1M-$10M,los_angeles,"Los Angeles, CA",engineering,Engineering,ic8,IC 8,Principal (Strategist),p75,281581,326147,1.9208
+seed,$1M-$10M,los_angeles,"Los Angeles, CA",engineering,Engineering,ic8,IC 8,Principal (Strategist),p90,335263,387933,2.3692
+seed,$1M-$10M,los_angeles,"Los Angeles, CA",engineering,Engineering,ic9,IC 9,Distinguished (Thought Leader),p25,215329,262844,0.3488
+seed,$1M-$10M,los_angeles,"Los Angeles, CA",engineering,Engineering,ic9,IC 9,Distinguished (Thought Leader),p50,247679,302270,0.8608
+seed,$1M-$10M,los_angeles,"Los Angeles, CA",engineering,Engineering,ic9,IC 9,Distinguished (Thought Leader),p75,292161,356861,1.9836
+seed,$1M-$10M,los_angeles,"Los Angeles, CA",engineering,Engineering,ic9,IC 9,Distinguished (Thought Leader),p90,348773,425605,2.5624
+seed,$1M-$10M,los_angeles,"Los Angeles, CA",product,Product,ic1,IC 1,Entry,p25,70046,77324,0.0032
+seed,$1M-$10M,los_angeles,"Los Angeles, CA",product,Product,ic1,IC 1,Entry,p50,90969,100976,0.0328
+seed,$1M-$10M,los_angeles,"Los Angeles, CA",product,Product,ic1,IC 1,Entry,p75,105524,116441,0.1536
+seed,$1M-$10M,los_angeles,"Los Angeles, CA",product,Product,ic1,IC 1,Entry,p90,122808,135544,0.1924
+seed,$1M-$10M,los_angeles,"Los Angeles, CA",product,Product,ic2,IC 2,Mid 1 (Developing),p25,102646,113947,0.0196
+seed,$1M-$10M,los_angeles,"Los Angeles, CA",product,Product,ic2,IC 2,Mid 1 (Developing),p50,118655,130898,0.068
+seed,$1M-$10M,los_angeles,"Los Angeles, CA",product,Product,ic2,IC 2,Mid 1 (Developing),p75,140315,155382,0.1728
+seed,$1M-$10M,los_angeles,"Los Angeles, CA",product,Product,ic2,IC 2,Mid 1 (Developing),p90,148790,164799,0.274
+seed,$1M-$10M,los_angeles,"Los Angeles, CA",product,Product,ic3,IC 3,Mid 2 (Proficient),p25,107483,118752,0.0356
+seed,$1M-$10M,los_angeles,"Los Angeles, CA",product,Product,ic3,IC 3,Mid 2 (Proficient),p50,133488,147356,0.0828
+seed,$1M-$10M,los_angeles,"Los Angeles, CA",product,Product,ic3,IC 3,Mid 2 (Proficient),p75,148223,163826,0.1864
+seed,$1M-$10M,los_angeles,"Los Angeles, CA",product,Product,ic3,IC 3,Mid 2 (Proficient),p90,178561,197631,0.3668
+seed,$1M-$10M,los_angeles,"Los Angeles, CA",product,Product,ic4,IC 4,Senior 1 (Skilled),p25,115671,127940,0.0388
+seed,$1M-$10M,los_angeles,"Los Angeles, CA",product,Product,ic4,IC 4,Senior 1 (Skilled),p50,146342,162115,0.0856
+seed,$1M-$10M,los_angeles,"Los Angeles, CA",product,Product,ic4,IC 4,Senior 1 (Skilled),p75,171755,190157,0.206
+seed,$1M-$10M,los_angeles,"Los Angeles, CA",product,Product,ic4,IC 4,Senior 1 (Skilled),p90,201549,222580,0.4228
+seed,$1M-$10M,los_angeles,"Los Angeles, CA",product,Product,ic5,IC 5,Senior 2 (Advanced),p25,143566,158778,0.0448
+seed,$1M-$10M,los_angeles,"Los Angeles, CA",product,Product,ic5,IC 5,Senior 2 (Advanced),p50,173040,192055,0.1
+seed,$1M-$10M,los_angeles,"Los Angeles, CA",product,Product,ic5,IC 5,Senior 2 (Advanced),p75,206316,229135,0.2244
+seed,$1M-$10M,los_angeles,"Los Angeles, CA",product,Product,ic5,IC 5,Senior 2 (Advanced),p90,230086,255756,0.4988
+seed,$1M-$10M,los_angeles,"Los Angeles, CA",product,Product,ic6,IC 6,Staff (Expert),p25,191949,212478,0.0472
+seed,$1M-$10M,los_angeles,"Los Angeles, CA",product,Product,ic6,IC 6,Staff (Expert),p50,215558,239167,0.1372
+seed,$1M-$10M,los_angeles,"Los Angeles, CA",product,Product,ic6,IC 6,Staff (Expert),p75,240193,266881,0.4172
+seed,$1M-$10M,los_angeles,"Los Angeles, CA",product,Product,ic6,IC 6,Staff (Expert),p90,284331,315125,0.6248
+seed,$1M-$10M,los_angeles,"Los Angeles, CA",product,Product,ic7,IC 7,Senior Staff (Advisor),p25,200270,232197,0.0596
+seed,$1M-$10M,los_angeles,"Los Angeles, CA",product,Product,ic7,IC 7,Senior Staff (Advisor),p50,224457,260254,0.2172
+seed,$1M-$10M,los_angeles,"Los Angeles, CA",product,Product,ic7,IC 7,Senior Staff (Advisor),p75,263157,304759,0.8372
+seed,$1M-$10M,los_angeles,"Los Angeles, CA",product,Product,ic7,IC 7,Senior Staff (Advisor),p90,282506,327011,1.024
+seed,$1M-$10M,los_angeles,"Los Angeles, CA",product,Product,ic8,IC 8,Principal (Strategist),p25,216999,251427,0.0712
+seed,$1M-$10M,los_angeles,"Los Angeles, CA",product,Product,ic8,IC 8,Principal (Strategist),p50,246211,285855,0.3228
+seed,$1M-$10M,los_angeles,"Los Angeles, CA",product,Product,ic8,IC 8,Principal (Strategist),p75,290028,335932,1.9208
+seed,$1M-$10M,los_angeles,"Los Angeles, CA",product,Product,ic8,IC 8,Principal (Strategist),p90,345321,399571,2.3692
+seed,$1M-$10M,los_angeles,"Los Angeles, CA",product,Product,ic9,IC 9,Distinguished (Thought Leader),p25,221789,270729,0.3488
+seed,$1M-$10M,los_angeles,"Los Angeles, CA",product,Product,ic9,IC 9,Distinguished (Thought Leader),p50,255110,311338,0.8608
+seed,$1M-$10M,los_angeles,"Los Angeles, CA",product,Product,ic9,IC 9,Distinguished (Thought Leader),p75,300926,367567,1.9836
+seed,$1M-$10M,los_angeles,"Los Angeles, CA",product,Product,ic9,IC 9,Distinguished (Thought Leader),p90,359237,438373,2.5624
+seed,$1M-$10M,los_angeles,"Los Angeles, CA",design,Design,ic1,IC 1,Entry,p25,48284,53301,0.0032
+seed,$1M-$10M,los_angeles,"Los Angeles, CA",design,Design,ic1,IC 1,Entry,p50,62707,69604,0.0328
+seed,$1M-$10M,los_angeles,"Los Angeles, CA",design,Design,ic1,IC 1,Entry,p75,72740,80265,0.1536
+seed,$1M-$10M,los_angeles,"Los Angeles, CA",design,Design,ic1,IC 1,Entry,p90,84654,93433,0.1924
+seed,$1M-$10M,los_angeles,"Los Angeles, CA",design,Design,ic2,IC 2,Mid 1 (Developing),p25,70756,78546,0.0196
+seed,$1M-$10M,los_angeles,"Los Angeles, CA",design,Design,ic2,IC 2,Mid 1 (Developing),p50,81791,90230,0.068
+seed,$1M-$10M,los_angeles,"Los Angeles, CA",design,Design,ic2,IC 2,Mid 1 (Developing),p75,96722,107108,0.1728
+seed,$1M-$10M,los_angeles,"Los Angeles, CA",design,Design,ic2,IC 2,Mid 1 (Developing),p90,102564,113599,0.274
+seed,$1M-$10M,los_angeles,"Los Angeles, CA",design,Design,ic3,IC 3,Mid 2 (Proficient),p25,74090,81858,0.0356
+seed,$1M-$10M,los_angeles,"Los Angeles, CA",design,Design,ic3,IC 3,Mid 2 (Proficient),p50,92015,101576,0.0828
+seed,$1M-$10M,los_angeles,"Los Angeles, CA",design,Design,ic3,IC 3,Mid 2 (Proficient),p75,102173,112928,0.1864
+seed,$1M-$10M,los_angeles,"Los Angeles, CA",design,Design,ic3,IC 3,Mid 2 (Proficient),p90,123086,136231,0.3668
+seed,$1M-$10M,los_angeles,"Los Angeles, CA",design,Design,ic4,IC 4,Senior 1 (Skilled),p25,79734,88191,0.0388
+seed,$1M-$10M,los_angeles,"Los Angeles, CA",design,Design,ic4,IC 4,Senior 1 (Skilled),p50,100876,111749,0.0856
+seed,$1M-$10M,los_angeles,"Los Angeles, CA",design,Design,ic4,IC 4,Senior 1 (Skilled),p75,118394,131079,0.206
+seed,$1M-$10M,los_angeles,"Los Angeles, CA",design,Design,ic4,IC 4,Senior 1 (Skilled),p90,138932,153429,0.4228
+seed,$1M-$10M,los_angeles,"Los Angeles, CA",design,Design,ic5,IC 5,Senior 2 (Advanced),p25,98963,109449,0.0448
+seed,$1M-$10M,los_angeles,"Los Angeles, CA",design,Design,ic5,IC 5,Senior 2 (Advanced),p50,119279,132387,0.1
+seed,$1M-$10M,los_angeles,"Los Angeles, CA",design,Design,ic5,IC 5,Senior 2 (Advanced),p75,142218,157947,0.2244
+seed,$1M-$10M,los_angeles,"Los Angeles, CA",design,Design,ic5,IC 5,Senior 2 (Advanced),p90,158603,176298,0.4988
+seed,$1M-$10M,los_angeles,"Los Angeles, CA",design,Design,ic6,IC 6,Staff (Expert),p25,132314,146466,0.0472
+seed,$1M-$10M,los_angeles,"Los Angeles, CA",design,Design,ic6,IC 6,Staff (Expert),p50,148588,164862,0.1372
+seed,$1M-$10M,los_angeles,"Los Angeles, CA",design,Design,ic6,IC 6,Staff (Expert),p75,165570,183967,0.4172
+seed,$1M-$10M,los_angeles,"Los Angeles, CA",design,Design,ic6,IC 6,Staff (Expert),p90,195995,217222,0.6248
+seed,$1M-$10M,los_angeles,"Los Angeles, CA",design,Design,ic7,IC 7,Senior Staff (Advisor),p25,138050,160058,0.0596
+seed,$1M-$10M,los_angeles,"Los Angeles, CA",design,Design,ic7,IC 7,Senior Staff (Advisor),p50,154723,179398,0.2172
+seed,$1M-$10M,los_angeles,"Los Angeles, CA",design,Design,ic7,IC 7,Senior Staff (Advisor),p75,181399,210076,0.8372
+seed,$1M-$10M,los_angeles,"Los Angeles, CA",design,Design,ic7,IC 7,Senior Staff (Advisor),p90,194737,225415,1.024

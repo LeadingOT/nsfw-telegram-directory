@@ -1,0 +1,54 @@
+{
+  "properties": {
+    "accountingai.tools": {
+      "propertyId": "525666370",
+      "measurementId": "G-E8KF1B38B4"
+    },
+    "aigirlfriend.tools": {
+      "propertyId": "525598443",
+      "measurementId": "G-93421KKXJM"
+    },
+    "bestanime.info": {
+      "propertyId": null,
+      "measurementId": null,
+      "note": "No GA4 configured yet"
+    },
+    "bestnootropics.info": {
+      "propertyId": "525658413",
+      "measurementId": "G-8JB00EXKV0"
+    },
+    "bestofpodcasts.com": {
+      "propertyId": "525963553",
+      "measurementId": "G-0Y94V75GB2"
+    },
+    "bestonlyfans.info": {
+      "propertyId": "525973538",
+      "measurementId": "G-RM2E1Y7V6B"
+    },
+    "bestwriting.tools": {
+      "propertyId": "526275077",
+      "measurementId": "G-VK3P0R3PDD"
+    },
+    "hrai.tools": {
+      "propertyId": "525610079",
+      "measurementId": "G-D62DBG2E4F"
+    },
+    "legalai.tools": {
+      "propertyId": "525648921",
+      "measurementId": "G-G0FYSX4M9G"
+    },
+    "mattressrank.info": {
+      "propertyId": "526337202",
+      "measurementId": "G-BP0S500KSN"
+    },
+    "nsfwtelegrambot.com": {
+      "propertyId": "526000898",
+      "measurementId": "G-JPBXLQ06VN"
+    },
+    "realestateai.tools": {
+      "propertyId": "525599769",
+      "measurementId": "G-KX2K3KGZVY"
+    }
+  },
+  "note": "Service account: openclaw-gsc@openclaw-test-488308.iam.gserviceaccount.com has Editor access to all properties"
+}

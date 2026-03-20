@@ -1,0 +1,137 @@
+[
+  {
+    "role": "Software Engineer",
+    "location": "San Francisco",
+    "p25": 137500,
+    "p50": 168750,
+    "p75": 206250,
+    "source": "mock_h1b_data",
+    "updated_at": "2026-02-25T01:37:37.691218"
+  },
+  {
+    "role": "Software Engineer",
+    "location": "New York",
+    "p25": 132000,
+    "p50": 162000,
+    "p75": 198000,
+    "source": "mock_h1b_data",
+    "updated_at": "2026-02-25T01:37:37.691232"
+  },
+  {
+    "role": "Software Engineer",
+    "location": "Seattle",
+    "p25": 126499,
+    "p50": 155250,
+    "p75": 189749,
+    "source": "mock_h1b_data",
+    "updated_at": "2026-02-25T01:37:37.691233"
+  },
+  {
+    "role": "Software Engineer",
+    "location": "Austin",
+    "p25": 104500,
+    "p50": 128250,
+    "p75": 156750,
+    "source": "mock_h1b_data",
+    "updated_at": "2026-02-25T01:37:37.691234"
+  },
+  {
+    "role": "Software Engineer",
+    "location": "Boston",
+    "p25": 121000,
+    "p50": 148500,
+    "p75": 181500,
+    "source": "mock_h1b_data",
+    "updated_at": "2026-02-25T01:37:37.691235"
+  },
+  {
+    "role": "Senior Software Engineer",
+    "location": "San Francisco",
+    "p25": 181250,
+    "p50": 218750,
+    "p75": 262500,
+    "source": "mock_h1b_data",
+    "updated_at": "2026-02-25T01:37:37.691236"
+  },
+  {
+    "role": "Senior Software Engineer",
+    "location": "New York",
+    "p25": 174000,
+    "p50": 210000,
+    "p75": 252000,
+    "source": "mock_h1b_data",
+    "updated_at": "2026-02-25T01:37:37.691237"
+  },
+  {
+    "role": "Senior Software Engineer",
+    "location": "Seattle",
+    "p25": 166750,
+    "p50": 201249,
+    "p75": 241499,
+    "source": "mock_h1b_data",
+    "updated_at": "2026-02-25T01:37:37.691237"
+  },
+  {
+    "role": "Senior Software Engineer",
+    "location": "Austin",
+    "p25": 137750,
+    "p50": 166250,
+    "p75": 199500,
+    "source": "mock_h1b_data",
+    "updated_at": "2026-02-25T01:37:37.691238"
+  },
+  {
+    "role": "Senior Software Engineer",
+    "location": "Boston",
+    "p25": 159500,
+    "p50": 192500,
+    "p75": 231000,
+    "source": "mock_h1b_data",
+    "updated_at": "2026-02-25T01:37:37.691239"
+  },
+  {
+    "role": "Staff Software Engineer",
+    "location": "San Francisco",
+    "p25": 225000,
+    "p50": 268750,
+    "p75": 325000,
+    "source": "mock_h1b_data",
+    "updated_at": "2026-02-25T01:37:37.691240"
+  },
+  {
+    "role": "Staff Software Engineer",
+    "location": "New York",
+    "p25": 216000,
+    "p50": 258000,
+    "p75": 312000,
+    "source": "mock_h1b_data",
+    "updated_at": "2026-02-25T01:37:37.691240"
+  },
+  {
+    "role": "Staff Software Engineer",
+    "location": "Seattle",
+    "p25": 206999,
+    "p50": 247249,
+    "p75": 299000,
+    "source": "mock_h1b_data",
+    "updated_at": "2026-02-25T01:37:37.691241"
+  },
+  {
+    "role": "Staff Software Engineer",
+    "location": "Austin",
+    "p25": 171000,
+    "p50": 204250,
+    "p75": 247000,
+    "source": "mock_h1b_data",
+    "updated_at": "2026-02-25T01:37:37.691242"
+  },
+  {
+    "role": "Staff Software Engineer",
+    "location": "Boston",
+    "p25": 198000,
+    "p50": 236500,
+    "p75": 286000,
+    "source": "mock_h1b_data",
+    "updated_at": "2026-02-25T01:37:37.691242"
+  }
+]

@@ -1,0 +1,1 @@
+../../../scripts/gsc-auto.mjs

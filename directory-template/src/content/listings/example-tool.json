@@ -1,0 +1,33 @@
+{
+  "name": "Example Tool",
+  "slug": "example-tool",
+  "tagline": "The best example tool for demonstration purposes",
+  "description": "Example Tool is a comprehensive solution that helps teams collaborate more effectively. It offers real-time editing, task management, and integrations with popular platforms.",
+  "category": "Collaboration",
+  "subcategory": "Team Communication",
+  "url": "https://example.com",
+  "pricing": {
+    "model": "freemium",
+    "startingPrice": "$12/mo"
+  },
+  "features": [
+    "Real-time collaboration",
+    "Task management",
+    "File sharing",
+    "Video conferencing",
+    "API integrations",
+    "Mobile app"
+  ],
+  "pros": [
+    "Easy to use interface",
+    "Generous free tier",
+    "Great customer support"
+  ],
+  "cons": [
+    "Limited storage on free plan",
+    "No offline mode"
+  ],
+  "rating": 4.5,
+  "lastUpdated": "2026-02-23",
+  "tags": ["collaboration", "team", "productivity", "remote-work"]
+}

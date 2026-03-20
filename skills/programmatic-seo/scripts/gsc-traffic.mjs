@@ -1,0 +1,1 @@
+../../../scripts/gsc-traffic.mjs

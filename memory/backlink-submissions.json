@@ -1,0 +1,35 @@
+{
+  "lastUpdated": "2026-02-24",
+  "submissions": {
+    "realestateai.tools": [
+      {"directory": "awesome-ai-tools", "url": "https://github.com/mahseema/awesome-ai-tools/pull/658", "type": "github-pr", "status": "pending", "date": "2026-02-24"},
+      {"directory": "best-of-ai/ai-directories", "url": "https://github.com/best-of-ai/ai-directories/pull/230", "type": "github-pr", "status": "pending", "date": "2026-02-24"}
+    ],
+    "hrai.tools": [
+      {"directory": "awesome-ai-tools", "url": "https://github.com/mahseema/awesome-ai-tools/pull/658", "type": "github-pr", "status": "pending", "date": "2026-02-24"},
+      {"directory": "best-of-ai/ai-directories", "url": "https://github.com/best-of-ai/ai-directories/pull/230", "type": "github-pr", "status": "pending", "date": "2026-02-24"}
+    ],
+    "legalai.tools": [
+      {"directory": "awesome-ai-tools", "url": "https://github.com/mahseema/awesome-ai-tools/pull/658", "type": "github-pr", "status": "pending", "date": "2026-02-24"},
+      {"directory": "best-of-ai/ai-directories", "url": "https://github.com/best-of-ai/ai-directories/pull/230", "type": "github-pr", "status": "pending", "date": "2026-02-24"}
+    ],
+    "accountingai.tools": [
+      {"directory": "awesome-ai-tools", "url": "https://github.com/mahseema/awesome-ai-tools/pull/658", "type": "github-pr", "status": "pending", "date": "2026-02-24"},
+      {"directory": "best-of-ai/ai-directories", "url": "https://github.com/best-of-ai/ai-directories/pull/230", "type": "github-pr", "status": "pending", "date": "2026-02-24"}
+    ],
+    "aigirlfriend.tools": [
+      {"directory": "best-of-ai/ai-directories", "url": "https://github.com/best-of-ai/ai-directories/pull/230", "type": "github-pr", "status": "pending", "date": "2026-02-24"}
+    ],
+    "bestnootropics.info": []
+  },
+  "pendingManualSubmissions": [
+    "Futurepedia (https://www.futurepedia.io/submit-tool) — free, needs browser",
+    "Toolify (https://www.toolify.ai/submit) — needs browser",
+    "BetaList (https://betalist.com/submit) — needs browser",
+    "SaaSHub (https://www.saashub.com/submit) — needs browser",
+    "AlternativeTo (https://alternativeto.net/add-app/) — needs browser",
+    "Product Hunt — schedule 1 launch per week",
+    "AI Tools Hunt — email aitoolshunt@gmail.com",
+    "AI Tools Directory — email hello@aitoolsdirectory.com"
+  ]
+}

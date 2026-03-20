@@ -1,0 +1,148 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import FAQSection from '../../components/FAQSection.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const listings = await getCollection('listings');
+  return listings.map((listing) => ({
+    params: { slug: listing.data.slug },
+    props: { listing: listing.data },
+  }));
+}
+
+const { listing } = Astro.props;
+
+// Schema.org for the listing
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'SoftwareApplication',
+  name: listing.name,
+  description: listing.description,
+  url: listing.url,
+  applicationCategory: listing.category,
+  offers: {
+    '@type': 'Offer',
+    price: listing.pricing.startingPrice || '0',
+    priceCurrency: 'USD',
+  },
+  ...(listing.rating && {
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue: listing.rating,
+      bestRating: 5,
+    },
+  }),
+};
+
+// Auto-generate FAQs
+const faqs = [
+  {
+    question: `What is ${listing.name}?`,
+    answer: listing.description,
+  },
+  {
+    question: `How much does ${listing.name} cost?`,
+    answer: listing.pricing.startingPrice
+      ? `${listing.name} starts at ${listing.pricing.startingPrice}. The pricing model is ${listing.pricing.model}.`
+      : `${listing.name} offers a ${listing.pricing.model} pricing model.`,
+  },
+  {
+    question: `What are the main features of ${listing.name}?`,
+    answer: `Key features include: ${listing.features.join(', ')}.`,
+  },
+];
+---
+
+<BaseLayout
+  title={`${listing.name} Review - Features, Pricing & Alternatives`}
+  description={listing.tagline}
+  schema={schema}
+>
+  <article class="max-w-3xl">
+    <!-- Header -->
+    <div class="mb-8">
+      <div class="flex items-center gap-2 text-sm text-gray-500 mb-2">
+        <a href="/" class="hover:text-blue-600">Home</a>
+        <span>/</span>
+        <a href={`/category/${listing.category.toLowerCase().replace(/\s+/g, '-')}`} class="hover:text-blue-600">{listing.category}</a>
+        <span>/</span>
+        <span>{listing.name}</span>
+      </div>
+      <h1 class="text-3xl font-bold mb-2">{listing.name}</h1>
+      <p class="text-lg text-gray-600">{listing.tagline}</p>
+      {listing.rating && (
+        <div class="mt-2 text-yellow-600 text-lg">★ {listing.rating.toFixed(1)} / 5.0</div>
+      )}
+    </div>
+
+    <!-- Description -->
+    <section class="mb-8">
+      <h2 class="text-xl font-semibold mb-3">Overview</h2>
+      <p class="text-gray-700 leading-relaxed">{listing.description}</p>
+      <a href={listing.url} target="_blank" rel="noopener" class="inline-block mt-4 px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700">
+        Visit {listing.name} →
+      </a>
+    </section>
+
+    <!-- Features -->
+    <section class="mb-8">
+      <h2 class="text-xl font-semibold mb-3">Key Features</h2>
+      <ul class="grid grid-cols-1 md:grid-cols-2 gap-2">
+        {listing.features.map((feature: string) => (
+          <li class="flex items-center gap-2">
+            <span class="text-green-600">✓</span>
+            <span>{feature}</span>
+          </li>
+        ))}
+      </ul>
+    </section>
+
+    <!-- Pros & Cons -->
+    {(listing.pros || listing.cons) && (
+      <section class="mb-8 grid grid-cols-1 md:grid-cols-2 gap-6">
+        {listing.pros && (
+          <div>
+            <h3 class="text-lg font-semibold mb-2 text-green-700">Pros</h3>
+            <ul class="space-y-1">
+              {listing.pros.map((pro: string) => (
+                <li class="text-sm">✅ {pro}</li>
+              ))}
+            </ul>
+          </div>
+        )}
+        {listing.cons && (
+          <div>
+            <h3 class="text-lg font-semibold mb-2 text-red-700">Cons</h3>
+            <ul class="space-y-1">
+              {listing.cons.map((con: string) => (
+                <li class="text-sm">❌ {con}</li>
+              ))}
+            </ul>
+          </div>
+        )}
+      </section>
+    )}
+
+    <!-- Pricing -->
+    <section class="mb-8">
+      <h2 class="text-xl font-semibold mb-3">Pricing</h2>
+      <div class="bg-gray-50 rounded-lg p-4">
+        <p><strong>Model:</strong> {listing.pricing.model}</p>
+        {listing.pricing.startingPrice && <p><strong>Starting at:</strong> {listing.pricing.startingPrice}</p>}
+      </div>
+    </section>
+
+    <!-- Tags -->
+    <div class="flex flex-wrap gap-2 mb-8">
+      {listing.tags.map((tag: string) => (
+        <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">{tag}</span>
+      ))}
+    </div>
+
+    <!-- FAQ -->
+    <FAQSection faqs={faqs} />
+
+    <p class="text-xs text-gray-400 mt-8">Last updated: {listing.lastUpdated}</p>
+  </article>
+</BaseLayout>

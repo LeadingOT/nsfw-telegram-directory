@@ -1,0 +1,34 @@
+{
+  "blogs": [
+    {
+      "title": "Best AI Content Detectors in 2026: Comprehensive Comparison",
+      "description": "Compare the top AI content detection tools including GPTZero, Originality.ai, Winston AI, and Turnitin. Learn which AI detector is most accurate for your needs.",
+      "keywords": ["ai content detector", "ai detection tools", "gpt detector", "chatgpt detector", "ai writing detector"],
+      "slug": "best-ai-content-detectors-2026-comparison"
+    },
+    {
+      "title": "How to Detect AI-Generated Content: Complete Guide for Educators",
+      "description": "Step-by-step guide for teachers to detect AI-written essays and assignments. Learn detection techniques, best tools, and academic integrity strategies.",
+      "keywords": ["detect ai content", "ai essay detector", "chatgpt detection", "academic integrity", "ai plagiarism"],
+      "slug": "how-to-detect-ai-generated-content-educators-guide"
+    },
+    {
+      "title": "AI Detector Accuracy: Which Tool is Most Reliable?",
+      "description": "Data-driven analysis of AI detector accuracy rates. Compare false positives, detection rates, and reliability across 10+ popular AI detection tools.",
+      "keywords": ["ai detector accuracy", "false positives", "reliable ai detector", "ai detection rates"],
+      "slug": "ai-detector-accuracy-reliability-comparison"
+    },
+    {
+      "title": "Can AI Detectors Be Fooled? Bypass Methods Explained",
+      "description": "Understand how AI detectors work and common bypass techniques. Learn why some content evades detection and how to improve detection accuracy.",
+      "keywords": ["bypass ai detector", "fool ai detector", "ai detection methods", "how ai detectors work"],
+      "slug": "can-ai-detectors-be-fooled-bypass-methods"
+    },
+    {
+      "title": "Free vs Paid AI Detectors: Is Premium Worth It?",
+      "description": "Compare free AI detection tools vs paid subscriptions. ROI analysis for businesses, educators, and content creators.",
+      "keywords": ["free ai detector", "paid ai detector", "ai detector pricing", "best value ai detector"],
+      "slug": "free-vs-paid-ai-detectors-worth-it"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+🛒 **域名购买时间到了！**
+
+需要购买3个域名（总共~$74/年）：
+
+**1. bypassimage.ai** ($20/年)
+用途：你的AI image bypass工具主站
+链接：https://dash.cloudflare.com/1276b83ae1c8fabc20d6581e430a9eb5/domains/register/bypassimage.ai
+
+**2. bestaidetector.tools** ($27/年)
+用途：AI检测工具综合directory
+分类：Text Detection / Image Detection / Video Detection
+关键词：33.1K (text) + 33.1K (image) = 66K+ volume
+**已建好text部分，等域名上线**
+链接：https://dash.cloudflare.com/1276b83ae1c8fabc20d6581e430a9eb5/domains/register/bestaidetector.tools
+
+**3. aihumanizer.tools** ($27/年)
+用途：AI bypass/humanizer工具综合directory
+分类：Text Humanizer / Image Bypass / Video Enhancement
+关键词：49.5K volume
+**已建好text部分，等域名上线**
+链接：https://dash.cloudflare.com/1276b83ae1c8fabc20d6581e430a9eb5/domains/register/aihumanizer.tools
+
+---
+
+**购买后我会立即：**
+1. 配置DNS指向Vercel
+2. 为两个directory添加Image Detection和Image Bypass分类
+3. Featured你的bypassimage.ai在两个站点
+4. GSC添加 + sitemap提交 + 外链建设
+
+**Total: ~$74/年，14个站点（12现有 + 2新） 🚀**
+
+**购买完告诉我一声！**
