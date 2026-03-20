@@ -3,6 +3,8 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import ListingCard from '../../components/ListingCard.astro';
 import { getCollection } from 'astro:content';
 
+export const prerender = true;
+
 export async function getStaticPaths() {
   const listings = await getCollection('listings');
   const categories = [...new Set(listings.map((l) => l.data.category))];
@@ -17,7 +19,6 @@ export async function getStaticPaths() {
 
 const { category, listings } = Astro.props;
 ---
-export const prerender = true;
 
 
 <BaseLayout
