@@ -60,4 +60,4 @@ User-agent: ImagesiftBot
 Allow: /
 Disallow: /api/
 
-Sitemap: https://nsfwtelegrambot.com/sitemap.xml
+Sitemap: https://nsfwtelegrambot.com/sitemap-index.xml
