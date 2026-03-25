@@ -57,21 +57,37 @@
 - dataforseo-cli, keyword-research, on-page-seo-auditor, seo-competitor-analysis, serp-analysis
 
 ## [P0] Lessons Learned
+
+### SEO & Keywords
 - Use DataForSEO for real keyword data, not guessing
 - NSFW/companion verticals have 100-500x more volume than AI SaaS
 - Restaurant AI (vol 40) and Construction AI (KD 57) not worth doing
 - .tools TLD works fine for SEO, keep brand consistent
-- Astro static sites: 0.13s load, perfect PageSpeed
 - **关键词研究必须跨类目** — 不限AI，包括NSFW/entertainment/ecommerce
 - **NSFW/Entertainment KD比AI低70%** — bestanime (KD 8) vs ai tools (KD 34-56)
 - **用 related 发现隐藏金矿** — 找到 bestonlyfans (KD 0), bestpodcasts (KD 1)
 - **域名可用性必须检查** — 很多 best[X].com 已被抢
 - **TLD策略按类目** — AI用.tools统一，NSFW用.info省钱，Entertainment用.com权威
 - **成本差异不重要** — $9 vs $27 对ROI影响小，KD才是关键
+
+### 部署 & 技术
+- Astro static sites: 0.13s load, perfect PageSpeed
 - **Vercel部署陷阱** — 同workspace多项目必须用API创建独立project，否则vercel CLI会link到第一个项目导致覆盖
 - **Sub-agent timeout** — 建站任务需1800秒，600秒会在部署步骤timeout
 - **Listing schema需灵活** — 不同垂直数据结构不同（播客无pricing，床垫rating是对象），template需要optional chaining和type checking
 - **Template修复技巧** — 用 `listing.field?.subfield` 和 `typeof x === 'number' ? x : x.overall` 处理不同数据结构
+
+### ⚠️ CRITICAL: Sitemap Crisis (2026-03-20)
+**永远本地测试再部署 — Deploy fast, but test faster**
+
+- **本地build优先** — 永远`npm run build`测试通过再git push，不要依赖Vercel发现问题
+- **Astro配置陷阱** — `output: 'hybrid'`已被移除，用`'server'` + `export const prerender = true;`
+- **Prerender必须在frontmatter内** — `export const prerender = true;`必须在`---`之间，不能在外面
+- **Robots.txt模板检查** — 新站launch前必须验证域名正确，不能是example.com或其他站域名
+- **Sitemap集成必需** — @astrojs/sitemap必须配置，否则只有5个静态页被索引
+- **3次部署失败教训** — 第1次prerender位置错误，第2次用了hybrid，第3次本地测试才成功
+- **浪费时间统计** — 84分钟总修复，40分钟可避免（如果第一次就本地测试）
+- **详细复盘文档** — SITEMAP-CRISIS-POSTMORTEM.md记录完整过程和教训
 
 ## [P1] RoleOffer.com（我负责）
 

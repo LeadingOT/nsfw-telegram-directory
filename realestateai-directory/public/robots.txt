@@ -59,4 +59,4 @@ User-agent: ImagesiftBot
 Allow: /
 Disallow: /api/
 
-Sitemap: https://realestateai.tools/sitemap.xml
+Sitemap: https://realestateai.tools/sitemap-index.xml
