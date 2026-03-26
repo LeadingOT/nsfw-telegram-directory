@@ -19,6 +19,8 @@ const listingsCollection = defineCollection({
     rating: z.number().optional(),
     lastUpdated: z.string().optional(),
     tags: z.array(z.string()).optional(),
+    seoTitle: z.string().optional(),
+    seoDescription: z.string().optional(),
   }),
 });
 
