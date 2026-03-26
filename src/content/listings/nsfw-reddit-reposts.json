@@ -6,11 +6,37 @@
   "category": "Adult Content Channels",
   "url": "https://t.me/nsfwredditreposts",
   "members": "280K+",
-  "pricing": { "model": "free" },
-  "features": ["Reddit content aggregation", "Auto-posting bot", "Quality threshold filter", "Source attribution", "Multiple subreddits", "High-upvote content only"],
-  "pros": ["Best of Reddit NSFW", "Automated quality filter", "Source links included", "No Reddit account needed"],
-  "cons": ["Delayed from Reddit posts", "Some content already seen", "Bot occasionally goes down", "Limited to Reddit content"],
-  "rating": 4.0,
+  "pricing": {
+    "model": "free"
+  },
+  "features": [
+    "Reddit content aggregation",
+    "Auto-posting bot",
+    "Quality threshold filter",
+    "Source attribution",
+    "Multiple subreddits",
+    "High-upvote content only"
+  ],
+  "pros": [
+    "Best of Reddit NSFW",
+    "Automated quality filter",
+    "Source links included",
+    "No Reddit account needed"
+  ],
+  "cons": [
+    "Delayed from Reddit posts",
+    "Some content already seen",
+    "Bot occasionally goes down",
+    "Limited to Reddit content"
+  ],
+  "rating": 4,
   "lastUpdated": "2026-02-24",
-  "tags": ["reddit nsfw", "nsfw telegram channels", "reddit telegram", "curated content"]
+  "tags": [
+    "reddit nsfw",
+    "nsfw telegram channels",
+    "reddit telegram",
+    "curated content"
+  ],
+  "seoTitle": "NSFW Reddit Reposts: Top Telegram Content in 2026!",
+  "seoDescription": "Discover the hottest NSFW Reddit posts delivered to Telegram. Join now for exclusive content and updates!"
 }

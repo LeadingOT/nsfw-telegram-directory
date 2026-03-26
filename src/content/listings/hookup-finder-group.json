@@ -6,11 +6,37 @@
   "category": "Dating & Hookup Groups",
   "url": "https://t.me/hookupfindergroup",
   "members": "95K+",
-  "pricing": { "model": "free" },
-  "features": ["Location-based matching", "Bot-assisted matching", "18+ verification", "Anti-spam rules", "Preference filters", "No commercial posts"],
-  "pros": ["Location matching is useful", "Bot makes finding matches easier", "Strict verification", "No escort/commercial spam"],
-  "cons": ["Activity varies by region", "Bot matching isn't always accurate", "Gender ratio skewed", "Safety concerns with meetups"],
+  "pricing": {
+    "model": "free"
+  },
+  "features": [
+    "Location-based matching",
+    "Bot-assisted matching",
+    "18+ verification",
+    "Anti-spam rules",
+    "Preference filters",
+    "No commercial posts"
+  ],
+  "pros": [
+    "Location matching is useful",
+    "Bot makes finding matches easier",
+    "Strict verification",
+    "No escort/commercial spam"
+  ],
+  "cons": [
+    "Activity varies by region",
+    "Bot matching isn't always accurate",
+    "Gender ratio skewed",
+    "Safety concerns with meetups"
+  ],
   "rating": 3.6,
   "lastUpdated": "2026-02-24",
-  "tags": ["hookup telegram", "casual encounters", "nsfw telegram groups", "dating group"]
+  "tags": [
+    "hookup telegram",
+    "casual encounters",
+    "nsfw telegram groups",
+    "dating group"
+  ],
+  "seoTitle": "Hookup Finder Group 2026: Discover Local Connections Fast!",
+  "seoDescription": "Join Hookup Finder Group for exciting local matches! Connect, chat, and explore casual encounters today. Find your perfect hookup now!"
 }

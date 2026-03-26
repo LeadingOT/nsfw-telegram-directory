@@ -6,11 +6,37 @@
   "category": "NSFW Bots",
   "url": "https://t.me/truthordare_nsfwbot",
   "members": "180K+",
-  "pricing": { "model": "free" },
-  "features": ["Truth or dare gameplay", "Multiple difficulty levels", "Group & private play", "Score tracking", "Thousands of prompts", "Icebreaker tool"],
-  "pros": ["Fun icebreaker", "Works in groups", "Lots of prompts", "Completely free"],
-  "cons": ["Some dares are repetitive", "No custom prompts", "Can get stale", "Limited game modes"],
+  "pricing": {
+    "model": "free"
+  },
+  "features": [
+    "Truth or dare gameplay",
+    "Multiple difficulty levels",
+    "Group & private play",
+    "Score tracking",
+    "Thousands of prompts",
+    "Icebreaker tool"
+  ],
+  "pros": [
+    "Fun icebreaker",
+    "Works in groups",
+    "Lots of prompts",
+    "Completely free"
+  ],
+  "cons": [
+    "Some dares are repetitive",
+    "No custom prompts",
+    "Can get stale",
+    "Limited game modes"
+  ],
   "rating": 3.9,
   "lastUpdated": "2026-02-24",
-  "tags": ["nsfw game", "telegram bot", "truth or dare", "adult game"]
+  "tags": [
+    "nsfw game",
+    "telegram bot",
+    "truth or dare",
+    "adult game"
+  ],
+  "seoTitle": "Truth or Dare NSFW Bot 2026: Unleash Fun in Your Chats!",
+  "seoDescription": "Join the ultimate adult Truth or Dare experience! Spark excitement in any chat—discover how today!"
 }

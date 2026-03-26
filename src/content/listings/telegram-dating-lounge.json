@@ -6,11 +6,37 @@
   "category": "Dating & Hookup Groups",
   "url": "https://t.me/telegramdatinglounge",
   "members": "120K+",
-  "pricing": { "model": "free" },
-  "features": ["Photo verification", "Regional sub-groups", "Active moderation", "Anti-scam measures", "Meetup coordination", "Profile sharing"],
-  "pros": ["Verification reduces catfishing", "Regional organization", "Active moderation", "Free to use"],
-  "cons": ["Gender imbalance common", "Some fake profiles slip through", "Regional groups vary in activity", "Privacy risks with meetups"],
+  "pricing": {
+    "model": "free"
+  },
+  "features": [
+    "Photo verification",
+    "Regional sub-groups",
+    "Active moderation",
+    "Anti-scam measures",
+    "Meetup coordination",
+    "Profile sharing"
+  ],
+  "pros": [
+    "Verification reduces catfishing",
+    "Regional organization",
+    "Active moderation",
+    "Free to use"
+  ],
+  "cons": [
+    "Gender imbalance common",
+    "Some fake profiles slip through",
+    "Regional groups vary in activity",
+    "Privacy risks with meetups"
+  ],
   "rating": 3.9,
   "lastUpdated": "2026-02-24",
-  "tags": ["telegram dating", "hookup groups", "nsfw telegram groups", "dating telegram"]
+  "tags": [
+    "telegram dating",
+    "hookup groups",
+    "nsfw telegram groups",
+    "dating telegram"
+  ],
+  "seoTitle": "Telegram Dating Lounge: Your Ultimate Hookup Hub 2026",
+  "seoDescription": "Join the Telegram Dating Lounge for verified connections & exciting meetups. Discover a world of intimacy today!"
 }

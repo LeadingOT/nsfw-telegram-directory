@@ -6,11 +6,38 @@
   "category": "NSFW Bots",
   "url": "https://t.me/nsfwroleplaybot",
   "members": "170K+",
-  "pricing": { "model": "freemium", "startingPrice": "$3.99/mo" },
-  "features": ["Scenario templates", "Character creation", "Adaptive writing style", "Custom scenarios", "Community sharing", "Multiple genres"],
-  "pros": ["Great scenario variety", "Good AI writing", "Community scenarios", "Affordable premium"],
-  "cons": ["Free tier limited", "Can lose narrative thread", "Some scenarios shallow", "Response time varies"],
-  "rating": 4.0,
+  "pricing": {
+    "model": "freemium",
+    "startingPrice": "$3.99/mo"
+  },
+  "features": [
+    "Scenario templates",
+    "Character creation",
+    "Adaptive writing style",
+    "Custom scenarios",
+    "Community sharing",
+    "Multiple genres"
+  ],
+  "pros": [
+    "Great scenario variety",
+    "Good AI writing",
+    "Community scenarios",
+    "Affordable premium"
+  ],
+  "cons": [
+    "Free tier limited",
+    "Can lose narrative thread",
+    "Some scenarios shallow",
+    "Response time varies"
+  ],
+  "rating": 4,
   "lastUpdated": "2026-02-24",
-  "tags": ["roleplay bot", "nsfw bots", "ai roleplay", "telegram bot nsfw"]
+  "tags": [
+    "roleplay bot",
+    "nsfw bots",
+    "ai roleplay",
+    "telegram bot nsfw"
+  ],
+  "seoTitle": "NSFW Roleplay Chat Bot 2026: Unleash Creativity & Fun!",
+  "seoDescription": "Explore the ultimate NSFW roleplay experience! Discover unique scenarios and character creation. Try it now!"
 }

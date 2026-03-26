@@ -6,11 +6,37 @@
   "category": "NSFW Bots",
   "url": "https://t.me/nsfwbothub",
   "members": "150K+",
-  "pricing": { "model": "free" },
-  "features": ["Bot directory", "Usage guides", "User ratings", "Regular testing", "AI chatbots", "Image generation bots"],
-  "pros": ["Comprehensive bot directory", "Regular updates on bot status", "Helpful usage guides", "Community ratings"],
-  "cons": ["Some listed bots go offline", "Bot quality varies widely", "Some bots require payment", "Can be hard to navigate"],
+  "pricing": {
+    "model": "free"
+  },
+  "features": [
+    "Bot directory",
+    "Usage guides",
+    "User ratings",
+    "Regular testing",
+    "AI chatbots",
+    "Image generation bots"
+  ],
+  "pros": [
+    "Comprehensive bot directory",
+    "Regular updates on bot status",
+    "Helpful usage guides",
+    "Community ratings"
+  ],
+  "cons": [
+    "Some listed bots go offline",
+    "Bot quality varies widely",
+    "Some bots require payment",
+    "Can be hard to navigate"
+  ],
   "rating": 4.2,
   "lastUpdated": "2026-02-24",
-  "tags": ["nsfw bots", "telegram bots", "ai chatbot nsfw", "nsfw telegram"]
+  "tags": [
+    "nsfw bots",
+    "telegram bots",
+    "ai chatbot nsfw",
+    "nsfw telegram"
+  ],
+  "seoTitle": "NSFW Bot Hub 2026: Discover the Ultimate NSFW Telegram Bots",
+  "seoDescription": "Unlock endless fun with the NSFW Bot Hub! Explore top-rated Telegram bots for content, games, and chats. Join the excitement now!"
 }
