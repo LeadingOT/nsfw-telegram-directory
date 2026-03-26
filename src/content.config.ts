@@ -22,6 +22,8 @@ const listings = defineCollection({
     rating: z.number().min(0).max(5).optional(),
     lastUpdated: z.string(),
     tags: z.array(z.string()),
+    seoTitle: z.string().optional(),
+    seoDescription: z.string().optional(),
   }),
 });
 
