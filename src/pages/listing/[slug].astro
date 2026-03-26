@@ -59,8 +59,8 @@ const faqs = [
 
 
 <BaseLayout
-  title={`${listing.name} Review - Features, Pricing & Alternatives`}
-  description={listing.tagline}
+  title={listing.seoTitle || `${listing.name} Review - Features, Pricing & Alternatives`}
+  description={listing.seoDescription || listing.tagline}
   schema={schema}
 >
   <article class="max-w-3xl">
