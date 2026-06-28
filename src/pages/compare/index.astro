@@ -1,0 +1,102 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+export const prerender = true;
+
+const siteUrl = import.meta.env.SITE || 'https://nsfwtelegrambot.com';
+const listings = (await getCollection('listings')).map((l) => l.data);
+
+// Top N per category that we surface head-to-head comparisons for.
+// Bounds the hub to the most meaningful, same-niche match-ups (max C(N,2) per category).
+const TOP_PER_CATEGORY = 6;
+
+const byCategory: Record<string, typeof listings> = {};
+for (const t of listings) {
+  (byCategory[t.category] ||= []).push(t);
+}
+
+// Build the exact same slug a /compare/[slug] page is generated with.
+const pairSlug = (a: any, b: any) => {
+  const [x, y] = [a, b].sort((m, n) => m.slug.localeCompare(n.slug));
+  return `${x.slug}-vs-${y.slug}`;
+};
+
+const sections = Object.entries(byCategory)
+  .map(([name, tools]) => {
+    const top = [...tools]
+      .sort((a, b) => (b.rating || 0) - (a.rating || 0))
+      .slice(0, TOP_PER_CATEGORY);
+    const pairs: { a: any; b: any; slug: string }[] = [];
+    for (let i = 0; i < top.length; i++) {
+      for (let j = i + 1; j < top.length; j++) {
+        pairs.push({ a: top[i], b: top[j], slug: pairSlug(top[i], top[j]) });
+      }
+    }
+    return { name, pairs };
+  })
+  .filter((s) => s.pairs.length > 0)
+  .sort((a, b) => b.pairs.length - a.pairs.length);
+
+const total = sections.reduce((n, s) => n + s.pairs.length, 0);
+const title = `NSFW Telegram Bots Comparisons — ${total}+ Head-to-Head Match-ups (2026)`;
+const description = `Side-by-side comparisons of the top Telegram bots by category. Compare pricing, features, ratings, and pros & cons to pick the right one. Updated 2026.`;
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: `${siteUrl}/` },
+        { '@type': 'ListItem', position: 2, name: 'Compare' },
+      ],
+    },
+    {
+      '@type': 'CollectionPage',
+      name: title,
+      description,
+      url: `${siteUrl}/compare`,
+    },
+  ],
+};
+---
+
+<BaseLayout title={title} description={description} schema={schema}>
+  <article class="max-w-5xl">
+    <div class="flex items-center gap-2 text-sm text-gray-500 mb-4">
+      <a href="/" class="hover:text-blue-600">Home</a>
+      <span>/</span>
+      <span>Compare</span>
+    </div>
+
+    <h1 class="text-3xl font-bold mb-3">{title}</h1>
+
+    <!-- GEO answer summary -->
+    <p class="text-gray-700 mb-8 text-lg leading-relaxed">
+      Deciding between two Telegram bots? These head-to-head comparisons put the
+      highest-rated options in each category side by side — pricing, key features, ratings,
+      and the real pros and cons of each. Pick a match-up below to see which one wins for
+      your use case, or browse the <a href="/alternatives" class="text-blue-600 hover:underline">alternatives hub</a>
+      to explore every option in a category.
+    </p>
+
+    {sections.map((section) => (
+      <section class="mb-10">
+        <h2 class="text-xl font-semibold mb-4 border-b border-gray-200 pb-2">
+          {section.name} <span class="text-sm font-normal text-gray-400">({section.pairs.length})</span>
+        </h2>
+        <div class="grid gap-3 sm:grid-cols-2">
+          {section.pairs.map((p) => (
+            <a
+              href={`/compare/${p.slug}`}
+              class="block border border-gray-200 rounded-lg p-3 hover:shadow-md hover:border-blue-300 transition-all"
+            >
+              <span class="font-medium">{p.a.name} <span class="text-gray-400">vs</span> {p.b.name}</span>
+            </a>
+          ))}
+        </div>
+      </section>
+    ))}
+  </article>
+</BaseLayout>
