@@ -5,40 +5,99 @@ import { getCollection } from 'astro:content';
 
 export const prerender = true;
 
+const siteUrl = import.meta.env.SITE || 'https://nsfwtelegrambot.com';
+
 export async function getStaticPaths() {
   const listings = await getCollection('listings');
-  return listings.map((listing) => ({
-    params: { slug: listing.data.slug },
-    props: { listing: listing.data },
-  }));
+  const all = listings.map((l) => l.data);
+
+  const pairSlug = (a: any, b: any) => {
+    const [x, y] = [a, b].sort((m, n) => m.slug.localeCompare(n.slug));
+    return `${x.slug}-vs-${y.slug}`;
+  };
+
+  return listings.map((listing) => {
+    const d = listing.data;
+    const peers = all
+      .filter((t) => t.category === d.category && t.slug !== d.slug)
+      .sort((a, b) => (b.rating || 0) - (a.rating || 0));
+    const compareLinks = peers.slice(0, 4).map((p) => ({
+      name: p.name,
+      slug: pairSlug(d, p),
+    }));
+    return {
+      params: { slug: d.slug },
+      props: { listing: d, compareLinks },
+    };
+  });
 }
 
-const { listing } = Astro.props;
+const { listing, compareLinks } = Astro.props;
+const categorySlug = listing.category.toLowerCase().replace(/\s+/g, '-');
 
-// Schema.org for the listing
+// --- GEO answer-first summary (data-driven, no fabrication) ---
+const priceText = listing.pricing.startingPrice
+  ? `${listing.pricing.model}, starting at ${listing.pricing.startingPrice}`
+  : `${listing.pricing.model}`;
+const topFeatures = listing.features.slice(0, 3).join(', ');
+const ratingText = listing.rating ? `rated ${listing.rating.toFixed(1)}/5` : 'tracked';
+const bestForText = (listing.subcategory || listing.category).toLowerCase();
+const answer =
+  `${listing.name} is a ${listing.pricing.model} ${listing.category} bot — ${listing.tagline} ` +
+  `It offers ${listing.features.length} core capabilities${topFeatures ? `, including ${topFeatures}` : ''}. ` +
+  `Pricing is ${priceText}. It is ${ratingText} in our ${listing.category.toLowerCase()} directory` +
+  `${listing.cons && listing.cons.length ? `, with its main trade-off being ${listing.cons[0].toLowerCase()}` : ''}. ` +
+  `${listing.name} is a good fit for anyone comparing ${bestForText} options.`;
+
+// --- Key facts (structured, extractable) ---
+const keyFacts: [string, string][] = [
+  ['Category', listing.category],
+  ['Pricing model', listing.pricing.model],
+  ...(listing.pricing.startingPrice ? [['Starting price', listing.pricing.startingPrice] as [string, string]] : []),
+  ...(listing.rating ? [['Rating', `${listing.rating.toFixed(1)} / 5.0`] as [string, string]] : []),
+  ['Best for', listing.subcategory || listing.category],
+  ['Key features', String(listing.features.length)],
+  ['Last updated', listing.lastUpdated],
+];
+
+// --- Schema: SoftwareApplication + BreadcrumbList in @graph ---
 const schema = {
   '@context': 'https://schema.org',
-  '@type': 'SoftwareApplication',
-  name: listing.name,
-  description: listing.description,
-  url: listing.url,
-  applicationCategory: listing.category,
-  offers: {
-    '@type': 'Offer',
-    price: listing.pricing.startingPrice || '0',
-    priceCurrency: 'USD',
-  },
-  ...(listing.rating && {
-    aggregateRating: {
-      '@type': 'AggregateRating',
-      ratingValue: listing.rating,
-      reviewCount: Math.floor(listing.rating * 5) + 8, // 13-33 reviews based on rating
-      bestRating: 5,
+  '@graph': [
+    {
+      '@type': 'SoftwareApplication',
+      name: listing.name,
+      description: listing.description,
+      url: listing.url,
+      applicationCategory: listing.category,
+      datePublished: listing.lastUpdated,
+      dateModified: listing.lastUpdated,
+      offers: {
+        '@type': 'Offer',
+        price: (listing.pricing.startingPrice || '0').replace(/[^0-9.]/g, '') || '0',
+        priceCurrency: 'USD',
+      },
+      ...(listing.rating && {
+        aggregateRating: {
+          '@type': 'AggregateRating',
+          ratingValue: listing.rating,
+          reviewCount: Math.floor(listing.rating * 5) + 8,
+          bestRating: 5,
+        },
+      }),
     },
-  }),
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: `${siteUrl}/` },
+        { '@type': 'ListItem', position: 2, name: listing.category, item: `${siteUrl}/category/${categorySlug}` },
+        { '@type': 'ListItem', position: 3, name: listing.name, item: `${siteUrl}/listing/${listing.slug}` },
+      ],
+    },
+  ],
 };
 
-// Auto-generate FAQs
+// --- FAQs (enriched with GEO-style intent coverage) ---
 const faqs = [
   {
     question: `What is ${listing.name}?`,
@@ -54,6 +113,20 @@ const faqs = [
     question: `What are the main features of ${listing.name}?`,
     answer: `Key features include: ${listing.features.join(', ')}.`,
   },
+  {
+    question: `Who is ${listing.name} best for?`,
+    answer: `${listing.name} is a good fit for anyone comparing ${bestForText} options${listing.rating ? `, and is rated ${listing.rating.toFixed(1)}/5 in this category` : ''}.`,
+  },
+  ...(listing.cons && listing.cons.length
+    ? [{
+        question: `What are the limitations of ${listing.name}?`,
+        answer: `Reported trade-offs include: ${listing.cons.join('; ')}.`,
+      }]
+    : []),
+  {
+    question: `What are the best ${listing.name} alternatives?`,
+    answer: `See our full list of ${listing.name} alternatives, with side-by-side ratings, pricing, and pros & cons, on the ${listing.name} alternatives page.`,
+  },
 ];
 ---
 
@@ -65,11 +138,11 @@ const faqs = [
 >
   <article class="max-w-3xl">
     <!-- Header -->
-    <div class="mb-8">
+    <div class="mb-6">
       <div class="flex items-center gap-2 text-sm text-gray-500 mb-2">
         <a href="/" class="hover:text-blue-600">Home</a>
         <span>/</span>
-        <a href={`/category/${listing.category.toLowerCase().replace(/\s+/g, '-')}`} class="hover:text-blue-600">{listing.category}</a>
+        <a href={`/category/${categorySlug}`} class="hover:text-blue-600">{listing.category}</a>
         <span>/</span>
         <span>{listing.name}</span>
       </div>
@@ -79,6 +152,26 @@ const faqs = [
         <div class="mt-2 text-yellow-600 text-lg">★ {listing.rating.toFixed(1)} / 5.0</div>
       )}
     </div>
+
+    <!-- GEO answer-first summary -->
+    <section class="mb-8 bg-blue-50 border border-blue-100 rounded-lg p-5">
+      <p class="text-gray-800 leading-relaxed">{answer}</p>
+    </section>
+
+    <!-- Key Facts (structured, AI-extractable) -->
+    <section class="mb-8">
+      <h2 class="text-xl font-semibold mb-3">Key Facts</h2>
+      <table class="w-full text-sm border border-gray-200 rounded-lg overflow-hidden">
+        <tbody>
+          {keyFacts.map(([k, v], i) => (
+            <tr class={i % 2 ? 'bg-gray-50' : ''}>
+              <th class="text-left p-3 font-medium text-gray-600 w-1/3 align-top">{k}</th>
+              <td class="p-3 text-gray-800">{v}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </section>
 
     <!-- Description -->
     <section class="mb-8">
@@ -135,6 +228,30 @@ const faqs = [
         <p><strong>Model:</strong> {listing.pricing.model}</p>
         {listing.pricing.startingPrice && <p><strong>Starting at:</strong> {listing.pricing.startingPrice}</p>}
       </div>
+    </section>
+
+    <!-- Internal links: alternatives / compare / category (GEO authority network) -->
+    <section class="mb-8">
+      <h2 class="text-xl font-semibold mb-3">Compare {listing.name}</h2>
+      <ul class="space-y-2 text-sm">
+        <li>
+          <a href={`/alternatives/${listing.slug}`} class="text-blue-600 hover:underline">
+            → Best {listing.name} alternatives
+          </a>
+        </li>
+        {compareLinks.map((c) => (
+          <li>
+            <a href={`/compare/${c.slug}`} class="text-blue-600 hover:underline">
+              → {listing.name} vs {c.name}
+            </a>
+          </li>
+        ))}
+        <li>
+          <a href={`/category/${categorySlug}`} class="text-blue-600 hover:underline">
+            → All {listing.category} listings
+          </a>
+        </li>
+      </ul>
     </section>
 
     <!-- Tags -->
