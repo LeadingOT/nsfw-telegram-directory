@@ -5,39 +5,90 @@ import { getCollection } from 'astro:content';
 
 export const prerender = true;
 
+const siteUrl = import.meta.env.SITE || 'https://nsfwtelegrambot.com';
+
 export async function getStaticPaths() {
   const listings = await getCollection('listings');
   const categories = [...new Set(listings.map((l) => l.data.category))];
   return categories.map((cat) => ({
-    params: { category: cat.toLowerCase().replace(/[&+]/g, '').replace(/\s+/g, '-') },
+    params: { category: cat.toLowerCase().replace(/\s+/g, '-') },
     props: {
       category: cat,
-      listings: listings.filter((l) => l.data.category === cat).sort((a, b) => (b.data.rating || 0) - (a.data.rating || 0)),
+      listings: listings.filter((l) => l.data.category === cat),
     },
   }));
 }
 
 const { category, listings } = Astro.props;
+const categorySlug = category.toLowerCase().replace(/\s+/g, '-');
+
+// Rating accessor tolerant of number | {overall} | missing (multi-schema safe)
+const rateOf = (x: any) => (typeof x?.rating === 'number' ? x.rating : (x?.rating?.overall ?? 0));
+const ranked = [...listings].sort((a: any, b: any) => rateOf(b.data) - rateOf(a.data));
+const top = ranked.slice(0, 3).map((l: any) => l.data.name);
+const leader = ranked[0]?.data;
+const leaderRate = leader ? rateOf(leader) : 0;
+
+// --- GEO answer-first summary ---
+const answer =
+  `The best ${category} bots include ${top.join(', ')}. ` +
+  `This guide compares ${listings.length} ${category.toLowerCase()} options side by side, ranked by rating and updated for 2026.` +
+  `${leader && leaderRate ? ` The highest-rated is ${leader.name} at ${leaderRate.toFixed(1)}/5.` : ''}`;
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: `${siteUrl}/` },
+        { '@type': 'ListItem', position: 2, name: 'Categories', item: `${siteUrl}/categories` },
+        { '@type': 'ListItem', position: 3, name: category },
+      ],
+    },
+    {
+      '@type': 'CollectionPage',
+      name: `Best ${category} bots`,
+      description: answer,
+      url: `${siteUrl}/category/${categorySlug}`,
+    },
+    {
+      '@type': 'ItemList',
+      name: `Best ${category} bots`,
+      numberOfItems: ranked.length,
+      itemListElement: ranked.map((l: any, i: number) => ({
+        '@type': 'ListItem',
+        position: i + 1,
+        name: l.data.name,
+        url: `${siteUrl}/listing/${l.data.slug}`,
+      })),
+    },
+  ],
+};
 ---
 
-
 <BaseLayout
-  title={`Best ${category} on Telegram (2026) — Directory & Reviews`}
-  description={`Find and compare the best ${category} on Telegram. Reviews, ratings, and member counts for ${listings.length} channels and groups.`}
+  title={`Best ${category} bots - Compare & Review (2026)`}
+  description={`Compare the best ${category} bots by rating, features, and pricing. ${listings.length} options reviewed and updated for 2026.`}
+  schema={schema}
 >
   <div class="flex items-center gap-2 text-sm text-gray-500 mb-4">
-    <a href="/" class="hover:text-purple-400">Home</a>
+    <a href="/" class="hover:text-blue-600">Home</a>
     <span>/</span>
-    <a href="/categories" class="hover:text-purple-400">Categories</a>
+    <a href="/categories" class="hover:text-blue-600">Categories</a>
     <span>/</span>
-    <span class="text-gray-400">{category}</span>
+    <span>{category}</span>
   </div>
 
-  <h1 class="text-3xl font-bold mb-2">Best {category} on Telegram</h1>
-  <p class="text-gray-400 mb-8">Compare {listings.length} channels and groups in this category.</p>
+  <h1 class="text-3xl font-bold mb-3">Best {category} bots</h1>
+
+  <!-- GEO answer-first summary -->
+  <section class="mb-8 bg-blue-50 border border-blue-100 rounded-lg p-5">
+    <p class="text-gray-800 leading-relaxed">{answer}</p>
+  </section>
 
   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-    {listings.map((listing: any) => (
+    {ranked.map((listing: any) => (
       <ListingCard {...listing.data} />
     ))}
   </div>
