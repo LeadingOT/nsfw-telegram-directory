@@ -27,7 +27,7 @@ const categoryEmojis: Record<string, string> = {
   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
     {categories.map(([cat, count]) => (
       <a
-        href={`/category/${cat.toLowerCase().replace(/[&+]/g, '').replace(/\s+/g, '-')}`}
+        href={`/category/${cat.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '')}`}
         class="block border border-gray-800 rounded-lg p-5 hover:shadow-lg hover:border-purple-600 transition-all bg-gray-900"
       >
         <h2 class="text-lg font-semibold">{categoryEmojis[cat] || '📂'} {cat}</h2>
