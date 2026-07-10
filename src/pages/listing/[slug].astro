@@ -77,14 +77,6 @@ const schema = {
         price: (listing.pricing.startingPrice || '0').replace(/[^0-9.]/g, '') || '0',
         priceCurrency: 'USD',
       },
-      ...(listing.rating && {
-        aggregateRating: {
-          '@type': 'AggregateRating',
-          ratingValue: listing.rating,
-          reviewCount: Math.floor(listing.rating * 5) + 8,
-          bestRating: 5,
-        },
-      }),
     },
     {
       '@type': 'BreadcrumbList',
@@ -149,7 +141,7 @@ const faqs = [
       <h1 class="text-3xl font-bold mb-2">{listing.name}</h1>
       <p class="text-lg text-gray-400">{listing.tagline}</p>
       {listing.rating && (
-        <div class="mt-2 text-yellow-400 text-lg">★ {listing.rating.toFixed(1)} / 5.0</div>
+        <div class="mt-2 text-yellow-400 text-lg">★ {listing.rating.toFixed(1)} / 5.0 <span class="text-xs opacity-60 ml-2">Editors' score</span></div>
       )}
     </div>
 
