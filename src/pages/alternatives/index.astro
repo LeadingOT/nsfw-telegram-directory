@@ -56,8 +56,8 @@ const schema = {
 
 <BaseLayout title={title} description={description} schema={schema}>
   <article class="max-w-5xl">
-    <div class="flex items-center gap-2 text-sm text-gray-500 mb-4">
-      <a href="/" class="hover:text-blue-600">Home</a>
+    <div class="flex items-center gap-2 text-sm text-gray-400 mb-4">
+      <a href="/" class="hover:text-blue-400">Home</a>
       <span>/</span>
       <span>Alternatives</span>
     </div>
@@ -65,7 +65,7 @@ const schema = {
     <h1 class="text-3xl font-bold mb-3">{title}</h1>
 
     <!-- GEO answer summary -->
-    <p class="text-gray-700 mb-8 text-lg leading-relaxed">
+    <p class="text-gray-300 mb-8 text-lg leading-relaxed">
       Looking for a different Telegram bot? This hub lists every one of the {total} Telegram bots
       we track across {categories.length} categories, each linking to a dedicated page of
       vetted alternatives with side-by-side ratings, pricing, and pros & cons. Options are
@@ -75,17 +75,17 @@ const schema = {
 
     {categories.map((cat) => (
       <section class="mb-10">
-        <h2 class="text-xl font-semibold mb-4 border-b border-gray-200 pb-2">
+        <h2 class="text-xl font-semibold mb-4 border-b border-gray-800 pb-2">
           {cat.name} <span class="text-sm font-normal text-gray-400">({cat.tools.length})</span>
         </h2>
         <div class="grid gap-3 sm:grid-cols-2">
           {cat.tools.map((t) => (
             <a
               href={`/alternatives/${t.slug}`}
-              class="flex items-center justify-between border border-gray-200 rounded-lg p-3 hover:shadow-md hover:border-blue-300 transition-all"
+              class="flex items-center justify-between border border-gray-800 rounded-lg p-3 hover:shadow-md hover:border-blue-700 transition-all"
             >
               <span class="font-medium">{t.name} alternatives</span>
-              <span class="text-yellow-600 text-sm whitespace-nowrap">★ {t.rating}</span>
+              <span class="text-yellow-400 text-sm whitespace-nowrap">★ {t.rating}</span>
             </a>
           ))}
         </div>

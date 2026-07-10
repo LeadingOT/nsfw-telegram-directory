@@ -18,7 +18,7 @@ const posts = [
     {posts.map((post) => (
       <a href={`/blog/${post.slug}`} class="block border border-gray-800 rounded-lg p-6 hover:border-purple-600 transition-all bg-gray-900">
         <h2 class="text-xl font-semibold mb-2">{post.title}</h2>
-        <p class="text-sm text-gray-500 mb-2">{post.date} · {post.readTime}</p>
+        <p class="text-sm text-gray-400 mb-2">{post.date} · {post.readTime}</p>
         <p class="text-gray-400">{post.description}</p>
       </a>
     ))}

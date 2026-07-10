@@ -36,7 +36,7 @@ const categories = [
 <BaseLayout title={title} description={description}>
   <div class="mb-12 text-center">
     <h1 class="text-4xl font-bold mb-4">{title}</h1>
-    <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+    <p class="text-lg text-gray-400 max-w-2xl mx-auto">
       {description}
     </p>
   </div>
@@ -45,10 +45,10 @@ const categories = [
     {categories.map(cat => (
       <a 
         href={`/best/${cat.slug}`}
-        class="p-6 bg-white border border-gray-200 rounded-lg hover:shadow-lg hover:border-blue-300 transition-all"
+        class="p-6 bg-gray-900 border border-gray-800 rounded-lg hover:shadow-lg hover:border-blue-700 transition-all"
       >
         <h3 class="text-xl font-bold mb-2">{cat.name}</h3>
-        <p class="text-gray-600 text-sm">{cat.description}</p>
+        <p class="text-gray-400 text-sm">{cat.description}</p>
       </a>
     ))}
   </div>

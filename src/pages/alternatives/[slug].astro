@@ -125,25 +125,25 @@ const faqs = [
 >
   <article class="max-w-4xl">
     <!-- Breadcrumb -->
-    <div class="flex items-center gap-2 text-sm text-gray-500 mb-4">
-      <a href="/" class="hover:text-blue-600">Home</a>
+    <div class="flex items-center gap-2 text-sm text-gray-400 mb-4">
+      <a href="/" class="hover:text-blue-400">Home</a>
       <span>/</span>
-      <a href={`/listing/${tool.slug}`} class="hover:text-blue-600">{tool.name}</a>
+      <a href={`/listing/${tool.slug}`} class="hover:text-blue-400">{tool.name}</a>
       <span>/</span>
       <span>Alternatives</span>
     </div>
 
     <h1 class="text-3xl font-bold mb-3">{title}</h1>
-    <p class="text-gray-600 mb-8 text-lg">
+    <p class="text-gray-400 mb-8 text-lg">
       Not sure if {tool.name} is right for you? Here are the best {tool.category.toLowerCase()} alternatives to consider in 2026.
     </p>
 
     <!-- About the tool -->
-    <section class="bg-gray-50 rounded-lg p-5 mb-8">
+    <section class="bg-gray-900 rounded-lg p-5 mb-8">
       <h2 class="text-lg font-semibold mb-2">About {tool.name}</h2>
-      <p class="text-gray-700 text-sm mb-2">{tool.tagline}</p>
-      <div class="flex gap-4 text-sm text-gray-500">
-        <span>Rating: <strong class="text-yellow-600">★ {tool.rating}</strong></span>
+      <p class="text-gray-300 text-sm mb-2">{tool.tagline}</p>
+      <div class="flex gap-4 text-sm text-gray-400">
+        <span>Rating: <strong class="text-yellow-400">★ {tool.rating}</strong></span>
         <span>Pricing: <strong>{tool.pricing.model}{tool.pricing?.startingPrice ? ` from ${tool.pricing?.startingPrice}` : ''}</strong></span>
       </div>
     </section>
@@ -152,8 +152,8 @@ const faqs = [
     <section class="mb-10">
       <h2 class="text-2xl font-semibold mb-4">Feature Comparison</h2>
       <div class="overflow-x-auto">
-        <table class="w-full text-sm border border-gray-200 rounded-lg">
-          <thead class="bg-gray-50">
+        <table class="w-full text-sm border border-gray-800 rounded-lg">
+          <thead class="bg-gray-900">
             <tr>
               <th class="text-left p-3 border-b">Tool</th>
               <th class="text-left p-3 border-b">Rating</th>
@@ -163,23 +163,23 @@ const faqs = [
             </tr>
           </thead>
           <tbody>
-            <tr class="bg-blue-50 border-b">
-              <td class="p-3 font-semibold">{tool.name} <span class="text-xs text-blue-600">(current)</span></td>
-              <td class="p-3 text-yellow-600">★ {tool.rating}</td>
+            <tr class="bg-blue-950 border-b">
+              <td class="p-3 font-semibold">{tool.name} <span class="text-xs text-blue-400">(current)</span></td>
+              <td class="p-3 text-yellow-400">★ {tool.rating}</td>
               <td class="p-3">{tool.pricing.model}{tool.pricing?.startingPrice ? ` from ${tool.pricing?.startingPrice}` : ''}</td>
               <td class="p-3">{tool.features.slice(0, 3).join(', ')}</td>
               <td class="p-3 text-center">
-                <a href={`/listing/${tool.slug}`} class="text-blue-600 hover:underline text-xs">View</a>
+                <a href={`/listing/${tool.slug}`} class="text-blue-400 hover:underline text-xs">View</a>
               </td>
             </tr>
             {alternatives.map((alt) => (
-              <tr class="border-b hover:bg-gray-50">
+              <tr class="border-b hover:bg-gray-800">
                 <td class="p-3 font-medium">{alt.name}</td>
-                <td class="p-3 text-yellow-600">★ {alt.rating}</td>
+                <td class="p-3 text-yellow-400">★ {alt.rating}</td>
                 <td class="p-3">{alt.pricing.model}{alt.pricing.startingPrice ? ` from ${alt.pricing.startingPrice}` : ''}</td>
                 <td class="p-3">{alt.features.slice(0, 3).join(', ')}</td>
                 <td class="p-3 text-center">
-                  <a href={`/listing/${alt.slug}`} class="text-blue-600 hover:underline text-xs">View</a>
+                  <a href={`/listing/${alt.slug}`} class="text-blue-400 hover:underline text-xs">View</a>
                 </td>
               </tr>
             ))}
@@ -192,29 +192,29 @@ const faqs = [
     <section class="mb-10">
       <h2 class="text-2xl font-semibold mb-4">Detailed Look at Each Alternative</h2>
       {alternatives.map((alt, i) => (
-        <div class="border border-gray-200 rounded-lg p-5 mb-4">
+        <div class="border border-gray-800 rounded-lg p-5 mb-4">
           <div class="flex items-start justify-between mb-2">
             <h3 class="text-lg font-semibold">{i + 1}. {alt.name}</h3>
-            <span class="text-yellow-600 text-sm">★ {alt.rating}/5</span>
+            <span class="text-yellow-400 text-sm">★ {alt.rating}/5</span>
           </div>
-          <p class="text-gray-700 text-sm mb-3">{alt.description}</p>
+          <p class="text-gray-300 text-sm mb-3">{alt.description}</p>
           <div class="grid grid-cols-2 gap-4 text-sm">
             <div>
-              <strong class="text-green-700">Pros:</strong>
+              <strong class="text-green-400">Pros:</strong>
               <ul class="mt-1 space-y-0.5">
                 {(alt.pros || []).map((p: string) => <li>✅ {p}</li>)}
               </ul>
             </div>
             <div>
-              <strong class="text-red-700">Cons:</strong>
+              <strong class="text-red-400">Cons:</strong>
               <ul class="mt-1 space-y-0.5">
                 {(alt.cons || []).map((c: string) => <li>❌ {c}</li>)}
               </ul>
             </div>
           </div>
           <div class="mt-3 flex gap-3">
-            <a href={`/listing/${alt.slug}`} class="text-sm text-blue-600 hover:underline">Full Review →</a>
-            <a href={`/compare/${tool.slug}-vs-${alt.slug}`} class="text-sm text-gray-500 hover:underline">Compare with {tool.name} →</a>
+            <a href={`/listing/${alt.slug}`} class="text-sm text-blue-400 hover:underline">Full Review →</a>
+            <a href={`/compare/${tool.slug}-vs-${alt.slug}`} class="text-sm text-gray-400 hover:underline">Compare with {tool.name} →</a>
           </div>
         </div>
       ))}

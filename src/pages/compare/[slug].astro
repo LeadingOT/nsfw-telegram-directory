@@ -95,8 +95,8 @@ function renderStars(rating: number) {
 >
   <article class="max-w-4xl">
     <!-- Breadcrumb -->
-    <div class="flex items-center gap-2 text-sm text-gray-500 mb-4">
-      <a href="/" class="hover:text-blue-600">Home</a>
+    <div class="flex items-center gap-2 text-sm text-gray-400 mb-4">
+      <a href="/" class="hover:text-blue-400">Home</a>
       <span>/</span>
       <span>Compare</span>
       <span>/</span>
@@ -104,19 +104,19 @@ function renderStars(rating: number) {
     </div>
 
     <h1 class="text-3xl font-bold mb-3">{toolA.name} vs {toolB.name}</h1>
-    <p class="text-gray-600 mb-8 text-lg">
+    <p class="text-gray-400 mb-8 text-lg">
       A detailed side-by-side comparison of two popular {toolA.category.toLowerCase()} tools to help you make the right choice.
     </p>
 
     <!-- Quick Summary Cards -->
     <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
       {[toolA, toolB].map((tool) => (
-        <div class="border border-gray-200 rounded-lg p-5">
+        <div class="border border-gray-800 rounded-lg p-5">
           <h2 class="text-xl font-semibold mb-1">{tool.name}</h2>
-          <p class="text-sm text-gray-600 mb-3">{tool.tagline}</p>
-          <div class="text-yellow-600 mb-2">{renderStars(tool.rating)} <span class="text-gray-500 text-sm">{tool.rating}/5</span></div>
+          <p class="text-sm text-gray-400 mb-3">{tool.tagline}</p>
+          <div class="text-yellow-400 mb-2">{renderStars(tool.rating)} <span class="text-gray-400 text-sm">{tool.rating}/5</span></div>
           <p class="text-sm"><strong>Pricing:</strong> {tool.pricing.model}{tool.pricing?.startingPrice ? ` from ${tool.pricing?.startingPrice}` : ''}</p>
-          <a href={`/listing/${tool.slug}`} class="inline-block mt-3 text-sm text-blue-600 hover:underline">Full Review →</a>
+          <a href={`/listing/${tool.slug}`} class="inline-block mt-3 text-sm text-blue-400 hover:underline">Full Review →</a>
         </div>
       ))}
     </div>
@@ -125,8 +125,8 @@ function renderStars(rating: number) {
     <section class="mb-10">
       <h2 class="text-2xl font-semibold mb-4">Side-by-Side Comparison</h2>
       <div class="overflow-x-auto">
-        <table class="w-full text-sm border border-gray-200 rounded-lg">
-          <thead class="bg-gray-50">
+        <table class="w-full text-sm border border-gray-800 rounded-lg">
+          <thead class="bg-gray-900">
             <tr>
               <th class="text-left p-3 border-b w-1/4">Criteria</th>
               <th class="text-left p-3 border-b w-[37.5%]">{toolA.name}</th>
@@ -136,10 +136,10 @@ function renderStars(rating: number) {
           <tbody>
             <tr class="border-b">
               <td class="p-3 font-medium">Rating</td>
-              <td class="p-3 text-yellow-600">★ {toolA.rating}/5</td>
-              <td class="p-3 text-yellow-600">★ {toolB.rating}/5</td>
+              <td class="p-3 text-yellow-400">★ {toolA.rating}/5</td>
+              <td class="p-3 text-yellow-400">★ {toolB.rating}/5</td>
             </tr>
-            <tr class="border-b bg-gray-50">
+            <tr class="border-b bg-gray-900">
               <td class="p-3 font-medium">Pricing Model</td>
               <td class="p-3">{toolA.pricing?.model || "Custom"}{toolA.pricing?.startingPrice ? ` from ${toolA.pricing?.startingPrice}` : ''}</td>
               <td class="p-3">{toolB.pricing?.model || "Custom"}{toolB.pricing?.startingPrice ? ` from ${toolB.pricing?.startingPrice}` : ''}</td>
@@ -148,16 +148,16 @@ function renderStars(rating: number) {
               <td class="p-3 font-medium">Key Features</td>
               <td class="p-3">
                 <ul class="space-y-1">
-                  {(toolA.features || []).map((f: string) => <li class="flex items-start gap-1"><span class="text-green-600 shrink-0">✓</span> {f}</li>)}
+                  {(toolA.features || []).map((f: string) => <li class="flex items-start gap-1"><span class="text-green-400 shrink-0">✓</span> {f}</li>)}
                 </ul>
               </td>
               <td class="p-3">
                 <ul class="space-y-1">
-                  {(toolB.features || []).map((f: string) => <li class="flex items-start gap-1"><span class="text-green-600 shrink-0">✓</span> {f}</li>)}
+                  {(toolB.features || []).map((f: string) => <li class="flex items-start gap-1"><span class="text-green-400 shrink-0">✓</span> {f}</li>)}
                 </ul>
               </td>
             </tr>
-            <tr class="border-b bg-gray-50">
+            <tr class="border-b bg-gray-900">
               <td class="p-3 font-medium">Pros</td>
               <td class="p-3">
                 <ul class="space-y-0.5">
@@ -189,9 +189,9 @@ function renderStars(rating: number) {
     </section>
 
     <!-- Verdict -->
-    <section class="bg-blue-50 rounded-lg p-6 mb-10">
+    <section class="bg-blue-950 rounded-lg p-6 mb-10">
       <h2 class="text-xl font-semibold mb-3">The Verdict</h2>
-      <p class="text-gray-700">
+      <p class="text-gray-300">
         {toolA.rating >= toolB.rating
           ? `${toolA.name} edges ahead with a ${toolA.rating}/5 rating compared to ${toolB.name}'s ${toolB.rating}/5. However, ${toolB.name} may be the better choice if you need ${toolB.features?.[0]?.toLowerCase() || toolB.category?.toLowerCase() || "its features"}.`
           : `${toolB.name} leads with a ${toolB.rating}/5 rating versus ${toolA.name}'s ${toolA.rating}/5. That said, ${toolA.name} could be better if ${toolA.features?.[0]?.toLowerCase() || toolA.category?.toLowerCase() || "its features"} is your priority.`
@@ -200,7 +200,7 @@ function renderStars(rating: number) {
       </p>
       <div class="flex gap-3 mt-4">
         <a href={`/listing/${toolA.slug}`} class="px-4 py-2 bg-blue-600 text-white text-sm rounded-lg hover:bg-blue-700">View {toolA.name}</a>
-        <a href={`/listing/${toolB.slug}`} class="px-4 py-2 bg-white text-blue-600 text-sm rounded-lg border border-blue-600 hover:bg-blue-50">View {toolB.name}</a>
+        <a href={`/listing/${toolB.slug}`} class="px-4 py-2 bg-gray-900 text-blue-400 text-sm rounded-lg border border-blue-600 hover:bg-blue-950">View {toolB.name}</a>
       </div>
     </section>
 
@@ -208,9 +208,9 @@ function renderStars(rating: number) {
     <section class="mb-8">
       <h2 class="text-lg font-semibold mb-3">Explore More</h2>
       <div class="flex flex-wrap gap-2">
-        <a href={`/alternatives/${toolA.slug}`} class="text-sm px-3 py-1.5 bg-gray-100 rounded-lg hover:bg-gray-200">{toolA.name} Alternatives</a>
-        <a href={`/alternatives/${toolB.slug}`} class="text-sm px-3 py-1.5 bg-gray-100 rounded-lg hover:bg-gray-200">{toolB.name} Alternatives</a>
-        <a href={`/category/${toolA.category.toLowerCase().replace(/\s+/g, '-')}`} class="text-sm px-3 py-1.5 bg-gray-100 rounded-lg hover:bg-gray-200">All {toolA.category} Tools</a>
+        <a href={`/alternatives/${toolA.slug}`} class="text-sm px-3 py-1.5 bg-gray-800 rounded-lg hover:bg-gray-700">{toolA.name} Alternatives</a>
+        <a href={`/alternatives/${toolB.slug}`} class="text-sm px-3 py-1.5 bg-gray-800 rounded-lg hover:bg-gray-700">{toolB.name} Alternatives</a>
+        <a href={`/category/${toolA.category.toLowerCase().replace(/\s+/g, '-')}`} class="text-sm px-3 py-1.5 bg-gray-800 rounded-lg hover:bg-gray-700">All {toolA.category} Tools</a>
       </div>
     </section>
 
