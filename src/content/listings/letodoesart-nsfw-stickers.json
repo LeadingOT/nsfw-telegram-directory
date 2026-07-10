@@ -1,0 +1,32 @@
+{
+  "name": "LetoDoesArt NSFW Sticker Pack",
+  "slug": "letodoesart-nsfw-stickers",
+  "tagline": "Artist-drawn NSFW sticker pack",
+  "description": "An artist-made NSFW sticker pack (by LetoDoesArt) that installs directly into Telegram. Verified working in July 2026; the art style is illustrated rather than photographic.",
+  "category": "NSFW Stickers",
+  "url": "https://t.me/addstickers/letodoesartnsfw",
+  "pricing": {
+    "model": "free"
+  },
+  "features": [
+    "Artist-drawn NSFW stickers",
+    "Verified installable (July 2026)",
+    "Free"
+  ],
+  "pros": [
+    "Distinct illustrated style",
+    "Simple one-tap install"
+  ],
+  "cons": [
+    "Single fixed set",
+    "Style is not for everyone"
+  ],
+  "rating": 4.1,
+  "lastUpdated": "2026-07-09",
+  "tags": [
+    "nsfw-stickers",
+    "telegram",
+    "verified-2026-07"
+  ],
+  "seoDescription": "Artist-drawn NSFW sticker pack. Verified real and active July 2026 — subscribers, pros & cons and how to join."
+}

@@ -1,0 +1,32 @@
+{
+  "name": "Premium 3D Hentai Bot",
+  "slug": "premium-3d-hentai-bot",
+  "tagline": "Telegram bot serving 3D hentai content",
+  "description": "Premium 3D Hentai Bot is a working Telegram bot (verified July 2026) that serves 3D hentai content on demand. As with most content bots, start it with the Start Bot button and expect promotional prompts for premium tiers.",
+  "category": "NSFW Bots",
+  "url": "https://t.me/Premium3Dhentaibot",
+  "pricing": {
+    "model": "free"
+  },
+  "features": [
+    "Working bot (verified July 2026)",
+    "3D hentai content on demand",
+    "Free to start"
+  ],
+  "pros": [
+    "Instant content access",
+    "No channel scrolling"
+  ],
+  "cons": [
+    "Premium upsells",
+    "Bot uptime can vary"
+  ],
+  "rating": 3.9,
+  "lastUpdated": "2026-07-09",
+  "tags": [
+    "nsfw-bots",
+    "telegram",
+    "verified-2026-07"
+  ],
+  "seoDescription": "Telegram bot serving 3D hentai content. Verified real and active July 2026 — subscribers, pros & cons and how to join."
+}
