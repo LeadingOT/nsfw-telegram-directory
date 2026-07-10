@@ -11,7 +11,7 @@ export async function getStaticPaths() {
   const listings = await getCollection('listings');
   const categories = [...new Set(listings.map((l) => l.data.category))];
   return categories.map((cat) => ({
-    params: { category: cat.toLowerCase().replace(/\s+/g, '-') },
+    params: { category: cat.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '') },
     props: {
       category: cat,
       listings: listings.filter((l) => l.data.category === cat),
@@ -20,7 +20,7 @@ export async function getStaticPaths() {
 }
 
 const { category, listings } = Astro.props;
-const categorySlug = category.toLowerCase().replace(/\s+/g, '-');
+const categorySlug = category.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
 
 // Rating accessor tolerant of number | {overall} | missing (multi-schema safe)
 const rateOf = (x: any) => (typeof x?.rating === 'number' ? x.rating : (x?.rating?.overall ?? 0));

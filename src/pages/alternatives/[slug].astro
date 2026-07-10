@@ -214,7 +214,7 @@ const faqs = [
           </div>
           <div class="mt-3 flex gap-3">
             <a href={`/listing/${alt.slug}`} class="text-sm text-blue-400 hover:underline">Full Review →</a>
-            <a href={`/compare/${tool.slug}-vs-${alt.slug}`} class="text-sm text-gray-400 hover:underline">Compare with {tool.name} →</a>
+            <a href={`/compare/${[tool.slug, alt.slug].sort((m, n) => m.localeCompare(n)).join('-vs-')}`} class="text-sm text-gray-400 hover:underline">Compare with {tool.name} →</a>
           </div>
         </div>
       ))}

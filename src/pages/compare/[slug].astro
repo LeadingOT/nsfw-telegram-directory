@@ -210,7 +210,7 @@ function renderStars(rating: number) {
       <div class="flex flex-wrap gap-2">
         <a href={`/alternatives/${toolA.slug}`} class="text-sm px-3 py-1.5 bg-gray-800 rounded-lg hover:bg-gray-700">{toolA.name} Alternatives</a>
         <a href={`/alternatives/${toolB.slug}`} class="text-sm px-3 py-1.5 bg-gray-800 rounded-lg hover:bg-gray-700">{toolB.name} Alternatives</a>
-        <a href={`/category/${toolA.category.toLowerCase().replace(/\s+/g, '-')}`} class="text-sm px-3 py-1.5 bg-gray-800 rounded-lg hover:bg-gray-700">All {toolA.category} Tools</a>
+        <a href={`/category/${toolA.category.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '')}`} class="text-sm px-3 py-1.5 bg-gray-800 rounded-lg hover:bg-gray-700">All {toolA.category} Tools</a>
       </div>
     </section>
 

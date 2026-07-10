@@ -33,7 +33,7 @@ export async function getStaticPaths() {
 }
 
 const { listing, compareLinks } = Astro.props;
-const categorySlug = listing.category.toLowerCase().replace(/\s+/g, '-');
+const categorySlug = listing.category.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
 
 // --- GEO answer-first summary (data-driven, no fabrication) ---
 const priceText = listing.pricing.startingPrice
